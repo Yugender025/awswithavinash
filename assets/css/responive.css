@@ -1,0 +1,197 @@
+/* Base styles (for large screens) */
+html {
+    font-size: 16px;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    :root {
+        --h1-font-size: 48px;
+        --h2-font-size: 32px;
+        --h3-font-size: 24px;
+        --h4-font-size: 20px;
+        --h5-font-size: 16px;
+        --h6-font-size: 14px;
+        --BODY-font-size: 16px;
+        --small-font-size: 12px;
+        --tiny-font-size: 10px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199px) {
+    :root {
+        --h1-font-size: 40px;
+        --h2-font-size: 28px;
+        --h3-font-size: 22px;
+        --h4-font-size: 18px;
+        --h5-font-size: 15px;
+        --h6-font-size: 13px;
+        --BODY-font-size: 15px;
+        --small-font-size: 11px;
+        --tiny-font-size: 9px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+    :root {
+        --h1-font-size: 34px;
+        --h2-font-size: 26px;
+        --h3-font-size: 20px;
+        --h4-font-size: 18px;
+        --h5-font-size: 15px;
+        --h6-font-size: 12px;
+        --BODY-font-size: 14px;
+        --small-font-size: 10px;
+        --tiny-font-size: 8px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+    :root {
+        --h1-font-size: 28px;
+        --h2-font-size: 24px;
+        --h3-font-size: 18px;
+        --h4-font-size: 16px;
+        --h5-font-size: 14px;
+        --h6-font-size: 12px;
+        --BODY-font-size: 13px;
+        --small-font-size: 10px;
+        --tiny-font-size: 8px;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+    :root {
+        --h1-font-size: 24px;
+        --h2-font-size: 20px;
+        --h3-font-size: 16px;
+        --h4-font-size: 14px;
+        --h5-font-size: 12px;
+        --h6-font-size: 10px;
+        --BODY-font-size: 12px;
+        --small-font-size: 10px;
+        --tiny-font-size: 8px;
+    }
+}
+/* Extra small devices (phones, 0px and up) */
+@media (max-width: 575.98px) {
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav_items ul {
+        gap: 1rem;
+    }
+    .btn_start button {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+    .banner-section {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+    .course_headerSection h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .banner-section .course_headerSection p {
+        width: 100%;
+    }
+    .program_highlights_container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .program_highlights_container .program_highlight {
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .why_innercontainer {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .btn_start button {
+        padding: 8px 24px;
+        font-size: 15px;
+    }
+    .banner-section {
+        padding: 3rem 2rem;
+    }
+    .program_highlights_container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .program_highlights_container .program_highlight {
+        width: 180px;
+    }
+    .why_innercontainer {
+        padding: 2.5rem 2rem;
+    }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    nav {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .banner-section {
+        padding: 4rem 3rem;
+    }
+    .program_highlights_container {
+        gap: 3rem;
+    }
+    .program_highlights_container .program_highlight {
+        width: 200px;
+    }
+    .why_innercontainer {
+        padding: 3rem 2.5rem;
+    }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    nav {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .program_highlights_container {
+        gap: 4rem;
+    }
+    .program_highlights_container .program_highlight {
+        width: 220px;
+    }
+    .why_innercontainer {
+        padding: 3rem 3rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    nav {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .banner-section {
+        padding: 5rem 3.75rem;
+    }
+    .program_highlights_container {
+        gap: 5rem;
+    }
+    .program_highlights_container .program_highlight {
+        width: 230px;
+    }
+    .why_innercontainer {
+        padding: 3.5rem 3.75rem;
+    }
+}
