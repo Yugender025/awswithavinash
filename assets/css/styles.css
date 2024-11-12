@@ -245,7 +245,7 @@ section .batch-info{
     background-color: #ffffff;
     position: sticky;
     top: 0;
-    z-index: 100;
+    
 }
 nav{
     display: flex;
@@ -253,6 +253,8 @@ nav{
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
+  
+    
 }
 .nav_items ul{
     display: flex;
@@ -458,6 +460,10 @@ nav{
         gap: 4rem;
         
     }
+    .whyaws_mainContainer{
+        display: flex;
+        flex-direction: column;
+    }
     .why_mainHeaderContainer {
         display: flex;
         flex-direction: column;
@@ -465,6 +471,9 @@ nav{
         justify-content: flex-end;
         gap: 1rem;
         position: relative;
+    }
+    .why_innerHeaderContainer mark{
+        background-color: #00F2B2;
     }
     .why_innercontainer .desc_achievements{
         display: flex;
@@ -521,5 +530,110 @@ nav{
     .mentorimg_Container_2 .social_header h3{
         white-space: nowrap;
     }
+    .mentor-infoAbout {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .mentor_aboutContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+    .mentor_aboutContainer   .contact_btn{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 8px 32px;
+        position: relative;
+        flex: 0 0 auto;
+        background-color:#0571B4;
+        border-radius: 24px;
+        cursor: pointer;
+        color: var(--colors-white-50);
+    }
+    .contact_btn .get-started{
+        font-size: var(--BODY-font-size);
+        font-family: var(--BODY-font-family);
+        font-style: var(--BODY-font-style);
+        line-height: var(--BODY-line-height);
+        letter-spacing: var(--BODY-letter-spacing);
+        font-weight: var(--BODY-font-weight);
+    }
+    .contact_btn:hover{
+        background-color: #0571B4;
+        gap: 14px;
+        color: white;
+        transition: 0.35s ease-in;
+    }
 
-    
+    /*-----------Course enrollemnent----------------------*/
+    .course_enrollementSection{
+        background-color: #00F2B2;
+    }
+    .course_enrollementSection .course_enrollementInnerContainer{
+        padding:3rem 3.75rem 4rem 3.75rem ;
+    }
+    .enrolling_sectionContainer{
+        position: relative;
+        padding-top:3rem ;
+    }
+    .enrolling_sectionContainer .details_container{
+        width: 80%;
+        height: auto;
+    }
+  
+    .enrolling_informationContainer{
+        position: absolute;
+        left: 5%;
+        bottom: 17%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+    }
+    .enrolling_sectionContainer .enrolling{
+        width: 87%;
+    }
+    .enrolling_sectionMaincontainer{
+        display: flex;
+    }
+    .enrolling_sectionContainer .enroll_btn{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 8px 32px;
+        position: relative;
+        flex: 0 0 auto;
+        background-color:#0571B4;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+        cursor: pointer;
+        color: var(--colors-white-50);
+    }
+    .enroll_btn .get-started{
+        font-size: var(--BODY-font-size);
+        font-family: var(--BODY-font-family);
+        font-style: var(--BODY-font-style);
+        line-height: var(--BODY-line-height);
+        letter-spacing: var(--BODY-letter-spacing);
+        font-weight: var(--BODY-font-weight);
+    }
+    .enroll_btn:hover{
+        background-color: #0571B4;
+        gap: 14px;
+        color: white;
+        transition: 0.35s ease-in;
+    }
+    span.enroll_btn {
+        bottom: 8rem;
+        right: 0.2rem;
+    }
