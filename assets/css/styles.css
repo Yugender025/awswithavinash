@@ -446,7 +446,7 @@ nav{
         gap: 0.8rem;
     }
 
-/*-----------------------why aws avinash-------*/
+/*-----------------------why aws avinash- responive------*/ 
     .whyawsavinash{
         width: 100%;
     }
@@ -455,7 +455,7 @@ nav{
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        gap: 1rem;
+        gap: 4rem;
         
     }
     .why_mainHeaderContainer {
@@ -466,3 +466,60 @@ nav{
         gap: 1rem;
         position: relative;
     }
+    .why_innercontainer .desc_achievements{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+    }
+    .desc_achievements .mentor_achievements{
+   
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns only */
+            gap: 1rem;
+            width: 100%;
+            column-gap: 2rem;
+  
+    }
+    .mentor_achievements
+    .mentorimg_Container
+    {
+        width: 100%;
+        object-fit: contain;
+        padding: 0.5rem;
+        border-radius: 0.6rem;
+        border: 1px solid #D9DFDF;
+        /* background-color: var(--colors-lochmara-100); */
+        mix-blend-mode: color-burn;
+    }
+    .mentorimg_Container_2
+    {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0.6rem;
+        border: 1px solid #D9DFDF;
+        background-color: var(--colors-lochmara-100);
+        mix-blend-mode: color-burn;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .mentorimg_Container_2 .no_students{
+        white-space: nowrap;
+        color: #00F2B2;
+    }
+    .social_header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    position: relative;
+    }
+    .mentorimg_Container_2 .social_header h3{
+        white-space: nowrap;
+    }
+
+    
