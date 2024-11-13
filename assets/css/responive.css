@@ -195,3 +195,287 @@ html {
         padding: 3.5rem 3.75rem;
     }
 }
+
+/*-------------next-responive part----------*/
+/*----------------------- Responsive for Why AWS Avinash -----------------------*/
+@media (max-width: 1024px) {
+    .why_innercontainer {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .desc_achievements .mentor_achievements {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 1rem;
+    }
+    .mentorimg_Container, .mentorimg_Container_2 {
+        width: 100%;
+    }
+    .youtube_iframe iframe{
+       width: 280px;
+       height: 200px;
+       border-radius: 12px;
+    }
+    .mentor-infoAbout {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+        flex-direction: column-reverse;
+    }
+    .mentor_aboutContainer .contact_btn {
+        padding: 8px 20px;
+    }
+}
+
+/*----------------------- Responsive for Course Enrollment -----------------------*/
+@media (max-width: 1024px) {
+    .course_enrollementSection .course_enrollementInnerContainer {
+        padding: 2rem;
+    }
+    .enrolling_sectionContainer .details_container {
+        width: 100%;
+    }
+    .enrolling_informationContainer {
+        flex-direction: column;
+        gap: 2rem;
+        left: 0;
+        bottom: 0;
+    }
+    .enrolling_sectionContainer .enroll_btn {
+        width: 100%;
+        padding: 8px 20px;
+    }
+}
+
+/*----------------------- Responsive for How It Works -----------------------*/
+@media (max-width: 1024px) {
+    .howitworks_section .howitworks_sectionInnercontainer {
+        padding: 2rem;
+    }
+}
+
+/*----------------------- Responsive for Testimonials -----------------------*/
+@media (max-width: 1024px) {
+    .testimonals_innerContainer {
+        padding: 2rem;
+    }
+}
+
+/*----------------------- Responsive for FAQs -----------------------*/
+@media (max-width: 1024px) {
+    .faqs_innerContainer {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .accordion {
+        max-width: 100%;
+    }
+    .faq-container {
+        max-width: 90%;
+        padding: 1rem;
+    }
+}
+
+/*----------------------- Responsive for Bootcamp Contact Form -----------------------*/
+@media (max-width: 1024px) {
+    .innerContainer_Bootcamp {
+        padding: 2rem;
+    }
+    .section-8 {
+        flex-direction: column;
+        margin: 1.5rem auto;
+    }
+    .form {
+        padding: 20px;
+    }
+}
+
+/*----------------------- Responsive for Footer -----------------------*/
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 20px;
+    }
+    footer .footer_mainContainer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .social_links {
+        justify-content: center;
+    }
+    .info1 {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/*responive for testimonals and course preview--------*/
+/* Base styles remain the same as provided */
+
+/* Large Devices (Desktops & Laptops) */
+@media screen and (max-width: 1200px) {
+    .testimonalslist_mainContainer {
+        max-width: 85vw;
+    }
+
+    .courseinfo_mainContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonals_innerContainer {
+        padding: 2rem 2rem 3rem 2rem;
+    }
+}
+
+/* Medium Devices (Tablets & Smaller Laptops) */
+@media screen and (max-width: 992px) {
+    .aws_courseInnercontainer {
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+    }
+
+    .coursemodules_container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .pricedetails_maincontainer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .testimonalslist_mainContainer {
+        max-width: 90vw;
+        min-height: 40vh;
+    }
+
+    .testimonial.active {
+        transform: scale(1.1);
+    }
+
+    .content {
+        width: 250px;
+    }
+}
+
+/* Small Devices (Tablets & Large Phones) */
+@media screen and (max-width: 768px) {
+    .aws_courseInnercontainer {
+        gap: 24px;
+    }
+
+    .coursename_headercontainer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .coursedetails_mainContainer {
+        padding: 0.75rem;
+    }
+
+    .courseenrolldetails-container {
+        padding: 0.75rem;
+    }
+
+    .testimonals_innerContainer {
+        padding: 1.5rem 1rem 2rem 1rem;
+    }
+
+    .testimonals_innerContainer .program_mainHeaderContainer {
+        padding-bottom: 2rem;
+    }
+
+    .testimonial.active {
+        transform: scale(1);
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .content {
+        width: 220px;
+    }
+}
+
+/* Extra Small Devices (Mobile Phones) */
+@media screen and (max-width: 576px) {
+    .aws_courseInnercontainer {
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+        gap: 16px;
+    }
+
+    .enroll_btn {
+        padding: 6px 24px;
+    }
+
+    .coursemodules_container {
+        padding: 10px;
+    }
+
+    .module-header {
+        padding: 12px;
+    }
+
+    .module-content.active {
+        padding: 12px;
+    }
+
+    .testimonalslist_mainContainer {
+        max-width: 95vw;
+        min-height: 30vh;
+        padding-bottom: 2rem;
+    }
+
+    .testimonials-wrapper {
+        padding: 0 10px;
+    }
+
+    .content {
+        width: 200px;
+    }
+
+    .name {
+        font-size: 1.1rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+}
+
+/* Very Small Devices (Small Mobile Phones) */
+@media screen and (max-width: 375px) {
+    .aws_courseInnercontainer {
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .enroll_btn {
+        padding: 5px 20px;
+    }
+
+    .coursedetails_mainContainer {
+        padding: 0.5rem;
+    }
+
+    .testimonalslist_mainContainer {
+        border-radius: 16px;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .content {
+        width: 180px;
+    }
+}
