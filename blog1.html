@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
+<style>
+    .blog_contentHeader{
+        color: #000;
+    }
+</style>
 <body>
     <div class="container-1">
         <div class="batch-info">
@@ -52,46 +57,49 @@
         
       </nav>
   </section>
-  <div class="feature_blog">
-        <div class="featured-article module h-c-grid">
-            <div class="h-c-grid__col h-c-grid__col--12 h-c-grid__col-l--8 featured-article__link featured-article__image featured-article__image--full-height">
-            <img loading="lazy" src="assets/images/featureblog.WEBP" width="100%" height="100%" alt="Stay &quot;connected to culture&quot; on International Museum Day">
-            </div> 
-            <a href="blogview.html" class="featured-article__content featured-article__content-horizontal h-c-grid__col h-c-grid__col--12 h-c-grid__col-l--4">
-                <p class="uni-eyebrow uni-eyebrow--ellipsize">
-                    <time class="uni-timesince" datetime="2020-05-18 11:47:00+00:00" aria-label="Nov 2024">Nov 2024</time> / AWS &amp; Services
-                </p>
-                <h2 class="featured-article__title">Unlock the "Future of Cloud" with AWS DevOps Learning</h2>
-                <p class="featured-article__summary">
-                    In today's rapidly evolving technological landscape, the convergence of cloud computing and DevOps practices has become a cornerstone of modern IT infrastructure. Amazon Web Services (AWS), as the leading cloud…
-                </p>
-                <div class="blog_view1">
-                    <span class="nowrap">Read Article <span><i class="fa-regular fa-arrow-right"></i></span></span>
-                </div>
-            </a>
-        </div>
-    </div>   
-    <div class="container">
-        <div class="blog_allArticles">
-            <h2 class="blog_headerContainer">All articles</h2>
+  <div class="blogview_mainContainer">
+    <div class="blogview_innerContainer">
+        <div class="blog_contentContainer" id="blogcontent">
         
-            <div class="filter-container">
-                <button class="filter-btn active" data-category="all">All</button>
-                <button class="filter-btn" data-category="aws">AWS EC2</button>
-                <button class="filter-btn" data-category="ai">Generative AI</button>
-                <button class="filter-btn" data-category="ai">Generative AI</button>
-                <button class="filter-btn" data-category="ai">Generative AI</button>
-                <button class="filter-btn" data-category="ai">Generative AI</button>
-                <button class="filter-btn" data-category="ai">Generative AI</button>
-                <button class="filter-btn" data-category="ai">Generative AI</button>
+            <div class="blog_contentHeader">
+              <h2 class="blogviewheader">Understanding Amazon EC2 Instances: A Comprehensive Guide</h2>
+              <p class="blogdesc">In today’s dynamic digital landscape, businesses need scalable and cost-effective computing power to meet fluctuating demands. Amazon Elastic Compute Cloud (Amazon EC2) is a core service in the Amazon Web Services (AWS) portfolio, offering flexible and resizable virtual servers—known as EC2 instances—to support various applications and workloads. Whether you're running a web server, managing large-scale data processing, or deploying machine learning models, EC2 provides the necessary infrastructure to meet your cloud computing needs. In this blog, we'll explore the key features, types, and benefits of Amazon EC2 instances, along with best practices for leveraging them.</p>
+              <div class="second_header">
+                <h3>Instance Types</h3>
+                <p>Amazon EC2 offers several instance types optimized for different use cases:</p>
+              </div>     
             </div>
-    
-            <div class="blog-grid" id="blogGrid">
-                <!-- Cards will be inserted here by JavaScript -->
+        </div>
+        <div class="blogcourse_detailsrealted">
+            <div class="course_details">
+                <div class="blog-card">
+                    <div class="card-image">
+                            <img src="assets/images/awscommunity.webp" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">AWS DevOps course</h4>
+                        <p class="card-text">Enroll now to get cerificate</p>
+                        <div class="card-footer">
+                            <a href="enroll.html" class="read-more">
+                                <div class="sm-btn">
+                                    <div id="how-link" class="get-started">Enroll now</div>
+                                    <i class="fa-regular fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>  
+            <div class="related_topicsContainer">
+                <h3>Related Topics</h3>
+                 <li><a href="http://" target="_blank" rel="noopener noreferrer">Cloud Computing</a></li>
+                 <li><a href="http://" target="_blank" rel="noopener noreferrer">Cloud Computing</a></li>
+                 <li><a href="http://" target="_blank" rel="noopener noreferrer">Cloud Computing</a></li>
+                 <li><a href="http://" target="_blank" rel="noopener noreferrer">Cloud Computing</a></li>
+            </div>
+        </div>
     </div>
-    <!-------FOOTER---------->
+  </div>
   <footer>
     <div class="footer-section">
          <div class="footer_mainContainer">
@@ -160,7 +168,50 @@
        </p>
     </div>
  </footer>
-<!------FOOTER ENDS------------->
-<script src="assets/js/blog.js"></script>
+ <!-- <script>
+ const blogContents = [
+  {
+    title: "Amazon EC2 Instances",
+    title2: "Amazon EC2 Instances",
+    category: "aws",
+    content2:"hello",
+    content:
+      "In today’s dynamic digital landscape, businesses need scalable and cost-effective computing power to meet fluctuating demands. Amazon Elastic Compute Cloud (Amazon EC2) is a core service in the Amazon Web Services (AWS) portfolio, offering flexible and resizable virtual servers—known as EC2 instances—to support various applications and workloads. Whether you're running a web server, managing large-scale data processing, or deploying machine learning models, EC2 provides the necessary infrastructure to meet your cloud computing needs. In this blog, we'll explore the key features, types, and benefits of Amazon EC2 instances, along with best practices for leveraging them.",
+    date: "Jun 11, 2024",
+  },
+  {
+    title: "Amazon EC2 Instances",
+    title2: "Amazon EC2 Instances",
+    category: "aws",
+    content2:"hello",
+    content1:
+      "Lorem ipsum dolor sit amet consectetur. Fermentum nec gravida rhoncus orci feugiat faucibus mattis mollis. Ipsum in eget nibh dui sit venenatis sit amet tellus. Diam at ut velit eget..",
+    date: "Jun 11, 2024",
+  },
+]
+
+function createBlogCard(content) {
+  return `
+        <div class="blog_contentHeader">
+          <h2>${content.title}</h2>
+          <p>${content.content}</p>
+          <div class="second_header">
+            <h2>${content.title2}</h2>
+            <p>${content.content2}</p>
+          </div>     
+        </div>
+    `;
+}
+// Function to populate blog content container
+function renderBlogContent() {
+  const blogContainer = document.getElementById("blogcontent");
+  blogContents.forEach((content) => {
+    blogContainer.innerHTML += createBlogCard(content);
+  });
+}
+
+// Call the function to render content when the page loads
+renderBlogContent();
+ </script> -->
 </body>
 </html>
