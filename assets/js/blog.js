@@ -1,11 +1,43 @@
 const blogPosts = [
   {
-    title: "Amazon EC2 Instances",
+    title: "Introduction to Cloud Computing",
     category: "aws",
     link: "blog1.html",
-    image: "assets/images/featureblog.WEBP",
+    image: "assets/images/cloudcomputing.png",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Fermentum nec gravida rhoncus orci feugiat faucibus mattis mollis. Ipsum in eget nibh dui sit venenatis sit amet tellus. Diam at ut velit eget..",
+      "In today's digital era, cloud computing has transformed the way businesses and individuals access, manage, and store data. By enabling on-demand availability of computing resources...",
+    date: "Jun 11, 2024",
+  },
+  {
+    title: "AWS Services: A Comprehensive Overview",
+    category: "ai",
+    image: "assets/images/awsservices.WEBP",
+    content:
+      "Amazon Web Services (AWS) is a comprehensive and evolving cloud platform providing over 200 fully featured services from data centers globally. It serves millions of customers, inc...",
+    date: "Jun 11, 2024",
+  },
+  {
+    title: "How to Create an AWS Account: A Step-by-Step Guide",
+    category: "ai",
+    image: "assets/images/accountaws.png",
+    content:
+      "Creating an AWS account is the first step toward accessing Amazon's powerful suite of cloud services, which enables..",
+    date: "Jun 11, 2024",
+  },
+  {
+    title: "Networking & Content Delivery",
+    category: "ai",
+    image: "assets/images/network_cdn.png",
+    content:
+      "Amazon Web Services (AWS) offers a robust selection of networking and content delivery services to help businesses build scalable, secure, and highly available applications. These services...",
+    date: "Jun 11, 2024",
+  },
+  {
+    title: "How to Create an IAM user",
+    category: "ai",
+    image: "assets/images/iamuser.png",
+    content:
+      "AWS Identity and Access Management (IAM) is an essential service that allows you to manage user access and control permissions for resources in your AWS environment. Creating individual IAM users for each person or application accessing..",
     date: "Jun 11, 2024",
   },
   {
@@ -17,35 +49,19 @@ const blogPosts = [
     date: "Jun 11, 2024",
   },
   {
-    title: "Introduction to Generative AI",
+    title: "AWS Services in Industry",
     category: "ai",
-    image: "assets/images/featureblog.WEBP",
+    image: "assets/images/awsindustry.png",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Fermentum nec gravida rhoncus orci feugiat faucibus mattis mollis. Ipsum in eget nibh dui sit venenatis sit amet tellus. Diam at ut velit eget..",
+      "Amazon Web Services (AWS) has become a go-to solution for businesses across various industries due to its flexibility, scalability, and wide array of services Companies worldwide leverage AWS to manage infrastructure...",
     date: "Jun 11, 2024",
   },
   {
-    title: "Introduction to Generative AI",
+    title: "Create an S3 bucket",
     category: "ai",
-    image: "assets/images/featureblog.WEBP",
+    image: "assets/images/s3bucket.WEBP",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Fermentum nec gravida rhoncus orci feugiat faucibus mattis mollis. Ipsum in eget nibh dui sit venenatis sit amet tellus. Diam at ut velit eget..",
-    date: "Jun 11, 2024",
-  },
-  {
-    title: "Introduction to Generative AI",
-    category: "ai",
-    image: "assets/images/featureblog.WEBP",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Fermentum nec gravida rhoncus orci feugiat faucibus mattis mollis. Ipsum in eget nibh dui sit venenatis sit amet tellus. Diam at ut velit eget..",
-    date: "Jun 11, 2024",
-  },
-  {
-    title: "Introduction to Generative AI",
-    category: "ai",
-    image: "assets/images/featureblog.WEBP",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Fermentum nec gravida rhoncus orci feugiat faucibus mattis mollis. Ipsum in eget nibh dui sit venenatis sit amet tellus. Diam at ut velit eget..",
+      "Amazon S3 (Simple Storage Service) is one of AWS's core services, providing scalable, secure, and durable storage for a wide range of data. From backups and data archives to hosting static websites, S3’s versatility makes it..",
     date: "Jun 11, 2024",
   },
 ];

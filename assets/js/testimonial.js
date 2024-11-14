@@ -8,7 +8,8 @@ const testimonials = [
   {
     id: 2,
     name: "Anudeep",
-    image: "assets/images/avatar_2.jpg",
+    image:
+      "https://s3.ap-south-1.amazonaws.com/awswithavinash.com/awswithavinash/assets/images/avatar_2.jpg",
     text: "Highly recommended! The practical projects and real-world scenarios helped me master AWS tools quickly.",
   },
   {

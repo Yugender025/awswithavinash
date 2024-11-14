@@ -361,8 +361,11 @@ a.featured-article__content.featured-article__content-horizontal.h-c-grid__col.h
     color: #666;
     margin-bottom: 1rem;
     line-height: 1.5;
+    margin-top: 1rem;
 }
-
+mark{
+    background-color: #00F2B2;
+}
 .card-footer {
     display: flex;
     justify-content: space-between;
