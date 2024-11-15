@@ -308,6 +308,9 @@ html {
         align-items: center;
         text-align: center;
     }
+    .info_details{
+        flex-direction: column;
+    }
 }
 
 
