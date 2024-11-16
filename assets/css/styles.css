@@ -1537,3 +1537,31 @@ nav {
         font-size: 1.1rem;
     }
 }
+
+/*course page*/
+.course_bannermainContainer{
+    color: var(--colors-white-50);
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    position: relative;
+}
+.course_bannermainContainer .course_bannerinnerContainer{
+    padding: 50px 60px 50px 60px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.course_bannerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+.hurry_upCourse{
+ background-color: #00F2B2;
+ padding: 16px 32px;
+ color: #000;
+}

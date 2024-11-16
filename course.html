@@ -20,175 +20,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="assets/js/navbar.js"></script>
 </head>
-<style>
-/* Existing CSS */
-.navbar_container {
-    width: 100%;
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: var(--colors-lochmara-50);
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.nav_items ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.nav_items ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.btn_start {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.btn_start button {
-    padding: 8px 32px;
-    border-radius: 24px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn_start button:nth-child(1) {
-    border: none;
-    background-color: #0571B4;
-    color: #fff;
-}
-
-.btn_start button:nth-child(2) {
-    border: 1px solid #000;
-    background-color: #fff;
-    color: #000;
-}
-
-/* Hamburger Menu Styles */
-.hamburger {
-    display: none;
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0.5rem;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: all 0.3s ease;
-}
-
-/* Mobile & Tablet Responsive Styles */
-@media screen and (max-width: 1024px) {
-    nav {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .hamburger {
-        display: block;
-        z-index: 1000;
-        order: 3; /* Move hamburger to the right */
-    }
-
-    /* Hamburger Animation */
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-    }
-
-    /* Mobile Navigation Menu */
-    .nav_items {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        background-color: var(--colors-lochmara-50);
-        padding-top: 80px;
-        transition: right 0.3s ease;
-    }
-
-    .nav_items.active {
-        right: 0;
-    }
-
-    .nav_items ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .nav_items ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav_items ul li a {
-        display: block;
-        padding: 10px 0;
-    }
-
-    /* Keep nav_btns visible */
-    .nav_btns {
-        position: static; /* Reset position */
-        order: 2; /* Place buttons in the middle */
-    }
-
-    .btn_start {
-        flex-direction: row; /* Keep buttons in row */
-        gap: 1rem;
-    }
-
-    .btn_start button {
-        padding: 6px 16px; /* Slightly smaller buttons on mobile */
-        font-size: 14px;
-    }
-}
-
-/* Small Mobile Devices */
-@media screen and (max-width: 480px) {
-    .nav_items {
-        width: 100%;
-    }
-
-    .btn_start {
-        gap: 0.5rem;
-    }
-
-    .btn_start button {
-        padding: 6px 12px;
-        font-size: 13px;
-    }
-}
-</style>
 <body>
     <div class="container-1">
         <div class="batch-info">
@@ -212,7 +43,7 @@ nav {
     
             <div class="nav_items">
                 <ul>
-                    <li><a href="http://">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="http://">Courses</a></li>
                     <li><a href="blog.html">Blogs</a></li>
                     <li><a href="http://">About us</a></li>
@@ -230,6 +61,152 @@ nav {
             </div>
         </nav>
     </section>
+    <div class="course_bannermainContainer">
+        <div class="course_bannerinnerContainer">
+            <div class="course_bannerContainer">
+                <div class="course_headerContainer">
+                    <h2>AWS Certified DevOps Engineer Professional 2024 - DOP-C02</h2>
+                    <p>Begin DevOps Career As an Absolute Beginner | AWS, Linux, Scripts, Jenkins, Ansible, GitOps, Docker,Kubernetes, &amp;ChatGPT</p>
+                </div>
+                <div class="course_infoDetails">
+                    <div class="course_duration">
+                        <div>Duration</div>
+                        <div class="duration">
+                            <i class="fas fa-circle-three-quarters"></i><span> 100+ Hrs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="course_duration">
+                        <div>Cohort</div>
+                        <div class="duration">
+                            <i class="fas fa-calendar"></i><span> October 1st 2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="course_duration">
+                        <div>Mode</div>
+                        <div class="duration">
+                            <i class="fas fa-laptop"></i><span> Online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hurry_upCourse">
+                    <div>Hurry up few seats left</div>
+                </div>
+            </div>
+            <div class="course_introContainer">
+                <div class="course_vdContainer">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/-ddHWeLv_IE?si=hX2bNrZacEzkI-aa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      
 
+            
+                 </div>
+                <div class="btn_cont">
+                    <button>Enroll</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!---FORM----->
+<div class="bootcampcontact_form">
+    <div class="innerContainer_Bootcamp">
+        <div class="program_mainHeaderContainer">
+            <div class="program_innerHeaderContainer">
+            <h2>Join the Bootcamp</h2>
+            </div>
+            <p>Enhance your skills with our AWS DevOps course. Join now for a comprehensive learning experience.</p> 
+        </div>
+        <div class="section-8">
+            <div class="image">
+                <img src="https://i.pinimg.com/564x/49/8d/31/498d318c094aeff6a6ed478723843f1c.jpg" alt="Form Image">
+            </div>
+            <div class="form">
+                <h1 style="color: #090A0C;">Get Started: Complete Your Enrollment Form Today</h1>
+                <form id="enrollmentForm" method="post" autocomplete="off" name="google-sheet">
+                    <label for="name" id="nameLabel">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name">
+                    <label for="mobile" id="mobileLabel">Mobile Number</label>
+                    <input type="text" id="mobile" name="mobile" placeholder="Enter Number">
+                    <label for="email" id="emailLabel">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter ID">
+                    <label for="message" id="messageLabel">Your message</label>
+                    <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+<!----------ENDS FORMS-->
+    <!-------FOOTER---------->
+  <footer>
+    <div class="footer-section">
+         <div class="footer_mainContainer">
+             <div class="hero_cmpny">
+                 <img src="https://www.sophos.com/sites/default/files/2022-02/aws-logo-white-orange.png" width="100" height="70" alt="awsavinash">
+             </div>
+             <div class="social_links">
+                <a href="http://" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                 <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+             </div>
+         </div> 
+            <br>
+            <hr> 
+         <div class="contact_details">
+           <div class="info_details">
+            <div class="info2">
+                <h3>Courses</h3>
+                <div class="courses_links">
+                    <li><a href="">AWS DevOps</a></li>
+                    <li><a href="">AWS DevOps</a></li>
+                    <li><a href="">AWS DevOps</a></li>
+                </div>
+                
+              </div>     
+             <div class="info1">
+               <h3>Contact us</h3>
+               <div class="mail_contact">
+                   <i class="fa-regular fa-envelope"></i>
+                   <div class="mail_link">
+                       <a href="mailto:info@rightkeyrealty.in">info@aws.in</a>
+                   </div>
+               </div>
+               <div class="mail_contact">
+                   <i class="fa-regular fa-phone"></i>
+                   <div class="mail_link">
+                       <a href="tel:++91-998 558 5558">+91-998 558 5558</a>
+                   </div>
+               </div>
+             </div>
+             <div class="info2">
+                <h3>Address</h3>
+                <div class="mail_contact">
+                    <p>4th Floor, above Sri Vasu Sarees,
+                      Plot No 418, opp. Matsuri, near Miyapur,
+                      Hyderabad, Telangana 500049</p>
+                </div>
+                
+              </div>
+           </div>
+           
+           <!-- <div class="footer_imgContainer">
+             <img src="assets/images/footer.png" width="360" height="190" alt="">
+          </div> -->
+         </div>
+         
+         <!-- <div style="color: white;" class="courses_list">
+            <div class="header-coursesList"><h3>Aws Cetification</h3></div>
+            
+         </div> -->
+    </div>
+    
+    <div class="designed_privacyCopyright">
+     <p>Designed by <a href="http://digitalwin.in" target="_blank">Digitalwin Technologies</a> Copyright © 2024 | Privacy Policy
+       </p>
+    </div>
+ </footer>
+<!------FOOTER ENDS------------->
 </body>
 </html>
