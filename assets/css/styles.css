@@ -237,39 +237,46 @@ header{
 .batch-info .batch_desc{
     color: var(--colors-white-50);
 }
-.navbar_container{
-    width:100% ;
-    height: auto ;
+/* Existing CSS */
+.navbar_container {
+    width: 100%;
+    height: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: var(--colors-lochmara-50);
     position: sticky;
     top: 0;
     z-index: 9999;
-    
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
-  
-    
 }
-.nav_items ul{
+
+.nav_items ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
 }
+
+.nav_items ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 .btn_start {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    
 }
+
 .btn_start button {
     padding: 8px 32px;
     border-radius: 24px;
@@ -280,14 +287,122 @@ nav{
 .btn_start button:nth-child(1) {
     border: none;
     background-color: #0571B4;
-    color: #fff; 
+    color: #fff;
 }
 
 .btn_start button:nth-child(2) {
-    
-    border: 1px solid #000; 
+    border: 1px solid #000;
     background-color: #fff;
-    color: #000; 
+    color: #000;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0.5rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile & Tablet Responsive Styles */
+@media screen and (max-width: 1024px) {
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1000;
+        order: 3; /* Move hamburger to the right */
+    }
+
+    /* Hamburger Animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Mobile Navigation Menu */
+    .nav_items {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--colors-lochmara-50);
+        padding-top: 80px;
+        transition: right 0.3s ease;
+    }
+
+    .nav_items.active {
+        right: 0;
+    }
+
+    .nav_items ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav_items ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_items ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* Keep nav_btns visible */
+    .nav_btns {
+        position: static; /* Reset position */
+        order: 2; /* Place buttons in the middle */
+    }
+
+    .btn_start {
+        flex-direction: row; /* Keep buttons in row */
+        gap: 1rem;
+    }
+
+    .btn_start button {
+        padding: 6px 16px; /* Slightly smaller buttons on mobile */
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .nav_items {
+        width: 100%;
+    }
+
+    .btn_start {
+        gap: 0.5rem;
+    }
+
+    .btn_start button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
 }
 
 .banner-section{
@@ -417,7 +532,7 @@ nav{
     }
     .program_mainHeaderContainer span.decor {
         position: relative;
-        left: 34%;
+        left: 30%;
     }
     .program_innerContainer {
         display: flex;
@@ -867,10 +982,11 @@ nav{
     .testimonials-wrapper {
         position: relative;
         height: auto;
-        min-height: 400px;
+        min-height: 300px;
         display: flex;
         justify-content: center;
-        align-items: center;
+       
+        margin-top: 3rem;
     }
     
     .testimonial {
@@ -1316,9 +1432,9 @@ nav{
         margin-top: 2rem;
     }
 
-    .course_infoSection {
-        text-align: center;
-    }
+    /* .course_infoSection {
+        /* text-align: center; */
+    
 
     .course_infoDetails {
         justify-content: center;
@@ -1341,13 +1457,11 @@ nav{
 
     .course_infoDetails {
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         gap: 1rem;
     }
 
-    .course_duration {
-        align-items: center;
-    }
+  
 
     .course-divider {
         display: none;

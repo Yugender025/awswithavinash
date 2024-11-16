@@ -2,7 +2,9 @@
 html {
     font-size: 16px;
 }
-
+body{
+    overflow-x: hidden;
+}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     :root {
@@ -90,6 +92,7 @@ html {
         padding: 6px 20px;
         font-size: 14px;
     }
+   
     .banner-section {
         flex-direction: column;
         padding: 2rem 1.5rem;
@@ -243,7 +246,7 @@ html {
         bottom: 0;
     }
     .enrolling_sectionContainer .enroll_btn {
-        width: 100%;
+        width: 30%;
         padding: 8px 20px;
     }
 }
@@ -354,6 +357,7 @@ html {
     .testimonalslist_mainContainer {
         max-width: 90vw;
         min-height: 40vh;
+        padding: 0;
     }
 
     .testimonial.active {
@@ -370,13 +374,22 @@ html {
     .aws_courseInnercontainer {
         gap: 24px;
     }
-
+    .program_mainHeaderContainer span.decor{
+        left: 20%;
+    }
     .coursename_headercontainer {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
-
+    .sup_img img{
+        width: 250px;
+        height: 250px;
+       }
+    .mentor_imgContainer img{
+        width: 300px;
+        height: 200px;
+    }   
     .coursedetails_mainContainer {
         padding: 0.75rem;
     }
@@ -435,6 +448,7 @@ html {
         max-width: 95vw;
         min-height: 30vh;
         padding-bottom: 2rem;
+        padding: 0;
     }
 
     .testimonials-wrapper {
