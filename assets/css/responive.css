@@ -496,3 +496,210 @@ body{
         width: 180px;
     }
 }
+
+/*-------Interview prep responive part---------------------------*/
+/* Base styles remain the same as provided */
+
+/* Large Screens (Desktops) - Above 1200px */
+@media screen and (max-width: 1200px) {
+    .youtubeframes_innerContainer {
+      grid-template-columns: 400px 400px;
+      gap: 1.5rem;
+      padding: 20px;
+    }
+  
+    .multipe_qsContainer .question,
+    .multipe_qsContainer #quiz-header {
+      margin-left: 8rem;
+      margin-right: 8rem;
+    }
+  
+    .multipe_qsContainer button {
+      margin-left: 40rem;
+    }
+  }
+  
+  /* Medium Screens (Tablets/Smaller Desktops) - 768px to 1199px */
+  @media screen and (max-width: 992px) {
+    .interview_innerContainer {
+      padding: 4rem 2rem;
+    }
+  
+    .youtubeframes_innerContainer {
+      grid-template-columns: 1fr;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    .interview_youtubeframes {
+      padding: 20px 30px;
+    }
+  
+    .multipe_qsContainer .question,
+    .multipe_qsContainer #quiz-header {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+  
+    .multipe_qsContainer button {
+      margin-left: 20rem;
+    }
+  
+    .multipe_qsContainer .quiz-container {
+      margin: 1rem;
+      height: 500px;
+    }
+  
+    .multipe_qsContainer #container-pie {
+      margin-left: 30%;
+    }
+  }
+  
+  /* Small Screens (Tablets/Large Phones) - 576px to 767px */
+  @media screen and (max-width: 768px) {
+    .interview_innerContainer {
+      padding: 3rem 1rem;
+      gap: 1rem;
+    }
+  
+    .interviewheader_section {
+      padding-top: 2rem;
+    }
+  
+    .youtubeframes_innerContainer {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  
+    .interview_youtubeframes {
+      padding: 20px 15px;
+    }
+  
+    .multipe_qsContainer .question,
+    .multipe_qsContainer #quiz-header {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  
+    .multipe_qsContainer button {
+      margin-left: 10rem;
+    }
+  
+    .multipe_qsContainer #scoreChart {
+      width: 250px !important;
+      height: 250px !important;
+    }
+  
+    .multipe_qsContainer #container-pie {
+      margin-left: 20%;
+    }
+  
+    .multiple_qsinnerContainer .sm-btn {
+      padding: 8px 24px;
+    }
+    .next-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .frm_container iframe {
+        width: 350px;
+        height: 200px;
+    }
+  }
+  
+  /* Extra Small Screens (Mobile Phones) - Below 576px */
+  @media screen and (max-width: 576px) {
+    .interview_innerContainer {
+      padding: 2rem 0.5rem;
+    }
+  
+    .interviewheader_section h1 {
+      font-size: 1.5rem;
+    }
+  
+    .youtubeframes_innerContainer {
+      padding: 0 0.5rem;
+    }
+  
+    .interview_youtubeframes {
+      padding: 15px 10px;
+    }
+  
+    .multipe_qsContainer .question,
+    .multipe_qsContainer #quiz-header {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .multipe_qsContainer button {
+      margin-left: 5rem;
+      padding: 8px 24px;
+    }
+  
+    .multipe_qsContainer .quiz-container {
+      margin: 0.5rem;
+      height: 450px;
+    }
+  
+    .multipe_qsContainer #scoreChart {
+      width: 200px !important;
+      height: 200px !important;
+    }
+  
+    .multipe_qsContainer #container-pie {
+      margin-left: 10%;
+    }
+  
+    .multipe_qsContainer #result {
+      left: 35%;
+    }
+  
+    .multiple_qsinnerContainer .sm-btn {
+      padding: 6px 20px;
+      font-size: 0.9em;
+    }
+  
+    .multipe_qsContainer #quiz-header {
+      /* flex-direction: column; */
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .multipe_qsContainer button#next-button {
+        margin-left: 25% !important;
+    }
+    .next-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .frm_container iframe {
+        width: 350px;
+        height: 200px;
+    }
+  }
+  
+  /* Ensure minimum width for very small devices */
+  @media screen and (max-width: 320px) {
+    .interview_innerContainer {
+      min-width: 320px;
+    }
+  
+    .multipe_qsContainer button {
+      margin-left: 2rem;
+      padding: 6px 16px;
+    }
+  
+    .multipe_qsContainer #result {
+      left: 30%;
+    }
+    .next-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .frm_container iframe {
+        width: 350px;
+        height: 200px;
+    }
+  }

@@ -211,9 +211,6 @@ h1{
     line-height: var(--h1-line-height);
 }
 .interviewbanner_section{
-    /* background-image: url();
-    background-position: center center;
-    position: relative; */
     background-color: #000;
     width: 100%;
     height: auto;
