@@ -1565,3 +1565,56 @@ nav {
  padding: 16px 32px;
  color: #000;
 }
+.btn_cont{
+    width: 100%;
+}
+.btn_cont button{
+    padding: 16px 169px;
+    /* width: 100%; */
+    font-size: 18px;
+    color: black;
+}
+
+.course_modulesmainContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.course_modulesinnerContainer {
+    padding: 40px 60px 40px 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+.modules_mainContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 0 0 auto;
+}
+.enroll_stcikytopedge {
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
+    position: sticky;
+}
+.course_descrpContainer{
+    width: 700px;
+    height: 300px;
+    border: 2px solid;
+    flex: 0 0 auto;
+    border-radius: 12px;
+}
+.modules_mainContainer .modules_container{
+    width: 100%;
+    flex: 0 0 auto;
+}
+.what-you-will-learn--objectives-list-two-column-layout--ED4as {
+    display: flex
+;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
