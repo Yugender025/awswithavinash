@@ -897,3 +897,123 @@ body{
         width: 300px;
     }
   }
+  /* Large Desktop (1440px and above) */
+@media screen and (min-width: 1440px) {
+  .feature_blog, .blog_allArticles {
+      padding-left: 120px;
+      padding-right: 120px;
+  }
+  
+  .blog-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Desktop (1024px to 1439px) */
+@media screen and (max-width: 1439px) {
+  .feature_blog, .blog_allArticles, .blogview_innerContainer {
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+  
+  .blog-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet Landscape (768px to 1023px) */
+@media screen and (max-width: 1023px) {
+  .featured-article.module.h-c-grid {
+      flex-direction: column;
+  }
+  
+  .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .blogview_innerContainer {
+      flex-direction: column;
+  }
+  
+  .blog_contentContainer {
+      max-width: 100%;
+  }
+  
+  .blogcourse_detailsrealted {
+      position: static;
+      width: 100%;
+      margin-top: 2rem;
+  }
+  
+  a.featured-article__content.featured-article__content-horizontal {
+      max-width: 100%;
+  }
+}
+
+/* Tablet Portrait (481px to 767px) */
+@media screen and (max-width: 767px) {
+  .feature_blog, .blog_allArticles, .blogview_innerContainer {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+  }
+  
+  .blog-grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+  }
+  
+  .filter-container {
+      gap: 0.5rem;
+  }
+  
+  .filter-btn {
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+  }
+  
+  .card-content {
+      padding: 1rem;
+  }
+  
+  .card-title {
+      font-size: 1.2rem;
+  }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .feature_blog, .blog_allArticles, .blogview_innerContainer {
+      padding: 16px;
+  }
+  
+  .blog_headerContainer {
+      margin-bottom: 1.5rem;
+  }
+  
+  .card-image {
+      height: 160px;
+  }
+  
+  .card-icon {
+      width: 40px;
+      height: 40px;
+  }
+  
+  .blog_contentContainer .blog-title {
+      font-size: 1.8rem;
+  }
+  
+  .blogcourse_detailsrealted {
+      padding: 1rem;
+      gap: 2rem;
+  }
+  
+  .related_topicsContainer li {
+      font-size: 16px;
+  }
+  
+  .bullet_points {
+      margin-left: 1rem;
+  }
+}

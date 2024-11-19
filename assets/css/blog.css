@@ -442,6 +442,7 @@ mark{
 }
 .blog_contentHeader .second_header{
     margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 .blog_contentHeader .blogdescrpheader{
     margin-top: 0.5rem;
@@ -572,4 +573,16 @@ mark{
 }
 .bullet_points .higlight{
     font-weight: 600;
+}
+.blogcourse_detailsrealted {
+    position: sticky;
+    top: 150px;
+    max-height: calc(100svh - 150px);
+    overflow-y: auto;
+    background-color: #F2F2F2 !important;
+    padding: 2rem;
+}
+.blogcourse_detailsrealted .sm-btn{
+    background-color: #0571B4;
+    color: #eee;
 }
