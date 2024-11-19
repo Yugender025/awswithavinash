@@ -12,7 +12,7 @@ const blogPosts = [
     title: "AWS Services: A Comprehensive Overview",
     category: "services",
     link: "blog2.html",
-    image: "assets/images/awsservices.WEBP",
+    image: "assets/images/awsservices.webp",
     content:
       "Amazon Web Services (AWS) is a comprehensive and evolving cloud platform providing over 200 fully featured services from data centers globally. It serves millions of customers, inc...",
     date: "Jun 11, 2024",
@@ -66,7 +66,7 @@ const blogPosts = [
     title: "Create an S3 bucket",
     category: "services",
     link: "blog8.html",
-    image: "assets/images/s3bucket.WEBP",
+    image: "assets/images/s3bucket.png",
     content:
       "Amazon S3 (Simple Storage Service) is one of AWS's core services, providing scalable, secure, and durable storage for a wide range of data. From backups and data archives to hosting static websites, S3’s versatility makes it..",
     date: "Jun 11, 2024",

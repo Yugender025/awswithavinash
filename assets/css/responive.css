@@ -703,3 +703,197 @@ body{
         height: 200px;
     }
   }
+
+  /*----------course responive page-----------*/
+  /* Base styles remain the same as provided */
+
+/* Large Screens (Desktops) - 1200px and above */
+@media screen and (max-width: 1200px) {
+    .course_bannerinnerContainer {
+      padding: 40px 40px;
+    }
+  
+    .course_modulesinnerContainer {
+      padding: 30px 40px;
+    }
+  
+    .course_descrpContainer {
+      width: 600px;
+    }
+  
+    .enroll_stcikytopedge {
+      width: 350px;
+    }
+  
+    .btn_cont button {
+      padding: 16px 120px;
+    }
+  }
+  
+  /* Medium Screens (Tablets/Smaller Desktops) - 992px to 1199px */
+  @media screen and (max-width: 992px) {
+    .course_bannerinnerContainer {
+      padding: 30px;
+      flex-direction: column;
+      
+    }
+  
+   
+    .course_modulesinnerContainer {
+      padding: 25px 30px;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .course_descrpContainer {
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+    }
+  
+    .enroll_stcikytopedge {
+      width: 100%;
+      position: relative;
+      margin-top: 2rem;
+    }
+  
+    .btn_cont {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .btn_cont button {
+      padding: 16px 100px;
+    }
+  
+    .what-you-will-learn--objectives-list-two-column-layout--ED4as {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .course_vdContainer iframe{
+        width: 300px;
+    }
+  }
+  
+  /* Small Screens (Tablets/Large Phones) - 768px to 991px */
+  @media screen and (max-width: 768px) {
+    .course_bannerinnerContainer {
+      padding: 25px 20px;
+    }
+  
+    .course_modulesinnerContainer {
+      padding: 20px;
+    }
+  
+    .hurry_upCourse {
+      padding: 12px 24px;
+      font-size: 0.9rem;
+    }
+  
+    .btn_cont button {
+      padding: 14px 80px;
+      font-size: 16px;
+    }
+  
+    .modules_mainContainer {
+      gap: 1.5rem;
+    }
+    .course_vdContainer iframe{
+        width: 300px;
+    }
+  }
+  
+  /* Extra Small Screens (Mobile Phones) - 576px to 767px */
+  @media screen and (max-width: 576px) {
+    .course_bannerinnerContainer {
+      padding: 20px 15px;
+      gap: 1.5rem;
+    }
+  
+    .course_modulesinnerContainer {
+      padding: 15px;
+    }
+  
+    .hurry_upCourse {
+      padding: 10px 20px;
+      font-size: 0.85rem;
+    }
+  
+    .btn_cont button {
+      padding: 12px 40px;
+      font-size: 15px;
+      width: 100%;
+    }
+  
+    .modules_mainContainer {
+      gap: 1rem;
+    }
+  
+    .course_descrpContainer {
+      min-height: 250px;
+    }
+  
+    .enroll_stcikytopedge {
+      height: 250px;
+    }
+    .course_vdContainer iframe{
+        width: 300px;
+    }
+  }
+  
+  /* Very Small Screens - Below 576px */
+  @media screen and (max-width: 375px) {
+    .course_bannerinnerContainer {
+      padding: 15px 10px;
+      gap: 1rem;
+    }
+  
+    .course_modulesinnerContainer {
+      padding: 10px;
+    }
+  
+    .hurry_upCourse {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+  
+    .btn_cont button {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+  
+    .course_descrpContainer {
+      min-height: 200px;
+    }
+  
+    .enroll_stcikytopedge {
+      height: 200px;
+    }
+    .course_vdContainer iframe{
+        width: 300px;
+    }
+  }
+  
+  /* Additional Utility Classes for Better Responsiveness */
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hide-on-mobile {
+      display: block !important;
+    }
+  }
+  
+  .text-center-mobile {
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .text-center-mobile {
+      text-align: left;
+    }
+    .course_vdContainer iframe{
+        width: 300px;
+    }
+  }

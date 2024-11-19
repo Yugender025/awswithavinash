@@ -427,3 +427,149 @@ mark{
 .innerblog_header{
     margin-top: 1rem;
 }
+.related_topicsContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    gap: 0.5rem;
+}
+.related_topicsContainer li{
+    font-size: 18px;
+    color: #0571B4;
+}
+.blog_contentHeader .third_header{
+    margin-top: 0.5rem;
+}
+.blog_contentHeader .second_header{
+    margin-top: 0.8rem;
+}
+.blog_contentHeader .blogdescrpheader{
+    margin-top: 0.5rem;
+}
+.blog_contentHeader .blogbullet_pnts{
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+}
+.blogbullet_pnts li{
+  list-style:square;
+  margin-top: 0.4rem;
+}
+.blogbullet_pnts li span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.aws_serviceslist img{
+    margin-top: 2rem; 
+    border-radius: 12px;  
+}
+.aws_serviceslist{
+   margin-bottom: 3rem;
+}
+.blog_contentHeader a{
+    color: #0847e7;
+}
+.blog_contentHeader .thrid_header{
+    margin-top: 0.5rem;
+}
+.step_1, .step_2 {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+.blog_contentHeader .container{
+ margin-top: 2rem;
+}
+.blog_contentHeader .steps_header{
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+.blog_contentContainer .blog_descrp{
+    padding: 1rem;
+}
+
+.blog_contentContainer.blog-header {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2c3e50 100%);
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.blog_contentContainer .blog-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog_contentContainer .blog-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+
+.blog_contentContainer .service-card {
+    background: white;
+    border-radius: 8px;
+
+    margin-bottom: 1.5rem;
+ 
+}
+
+
+
+.blog_contentContainer.service-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog_contentContainer .feature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog_contentContainer .feature-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.blog_contentContainer .feature-list li::before {
+    content: "→";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+}
+
+.blog_contentContainer .highlight-box {
+    background: #fff8e8;
+    border-left: 4px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+.vpc_contentContainer ul {
+    margin: 10px 0 10px 20px;
+
+}
+.vpc_contentContainer li {
+    margin-bottom: 10px;
+    list-style: square;
+}
+.vpc_contentContainer .highlight {
+    font-weight: bold;
+    color: #000;
+}
+.bullet_points li{
+    margin-top: 0.5rem;
+    list-style: square;
+}
+.bullet_points .innerpnts{
+    margin-left: 2rem;
+}
+.innerpnts li{
+    margin-bottom: 0.5rem;
+}
+.bullet_points .higlight{
+    font-weight: 600;
+}

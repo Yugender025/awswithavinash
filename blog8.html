@@ -83,7 +83,7 @@
                 </div>
               </div>
               <div class="innerblog_header">
-                    <h3>Step 1: Log in to Your AWS Account</h3>
+                    <h3>1. Log in to Your AWS Account</h3>
                     <div class="bullet_points">
                         <ol>
                             <li style="list-style:numeric;">Go to the <a style="color:blue" href="https://console.aws.amazon.com/s3/" target="_blank">AWS Management Console.</a></li>
@@ -91,6 +91,131 @@
                         </ol>
                     </div>
                     <!-- <img src="assets/images/s3bucketcreation.png" width="500" height="300"  alt="" srcset=""> -->
+                     <br>
+                     <h3>2. Navigate to Amazon S3</h3>
+                     <div class="bullet_points">
+                         <ol>
+                             <li style="list-style: numeric;">Sign in to the AWS Management Console and open the Amazon S3 console at <a style="color:blue" href=" https://console.aws.amazon.com/s3/" target="_blank" rel="noopener noreferrer">https://console.aws.amazon.com/s3/.</a></li>
+                             <li style="list-style: numeric;">In the navigation bar on the top of the page, choose the name of the currently displayed AWS Region. Next, choose the Region in which you want to create a bucket.</li>
+                             <li style="list-style: numeric;">In the left navigation pane, choose Buckets.</li>
+                             <li style="list-style: numeric;">Choose Create bucket.
+
+                                The Create bucket page opens.</li>
+                             <li style="list-style: numeric;">Under General configuration, view the AWS Region where your bucket will be created.</li>
+                             <li style="list-style: numeric;">Under Bucket type, choose General purpose.</li>
+                             <li style="list-style: numeric;">For Bucket name, enter a name for your bucket.</li>
+                             <ul class="innerpnts">
+                                 <li>Be unique within a partition. A partition is a grouping of Regions. AWS currently has three partitions: aws (Standard Regions), aws-cn (China Regions), and aws-us-gov (AWS GovCloud (US) Regions).</li>
+                                 <li>Be between 3 and 63 characters long.</li>
+                                 <li>Consist only of lowercase letters, numbers, dots (.), and hyphens (-). For best compatibility, we recommend that you avoid using dots (.) in bucket names, except for buckets that are used only for static website hosting.</li>
+                                 <li>Begin and end with a letter or number.</li>
+                             </ul>
+                             <p>After you create the bucket, you cannot change its name. The AWS account that creates the bucket owns it. For more information about naming buckets, see General purpose bucket naming rules.</p>
+
+                             <li style="list-style: numeric;" >AWS Management Console allows you to copy an existing bucket's settings to your new bucket. If you do not want to copy the settings of an existing bucket, skip to the next step.</li>
+                             <p>To copy an existing bucket's settings, under Copy settings from existing bucket, select Choose bucket. The Choose bucket window opens. Find the bucket with the settings that you would like to copy, and select Choose bucket. The Choose bucket window closes, and the Create bucket window re-opens.</p>
+                             <br>
+                             <p>Under Copy settings from existing bucket, you will now see the name of the bucket you selected. You will also see a Restore defaults option that you can use to remove the copied bucket settings. Review the remaining bucket settings, on the Create bucket page. You will see that they now match the settings of the bucket that you selected. You can skip to the final step.</p>
+                             <li style="list-style: numeric;" >Under Object Ownership, to disable or enable ACLs and control ownership of objects uploaded in your bucket, choose one of the following settings:
+                                 <br><br>
+                                <span class="higlight">ACLs disabled</span>
+                            </li>
+                            <ul class="innerpnts">
+                                <li>Bucket owner enforced (default) – ACLs are disabled, and the bucket owner automatically owns and has full control over every object in the bucket. ACLs no longer affect access permissions to data in the S3 bucket. The bucket uses policies exclusively to define access control.
+                                    <br><br>
+                                    By default, ACLs are disabled. A majority of modern use cases in Amazon S3 no longer require the use of ACLs. We recommend that you keep ACLs disabled, except in unusual circumstances where you must control access for each object individually. For more information, see Controlling ownership of objects and disabling ACLs for your bucket.
+                                </li>
+                                <br>
+                                <span class="higlight">ACLs enabled</span>
+                                <li> <span class="higlight">Bucket owner preferred – </span>The bucket owner owns and has full control over new objects that other accounts write to the bucket with the bucket-owner-full-control canned ACL.
+                                    <br>
+                                    If you apply the Bucket owner preferred setting, to require all Amazon S3 uploads to include the bucket-owner-full-control canned ACL, you can add a bucket policy that allows only object uploads that use this ACL.
+                                </li>
+                                <li><span class="higlight">Object writer – </span>The AWS account that uploads an object owns the object, has full control over it, and can grant other users access to it through ACLs.</li>
+
+                            </ul>
+                            <div class="highlight-box">
+                                <strong>Note</strong>
+                                <p>The default setting is Bucket owner enforced. To apply the default setting and keep ACLs disabled, only the s3:CreateBucket permission is needed. To enable ACLs, you must have the s3:PutBucketOwnershipControls permission.</p>
+                            </div>
+                             <li style="list-style: numeric;" >Under Block Public Access settings for this bucket, choose the Block Public Access settings that you want to apply to the bucket.
+                                <br>
+                                By default, all four Block Public Access settings are enabled. We recommend that you keep all settings enabled, unless you know that you need to turn off one or more of them for your specific use case. For more information about blocking public access, see Blocking public access to your Amazon S3 storage.</li>
+                                <div class="highlight-box">
+                                    <strong>Note</strong>
+                                    <p>To enable all Block Public Access settings, only the s3:CreateBucket permission is required. To turn off any Block Public Access settings, you must have the s3:PutBucketPublicAccessBlock permission.</p>
+                                </div>
+                             <li style="list-style: numeric;" >(Optional) Under Bucket Versioning, you can choose if you wish to keep variants of objects in your bucket. For more information about versioning, see Retaining multiple versions of objects with S3 Versioning.
+                                 <br>
+                                To disable or enable versioning on your bucket, choose either <strong>Disable</strong> or <strong>Enable.</strong> </li>
+                             <li style="list-style: numeric;" >(Optional) Under Tags, you can choose to add tags to your bucket. Tags are key-value pairs used to categorize storage.
+                                <br>
+                                To add a bucket tag, enter a <strong>Key</strong> and optionally a <strong>Value</strong> and choose <strong>Add Tag.</strong> </li>
+                             <li style="list-style: numeric;" >Under <strong>Default encryption</strong>, choose <strong>Edit.</strong></li>
+                             <li style="list-style: numeric;" >To configure default encryption, under <strong>Encryption type</strong>, choose one of the following:</li>
+                             <ul class="innerpnts">
+                                <li><strong>Amazon S3 managed key (SSE-S3)</strong></li>
+                                <li><strong>AWS Key Management Service key (SSE-KMS)</strong></li>
+                                <div style="border: 1px solid red; border-radius: 8px;" class="highlight-box">
+                                    <strong>Important</strong>
+                                    <p>The default setting is Bucket owner enforced. To apply the default setting and keep ACLs disabled, only the s3:CreateBucket permission is needed. To enable ACLs, you must have the s3:PutBucketOwnershipControls permission.</p>
+                                </div>
+                                <p>Buckets and new objects are encrypted with server-side encryption with an Amazon S3 managed key as the base level of encryption configuration. For more information about default encryption, see Setting default server-side encryption behavior for Amazon S3 buckets.
+                                    <br>
+                                    For more information about using Amazon S3 server-side encryption to encrypt your data, see Using server-side encryption with Amazon S3 managed keys (SSE-S3).</p>
+                            </ul>
+                            <li style="list-style: numeric;">If you chose AWS Key Management Service key (SSE-KMS), do the following:</li>
+                            <ul>
+                                <li style="list-style: lower-alpha;">Under <strong>AWS KMS key</strong>, specify your KMS key in one of the following ways:</li>
+                           
+                            <ul class="innerpnts">
+                                <li>To choose from a list of available KMS keys, choose Choose from your AWS KMS keys, and choose your KMS key from the list of available keys.
+                                    <br><br>
+                                    Both the AWS managed key (aws/s3) and your customer managed keys appear in this list. For more information about customer managed keys, see Customer keys and AWS keys in the AWS Key Management Service Developer Guide.
+                                </li>
+                                <br>
+                            
+                                <li> To enter the KMS key ARN, choose Enter AWS KMS key ARN, and enter your KMS key ARN in the field that appears.
+                                </li>
+                                <li>To create a new customer managed key in the AWS KMS console, choose Create a KMS key.
+                                    <br><br>
+                                    For more information about creating an AWS KMS key, see Creating keys in the AWS Key Management Service Developer Guide.
+                                </li>
+                                <div style="border: 1px solid red; border-radius: 8px;" class="highlight-box">
+                                    <strong>Important</strong>
+                                    <p>You can use only KMS keys that are available in the same AWS Region as the bucket. The Amazon S3 console lists only the first 100 KMS keys in the same Region as the bucket. To use a KMS key that is not listed, you must enter your KMS key ARN. If you want to use a KMS key that is owned by a different account, you must first have permission to use the key and then you must enter the KMS key ARN. For more information on cross account permissions for KMS keys, see Creating KMS keys that other accounts can use in the AWS Key Management Service Developer Guide. For more information on SSE-KMS, see Specifying server-side encryption with AWS KMS (SSE-KMS).
+                                        <br><br>
+                                        When you use an AWS KMS key for server-side encryption in Amazon S3, you must choose a symmetric encryption KMS key. Amazon S3 supports only symmetric encryption KMS keys and not asymmetric KMS keys. For more information, see Identifying symmetric and asymmetric KMS keys in the AWS Key Management Service Developer Guide.</p>
+                                </div>
+                                <p>For more information about creating an AWS KMS key, see Creating keys in the AWS Key Management Service Developer Guide. For more information about using AWS KMS with Amazon S3, see Using server-side encryption with AWS KMS keys (SSE-KMS).</p>
+                            </ul>
+                            <li style="list-style: lower-alpha;">When you configure your bucket to use default encryption with SSE-KMS, you can also enable S3 Bucket Keys. S3 Bucket Keys lower the cost of encryption by decreasing request traffic from Amazon S3 to AWS KMS. For more information, see <a style="color:blue" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html" target="_blank" rel="noopener noreferrer"> Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys.</a></li>
+                            <br>
+                            <p>To use S3 Bucket Keys, under <strong>Bucket Key</strong>, choose <strong>Enable</strong>.</p>
+                            </ul>
+                            <li style="list-style: numeric;">(Optional) If you want to enable S3 Object Lock, do the following:</li>
+                            <ul>
+                                <li style="list-style: lower-alpha;">Choose <strong>Advanced settings.</strong></li>
+                                <div style="border: 1px solid red; border-radius: 8px;" class="highlight-box">
+                                    <strong>Important</strong>
+                                    <p>Enabling Object Lock also enables versioning for the bucket. After enabling you must configure the Object Lock default retention and legal hold settings to protect new objects from being deleted or overwritten.</p>
+                                </div>
+                                <li style="list-style: lower-alpha;">If you want to enable Object Lock, choose Enable, read the warning that appears, and acknowledge it.</li>
+                               <p>For more information, see Locking objects with Object Lock.
+
+                               </p>
+                               <div style="border-radius: 8px;" class="highlight-box">
+                                <strong>Note</strong>
+                                <p>To create an Object Lock enabled bucket, you must have the following permissions: s3:CreateBucket, s3:PutBucketVersioning and s3:PutBucketObjectLockConfiguration.</p>
+                               </div>
+                            </ul>
+                            
+                            <li style="list-style: numeric;">Choose <strong>Create bucket.</strong></li>
+                            <p>You've created a bucket in Amazon S3.</p>
+                         </ol>
+                        
+                     </div>
+
               </div>    
             </div>
         </div>
