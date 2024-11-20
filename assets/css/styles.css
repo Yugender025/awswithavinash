@@ -767,6 +767,111 @@ nav {
     .howitworks_section .howitworks_sectionInnercontainer{
         padding:3rem 3.75rem 4rem 3.75rem ;
     }
+    .howitworks_section  .steps-container {
+        padding: 4rem 1rem;
+        background-color: #f8fafc;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .howitworks_section .steps-header {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 3rem auto;
+    }
+
+    /* .howitworks_section .steps-header h2 {
+        font-size: 2.5rem;
+        color: #1e293b;
+        margin-bottom: 1rem;
+    } */
+
+    /* .howitworks_section .steps-header p {
+        font-size: 1.125rem;
+        color: #64748b;
+    } */
+
+    .howitworks_section  .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .howitworks_section .step-card {
+        background: white;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .howitworks_section .step-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .howitworks_section .step-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color:var(--colors-lochmara-700);
+        margin-bottom: 1rem;
+    }
+
+    .howitworks_section  .step-icon {
+        width: 64px;
+        height: 64px;
+        background: #dcfff6;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem auto;
+    }
+
+    .howitworks_section  .step-icon i {
+        font-size: 1.75rem;
+        color: #f09534;
+    }
+
+    .howitworks_section  .step-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin: 0;
+    }
+
+    .howitworks_section .circle-bg {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: #dcfff6;
+        border-radius: 50%;
+        top: -50px;
+        right: -50px;
+        z-index: 0;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 768px) {
+        .howitworks_section   .steps-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .howitworks_section  .steps-grid {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        
+        .howitworks_section  .steps-header h2 {
+            font-size: 3rem;
+        }
+    }
     /*------course preview--------------*/
     .aws_coursepreviewContainer {
         width: 100%;

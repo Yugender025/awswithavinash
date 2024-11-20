@@ -266,6 +266,54 @@
                 </div>
                 <p>To enhance both your AWS DevOps skills and cloud career.</p> 
            </div>
+           <div class="steps-container">
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="circle-bg"></div>
+                        <div class="step-number">01</div>
+                        <div class="step-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="step-title">Attend Live Sessions</h3>
+                    </div>
+        
+                    <div class="step-card">
+                        <div class="circle-bg"></div>
+                        <div class="step-number">02</div>
+                        <div class="step-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="step-title">Hands-on Practice Lab</h3>
+                    </div>
+        
+                    <div class="step-card">
+                        <div class="circle-bg"></div>
+                        <div class="step-number">03</div>
+                        <div class="step-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="step-title">Placement & Technical Support</h3>
+                    </div>
+        
+                    <div class="step-card">
+                        <div class="circle-bg"></div>
+                        <div class="step-number">04</div>
+                        <div class="step-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="step-title">Certification Bootcamp</h3>
+                    </div>
+        
+                    <div class="step-card">
+                        <div class="circle-bg"></div>
+                        <div class="step-number">05</div>
+                        <div class="step-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="step-title">Mentor Support & Monthly AWS Coupons</h3>
+                    </div>
+                </div>
+           </div>
         </div>
   </div>
   <!-------HOW IT WORKS-ENDS----------->
@@ -580,6 +628,38 @@
 <script src="assets/js/script.js" async></script>
 <script src="assets/js/testimonial.js" async></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+       
+        // Add animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.step-card');
+            
+            function checkScroll() {
+                const triggerBottom = window.innerHeight * 0.8;
+                
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    
+                    if (cardTop < triggerBottom) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+
+            // Initial styles
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+
+            // Check on scroll and initial load
+            window.addEventListener('scroll', checkScroll);
+            checkScroll();
+        });
+    </script>
+</script>
 <script>
   AOS.init();
 </script>

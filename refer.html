@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .steps-container {
+            padding: 4rem 1rem;
+            background-color: #f8fafc;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .steps-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .steps-header h2 {
+            font-size: 2.5rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .steps-header p {
+            font-size: 1.125rem;
+            color: #64748b;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .step-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .step-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .step-icon {
+            width: 64px;
+            height: 64px;
+            background: #eff6ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        .step-icon i {
+            font-size: 1.75rem;
+            color: #3b82f6;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin: 0;
+        }
+
+        .circle-bg {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #eff6ff;
+            border-radius: 50%;
+            top: -50px;
+            right: -50px;
+            z-index: 0;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .steps-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            
+            .steps-header h2 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="steps-container">
+        <div class="steps-header">
+            <h2>Our Five Steps Approach</h2>
+            <p>Your path to AWS expertise and career success</p>
+        </div>
+        
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="circle-bg"></div>
+                <div class="step-number">01</div>
+                <div class="step-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="step-title">Attend Live Sessions</h3>
+            </div>
+
+            <div class="step-card">
+                <div class="circle-bg"></div>
+                <div class="step-number">02</div>
+                <div class="step-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="step-title">Hands-on Practice Lab</h3>
+            </div>
+
+            <div class="step-card">
+                <div class="circle-bg"></div>
+                <div class="step-number">03</div>
+                <div class="step-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="step-title">Placement & Technical Support</h3>
+            </div>
+
+            <div class="step-card">
+                <div class="circle-bg"></div>
+                <div class="step-number">04</div>
+                <div class="step-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3 class="step-title">Certification Bootcamp</h3>
+            </div>
+
+            <div class="step-card">
+                <div class="circle-bg"></div>
+                <div class="step-number">05</div>
+                <div class="step-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="step-title">Mentor Support & Monthly AWS Coupons</h3>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.step-card');
+            
+            function checkScroll() {
+                const triggerBottom = window.innerHeight * 0.8;
+                
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    
+                    if (cardTop < triggerBottom) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+
+            // Initial styles
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+
+            // Check on scroll and initial load
+            window.addEventListener('scroll', checkScroll);
+            checkScroll();
+        });
+    </script>
+</body>
+</html>
