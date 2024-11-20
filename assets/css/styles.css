@@ -768,9 +768,9 @@ nav {
         padding:3rem 3.75rem 4rem 3.75rem ;
     }
     .howitworks_section  .steps-container {
-        padding: 4rem 1rem;
-        background-color: #f8fafc;
-        font-family: 'Arial', sans-serif;
+        padding-top: 4rem;
+        
+      
     }
 
     .howitworks_section .steps-header {
@@ -802,7 +802,7 @@ nav {
     .howitworks_section .step-card {
         background: white;
         border-radius: 0.5rem;
-        padding: 2rem;
+        padding: 1rem;
         text-align: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
@@ -839,8 +839,8 @@ nav {
     }
 
     .howitworks_section  .step-title {
-        font-size: 1.25rem;
-        font-weight: 600;
+        
+      
         color: #1e293b;
         margin: 0;
     }
@@ -893,7 +893,7 @@ nav {
             rgba(153, 212.01, 255, 0.06) 100%
         );
         padding-bottom: 5rem;
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
     .aws_courseInnercontainer .enroll_btn{
         display: inline-flex;
