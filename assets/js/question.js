@@ -42,7 +42,7 @@ function showQuestion(index) {
     nextButton.style.color = "white";
     nextButton.style.removeProperty("border-color");
 
-    nextButton.style.marginLeft = "65rem";
+    nextButton.style.marginLeft = "25%";
   } else {
     nextButton.textContent = "Next question";
   }
