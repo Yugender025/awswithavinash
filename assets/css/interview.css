@@ -386,7 +386,11 @@ a.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 62rem;
+    left: 12%;
+    right: 24%;
+    margin-top: 2rem;
+    display: block;
+    position: relative;
   }
   .multipe_qsContainer #result{
     position: absolute;
@@ -396,7 +400,8 @@ a.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
   }
   
   .multipe_qsContainer button:hover {
-    color: #252F3E;
+    color:#fff;
+    background-color: var(--colors-lochmara-700);
     border-color: #fff;
   }
   
