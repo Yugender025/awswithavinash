@@ -565,7 +565,8 @@ mark{
     margin-top: 0.5rem;
     list-style: square;
 }
-.bullet_points .innerpnts{
+.innerpnts{
+    margin-top: 0.4rem;
     margin-left: 2rem;
 }
 .innerpnts li{
@@ -586,3 +587,9 @@ mark{
     background-color: #0571B4;
     color: #eee;
 }
+@media screen and (max-width: 480px){
+    .blog_contentHeader img{
+        height: 30vh;
+    }
+}
+

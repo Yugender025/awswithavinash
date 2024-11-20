@@ -66,12 +66,104 @@
               <h2 class="blogviewheader">Create an <mark>IAM user</mark> in your AWS account</h2>
               <p class="blogdesc">Managing access to your AWS resources effectively is crucial for security and operational efficiency. AWS Identity and Access Management (IAM) enables you to create users and assign them precise permissions. Here's how to set up an IAM user step-by-step.</p>
               <div class="second_header">
-                <h3>Root user</h3>
-                <p>When you first create an Amazon Web Services (AWS) account, you begin with a single sign-in 
-                    identity that has complete access to all AWS services and resources in the account. This identity is 
-                    called the AWS account root user and is accessed by signing in with the email address and password 
-                    that you used to create the account. </p>
-              </div>     
+                    <h3>Root user</h3>
+                    <p>When you first create an Amazon Web Services (AWS) account, you begin with a single sign-in 
+                        identity that has complete access to all AWS services and resources in the account. This identity is 
+                        called the AWS account root user and is accessed by signing in with the email address and password 
+                        that you used to create the account. 
+                    </p>
+                    <ul class="innerpnts">
+                        <li style="list-style:square;">The "root account" is simply the account created when first setup your AWS account. It has 
+                            complete Admin access on your account. </li>
+                    </ul>  
+                        <p>AWS strongly recommend that you do not use the root user for your everyday tasks, even the 
+                            administrative ones. Instead of using the root user we can create IAM user and allocates the 
+                            appropriate permissions for the IAM user.</p>
+                    
+              </div> 
+              <strong>IAM</strong>  
+              <p>IAM stands for Identity and Access Management (IAM). IAM is a web service that helps you securely 
+                control access to AWS resources for your users. We can use IAM to control who can use our AWS 
+                resources and how they can use resources. </p>
+                <br>
+                <strong>IAM Features:</strong> 
+                <ul class="innerpnts">
+                    <li style="list-style:square;">You can provide Shared Access to your AWS account</li>
+                    <li style="list-style:square;">You can grant different permissions to different people for different resources. </li>
+                    <li style="list-style:square;">IAM allows you to manage users and their level of access to AWS console. </li>
+                    <li style="list-style:square;">IAM is universal. It does not apply to regions. </li>
+                    <li style="list-style:square;">You can enable Multi-factor authentication (MFA) for your AWS account</li>
+                    <li style="list-style:square;">IAM allows you to set up your own password rotation policy</li>
+                    <li style="list-style:square;">Integrates with many different AWS services</li>
+                </ul> 
+                <br>
+                <strong>Steps to Create an IAM user:</strong>
+                <ul class="innerpnts">
+                    <li style="list-style-type:numeric;">The "root account" is simply the account created when first setup your AWS account. It has 
+                        complete Admin access on your account. </li>
+                        <img src="assets/images/INITIALSTEPIAM.png" width="100%" height="300" alt="iamuser">
+                        <li style="list-style-type:numeric;">IAM users have to sign-in using a dedicated Sign-In link. Every AWS account user will get a 12 
+                            Digit account number, that 12 digit number will be displayed on the Sign-In link, if you don’t 
+                            want to expose the account Number you can give an Alias name. For that select the 
+                            <Strong>“customize”</Strong> option in IAM dashboard. </li>
+                            <img src="assets/images/WIAM.png" width="100%" height="200" alt="iamuser">
+                            <li style="list-style-type:numeric;">To create a new IAM user, Please select <strong>“Users”</strong> option under IAM Resources and Select <strong>“Add 
+                                User”</strong> option.</li>
+                                <img src="assets/images/selectusers.png" width="100%" height="400" alt="iamuser"> 
+                                <ul class="innerpnts">
+                                    <li style="list-style-type:square;">We need to provide a “user name” for the newly creating IAM user. This username 
+                                        must be unique with-in your AWS account. </li>
+                                        <li style="list-style-type:square;">Then you have to select AWS access type. We have two types of the access types </li>
+                                            <ul class="innerpnts">
+                                                <li style="list-style-type:circle;"><strong>Programmatic access: </strong>This Enables the access to your AWS account by AWS 
+                                                    API, CLI, SDK, and other development tools. You will get an access key ID and 
+                                                    secret access key if you select this access type. </li>
+                                                <li style="list-style-type:circle;"><strong>AWS Management Console access: </strong>This enables users to sign-in to the AWS 
+                                                    Management Console i.e; Web Browser. You will get a username and 
+                                                    password to login.</li>
+                                            </ul>
+                                        <li style="list-style-type:square;">If you select <strong>“AWS Management Console access”</strong> you have to get a password by 
+                                            <strong>“Auto generated password”</strong> or <strong>“Custom password”</strong> option.</li> 
+                                        <li style="list-style-type:square;">You can select the <strong>“Require password reset option”</strong> tick box if you want IAM user to 
+                                            create a new password at next sign-in. </li>    
+                                        </ul>
+                    <li style="list-style-type:numeric;">By default IAM users will create with NO Permissions. If you want to allocate certain level of 
+                        permission on any of the AWS resource, you have to attach/apply policy to the user. </li>                  
+                        <ul class="innerpnts">
+                            <li style="list-style-type:circle;">You can directly Attach one or more existing policies directly to the users or create a 
+                                new policy</li>
+                            <li style="list-style-type:circle;">If you have any existing user with policies you can select the user, same permissions 
+                                will apply for the newly created user also.</li>
+                                <li style="list-style-type:circle;">Or, you can create a group allocate the policy on top of the group, then you can add 
+                                    this IAM user to that group. Creating group will eases the administration. </li>
+                        </ul> 
+                    <li style="list-style-type:numeric;">To create a group, select the “Create a Group” option and you will get a pop-up to select the 
+                        policy. You can filter the policies based on your requirement and select.  
+                        Here is some key policies, you have to remember</li>
+                        <ul class="innerpnts">
+                            <li style="list-style-type:circle;"><strong>AdministratorAccess: </strong>Provides full access to AWS services and resources Except 
+                                Billing and Account management. He can create/delete an IAM user or Groups.  </li>
+                            <li style="list-style-type:circle;"><strong>PowerUserAccess: </strong>Provides full access to AWS services and resources, but does 
+                                not allow management of Users and groups. He can launch any resource but 
+                                doesn’t have any permission to create a new user, group or deleting an existing 
+                                user.</li>
+                            <li style="list-style-type:circle;"><strong>ReadonlyAccess: </strong>Provides Read Only access on all AWS services and resources.</li>    
+                        </ul>
+                        <img src="assets/images/addusergroup5.png"  width="100%" height="300" alt="creategroup"> 
+                     
+                    <p>To Create group, use the <strong>“Create Group”</strong> option and choose the required policy. Permissions 
+                        managed at group level, not at user level.</p> 
+                        <img src="assets/images/creategroup.png"  width="100%" height="300" alt="creategroup">
+                        <li style="list-style-type:numeric;">Add required tags. Tag allow us to add metadata to the AWS resources.</li>
+                        <img src="assets/images/adduser.png"  width="100%" height="300" alt="creategroup">
+                        <li style="list-style-type:numeric;">Review the screen and click on <strong>“Create User”</strong> option. New IAM user will create and you can 
+                            send the credentials directly to the user by using <strong>“Send Email”</strong> option. </li> 
+                            <img src="assets/images/createuser.png"  width="100%" height="300" alt="creategroup">
+                            <li style="list-style-type:numeric;"> You can download the Credentials.csv file and keep it in a secured location. </li>
+                            <img src="assets/images/successiamuser.png"  width="100%" height="300" alt="creategroup"> 
+                            
+                            <li style="list-style-type:numeric;">By using the mentioned IAM sig-in URL, this newly created IAM user can login to AWS console. </li>   
+                </ul>
             </div>
         </div>
         <div class="blogcourse_detailsrealted">
