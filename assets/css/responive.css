@@ -238,13 +238,26 @@ body{
     }
     .enrolling_sectionContainer .details_container {
         width: 100%;
+        display: none;
     }
     .enrolling_informationContainer {
         flex-direction: column;
         gap: 2rem;
         left: 0;
         bottom: 0;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 2rem;
     }
+    .enrolling_informationContainer .course_headerContainer{
+      align-items: center;
+    }
+    .enrolling_informationContainer .course_infoDetails{
+       align-items: center;
+    }
+    .enrolling_informationContainer .course_duration{
+      align-items: center;
+   }
     .enrolling_sectionContainer .enroll_btn {
         width: 30%;
         padding: 8px 20px;
@@ -723,6 +736,7 @@ body{
   
     .enroll_stcikytopedge {
       width: 350px;
+      
     }
   
     .btn_cont button {
@@ -749,12 +763,14 @@ body{
       width: 100%;
       height: auto;
       min-height: 300px;
+      max-width: 500px;
     }
   
     .enroll_stcikytopedge {
       width: 100%;
       position: relative;
       margin-top: 2rem;
+      display: none;
     }
   
     .btn_cont {
@@ -799,7 +815,7 @@ body{
       gap: 1.5rem;
     }
     .course_vdContainer iframe{
-        width: 300px;
+        width: 100%;
     }
   }
   
@@ -835,9 +851,10 @@ body{
   
     .enroll_stcikytopedge {
       height: 250px;
+      display: none;
     }
     .course_vdContainer iframe{
-        width: 300px;
+        width: 100%;
     }
   }
   
@@ -864,13 +881,15 @@ body{
   
     .course_descrpContainer {
       min-height: 200px;
+      max-width: 300px;
     }
   
     .enroll_stcikytopedge {
       height: 200px;
+      display: none;
     }
     .course_vdContainer iframe{
-        width: 300px;
+        width: 100%;
     }
   }
   
@@ -894,7 +913,7 @@ body{
       text-align: left;
     }
     .course_vdContainer iframe{
-        width: 300px;
+        width: 100%;
     }
   }
   /* Large Desktop (1440px and above) */

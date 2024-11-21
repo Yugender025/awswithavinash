@@ -398,7 +398,9 @@ a.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
     top:45%;
       
   }
-  
+  .frm_container iframe {
+    width: 100%;
+}
   .multipe_qsContainer button:hover {
     color:#fff;
     background-color: var(--colors-lochmara-700);
