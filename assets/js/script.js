@@ -1,22 +1,3 @@
-//aos animation sections
-document.addEventListener("DOMContentLoaded", function () {
-  const section = document.querySelector(".course_enrollementSection");
-
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fadeInLeft"); // Trigger the animation
-          observer.unobserve(entry.target); // Run only once
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
-
-  observer.observe(section);
-});
-
 //faqs
 const items = document.querySelectorAll(".accordion button");
 function toggleAccordion() {
