@@ -227,9 +227,11 @@ header{
     width:100% ;
     height: auto ;  
 }
-
+.container-1{
+    background-color:var(--colors-west-side-500);
+}
 .container-1 .batch-info{
-  background-color:var(--colors-west-side-500);
+
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -237,6 +239,31 @@ header{
 .batch-info .batch_desc{
     color: var(--colors-white-50);
 }
+.batch_desc:hover {
+    transform: scale(1.05);
+}
+.batch-info {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+.batch-info .alert i{
+    color: red;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
 /* Existing CSS */
 .navbar_container {
     width: 100%;
