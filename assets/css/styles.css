@@ -311,13 +311,13 @@ nav {
     cursor: pointer;
 }
 
-.btn_start button:nth-child(1) {
+.btn_start .btn_1 {
     border: none;
     background-color: #0571B4;
     color: #fff;
 }
 
-.btn_start button:nth-child(2) {
+.btn_start .btn_2 {
     border: 1px solid #000;
     background-color: #fff;
     color: #000;
