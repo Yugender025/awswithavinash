@@ -1523,7 +1523,20 @@ nav {
         animation: fadeInLeft 1s ease forwards;
     }
     
-    
+    .whatsapp-link {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 60px;
+        height: 60px;
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
     
 /* Large Screens (1200px and below) */
 @media screen and (max-width: 1200px) {
