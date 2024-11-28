@@ -4,7 +4,7 @@ html {
     overflow-x: hidden;
 }
 body{
-    overflow-x: hidden;
+  overflow: hidden;
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -112,7 +112,7 @@ body{
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
-      width: 100%;
+    
       animation: scroll 15s linear infinite;
   }
 
