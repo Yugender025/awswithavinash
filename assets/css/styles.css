@@ -226,6 +226,7 @@ header{
 .container-1{
     width:100% ;
     height: auto ;  
+    overflow: hidden; 
 }
 .container-1{
     background-color:var(--colors-west-side-500);
