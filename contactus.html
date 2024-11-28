@@ -57,11 +57,18 @@ background: linear-gradient(
         
         
     }
+    ::before{
+        transform: rotate(12deg);
+    }
     .innercontactContainer{
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 60px;
+    }
+    .innercontactContainer .highlight-1{
+        color: #fff;
     }
     .container {
         width: 100%;
@@ -72,12 +79,15 @@ justify-content: space-around;
 align-items: center;
 flex-wrap: wrap;
 gap: 110px;
+margin-top: 3rem;
+
     }
 
     .logo {
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
+      
     }
 
     .logo img {
@@ -87,7 +97,7 @@ gap: 110px;
 
     .left-section {
 /* flex: 1; */
-min-width: 300px;
+min-width: 400px;
 padding: 20px;
 width: 200px !important;
 }
@@ -98,6 +108,7 @@ width: 200px !important;
         color: #000;
         margin-bottom: 20px;
         position: relative;
+        padding-left: 1rem;
     }
 
     .left-section h1::before {
@@ -107,7 +118,9 @@ width: 200px !important;
         top: 0;
         width: 6px;
         height: 100%;
-        background: #ff4444;
+        background: #ffa000;
+    border-radius: 24px;
+   
     }
 
     .right-section {
@@ -209,16 +222,12 @@ width: 200px !important;
 <body>
     <div class="box"><div class="rectangle"></div></div>
     <div class="logo">
-        <svg width="60" height="60" viewBox="0 0 60 60">
-            <path d="M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5z" fill="none" stroke="#0066ff" stroke-width="3"/>
-            <rect x="35" y="25" width="5" height="5" fill="#ff0066"/>
-            <rect x="42" y="25" width="5" height="5" fill="#ff9900"/>
-        </svg>
+      <a href="index.html"><img src="assets/images/logo_hero.png" width="100" height="60" alt="decor"></a>  
     </div>
     <div class="innercontactContainer">
         <div class="container">
             <div class="left-section">
-                <h1><span>Start</span><br><span>learning aws</span><br><span>with</span><br><span>Avinash</span></h1>
+                <h1><span>Start</span><br><span>learning aws</span><br><span class="highlight-1">with</span><br><span class="highlight-1">Avinash</span></h1>
             </div>
             
             <div class="right-section">
