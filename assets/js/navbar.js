@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const navItems = document.querySelector(".nav_items");
   const navBtns = document.querySelector(".nav_btns");
+  const ctct = document.querySelector(".ctct");
 
   hamburger.addEventListener("click", function () {
     // Toggle active classes

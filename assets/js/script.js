@@ -36,3 +36,21 @@ function toggleModule(element) {
     arrow.textContent = "▲";
   }
 }
+
+//scrolling part
+document.querySelector(".about_us").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const whyawsavinash = document.querySelector(".whyawsavinash");
+
+  if (whyawsavinash) {
+    // Use scrollY instead of pageYOffset
+    const offsetTop =
+      whyawsavinash.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }
+});

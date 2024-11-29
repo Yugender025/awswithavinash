@@ -431,6 +431,9 @@ nav {
         padding: 6px 12px;
         font-size: 13px;
     }
+    .nav_btns .ctct{
+        display: none;
+    }
 }
 
 .banner-section{
