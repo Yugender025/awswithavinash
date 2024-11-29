@@ -1887,3 +1887,23 @@ border:  none;
     flex-flow: row wrap;
     justify-content: space-between;
 }
+
+/*---------form validation----------------*/
+.error-input {
+    border: 2px solid red !important;
+}
+
+.error-label {
+    color: red !important;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
