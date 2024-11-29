@@ -98,7 +98,7 @@
 --colors-lochmara-400: rgba(67, 177, 237, 1);
 --colors-lochmara-500: rgba(26, 151, 221, 1);
 --colors-lochmara-600: rgba(14, 130, 203, 1);
---colors-lochmara-700: rgba(12, 96, 152, 1);
+--colors-lochmara-700: rgba(0, 40, 225, 1);
 --colors-lochmara-800: rgba(14, 82, 126, 1);
 --colors-lochmara-900: rgba(17, 69, 105, 1);
 --colors-lochmara-950: rgba(12, 43, 69, 1);
@@ -194,6 +194,17 @@
 --size-space-300: 12px;
 --size-radius-200: 8px;
 --size-space-200: 8px;
+--colors-lucky-point-50: rgba(234, 245, 255, 1);
+  --colors-lucky-point-100: rgba(207, 233, 255, 1);
+  --colors-lucky-point-200: rgba(169, 218, 255, 1);
+  --colors-lucky-point-300: rgba(111, 197, 255, 1);
+  --colors-lucky-point-400: rgba(43, 162, 255, 1);
+  --colors-lucky-point-500: rgba(0, 118, 255, 1);
+  --colors-lucky-point-600: rgba(0, 77, 255, 1);
+  --colors-lucky-point-700: rgba(0, 50, 255, 1);
+  --colors-lucky-point-800: rgba(0, 40, 225, 1);
+  --colors-lucky-point-900: rgba(0, 42, 175, 1);
+  --colors-lucky-point-950: rgba(2, 26, 102, 1);
 }
 *{
     margin: 0;
@@ -314,7 +325,7 @@ nav {
 
 .btn_start .btn_1 {
     border: none;
-    background-color: #0571B4;
+    background-color: rgba(0, 40, 225, 1);
     color: #fff;
 }
 
@@ -540,7 +551,7 @@ nav {
         font-weight: var(--BODY-font-weight);
     }
     .sm-btn:hover{
-        background-color: #0571B4;
+        background-color: rgba(0, 40, 225, 1);
         gap: 14px;
         color: white;
         transition: 0.35s ease-in;
@@ -704,7 +715,7 @@ nav {
         padding: 8px 32px;
         position: relative;
         flex: 0 0 auto;
-        background-color:#0571B4;
+        background-color:rgba(0, 40, 225, 1);
         border-radius: 24px;
         cursor: pointer;
         color: var(--colors-white-50);
@@ -718,7 +729,7 @@ nav {
         font-weight: var(--BODY-font-weight);
     }
     .contact_btn:hover{
-        background-color: #0571B4;
+        background-color: rgba(0, 40, 225, 1);
         gap: 14px;
         color: white;
         transition: 0.35s ease-in;
@@ -774,7 +785,7 @@ nav {
         padding: 8px 32px;
         position: relative;
         flex: 0 0 auto;
-        background-color:#0571B4;
+        background-color:rgba(0, 40, 225, 1);
         border-top-right-radius: 24px;
         border-bottom-right-radius: 24px;
         cursor: pointer;
@@ -789,7 +800,7 @@ nav {
         font-weight: var(--BODY-font-weight);
     }
     .enroll_btn:hover{
-        background-color: #0571B4;
+        background-color: rgba(0, 40, 225, 1);
         gap: 14px;
         color: white;
         transition: 0.35s ease-in;
@@ -865,7 +876,7 @@ nav {
     .howitworks_section  .step-icon {
         width: 64px;
         height: 64px;
-        background: #dcfff6;
+        background: var(--colors-lucky-point-100);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -889,7 +900,7 @@ nav {
         position: absolute;
         width: 100px;
         height: 100px;
-        background: #dcfff6;
+        background: var(--colors-lucky-point-100);
         border-radius: 50%;
         top: -50px;
         right: -50px;
@@ -943,7 +954,7 @@ nav {
         padding: 8px 32px;
         position: relative;
         flex: 0 0 auto;
-        background-color:#0571B4;
+        background-color:rgba(0, 40, 225, 1);
         border-radius: 24px;
         cursor: pointer;
         color: var(--colors-white-50);
@@ -957,7 +968,7 @@ nav {
         font-weight: var(--BODY-font-weight);
     }
     .enroll_btn:hover{
-        background-color: #0571B4;
+        background-color: rgba(0, 40, 225, 1);
         gap: 14px;
         color: white;
         transition: 0.35s ease-in;

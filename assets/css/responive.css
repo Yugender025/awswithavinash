@@ -333,6 +333,7 @@ html {
     .enrolling_sectionContainer .enroll_btn {
         width: 30%;
         padding: 8px 20px;
+        display: none;
     }
 }
 
