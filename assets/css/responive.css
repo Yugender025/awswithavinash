@@ -102,6 +102,9 @@ html {
       flex: 0 0 auto;
       font-size: 0.9rem;
   }
+  .interviewbanner_section{
+    height: 70vh;
+  }
 }
 
 /* Tablets and Medium Devices */

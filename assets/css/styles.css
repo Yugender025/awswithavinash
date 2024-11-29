@@ -422,7 +422,10 @@ nav {
     .nav_items {
         width: 100%;
     }
-
+    .hero_img img{
+        width: 80px;
+        height: 50px;
+    }
     .btn_start {
         gap: 0.5rem;
     }
