@@ -280,8 +280,8 @@ header{
 .navbar_container {
     width: 100%;
     height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: var(--colors-lochmara-50);
     position: sticky;
     top: 0;
@@ -451,15 +451,15 @@ nav {
 }
 
 .banner-section{
-    background-image: url('../images/backdrop.svg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/transparent-grain-white.png');
+    background-color: var(--colors-lucky-point-950);
+   
+    background-size: 220px, contain;
     padding: 5rem 3.75rem 4rem 3.75rem ;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #6629DE;
+    /* background-color: #6629DE; */
     color: var(--colors-white-50);
  
 }
@@ -738,11 +738,7 @@ nav {
     /*-----------Course enrollemnent----------------------*/
     .course_enrollementSection{
         background-color: rgba(255, 255, 255, 1.0);
-        background: linear-gradient(
-        180deg,
-        rgb(255, 255, 255) 0%,
-        rgb(0, 242, 178) 100%
-        );
+        background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(83 114 255) 100%);
     }
     .course_enrollementSection .course_enrollementInnerContainer{
         padding:3rem 3.75rem 4rem 3.75rem ;

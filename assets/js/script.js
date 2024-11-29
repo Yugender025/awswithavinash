@@ -54,3 +54,24 @@ document.querySelector(".about_us").addEventListener("click", function (e) {
     });
   }
 });
+
+document.querySelectorAll(".form_linkup").forEach(function (element) {
+  element.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const bootcampcontact_form = document.querySelector(
+      ".bootcampcontact_form"
+    );
+
+    if (bootcampcontact_form) {
+      // Calculate the offset taking into account the current scroll position
+      const offsetTop =
+        bootcampcontact_form.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
+});
