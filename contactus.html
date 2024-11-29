@@ -236,30 +236,41 @@ width: 200px !important;
                         <span>Get Job Ready for </span>
                         <span>Tech Interviews</span>
                     </h2>
-                    
-                    <form id="contactForm" method="post" autocomplete="off" name="google-sheet">
+                    <!-- <form id="enrollmentForm" method="post" autocomplete="off" name="google-sheet">
+                        <label for="name" id="nameLabel">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Name">
+                        <label for="mobile" id="mobileLabel">Mobile Number</label>
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter Number">
+                        <label for="email" id="emailLabel">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter ID">
+                        <label for="message" id="messageLabel">Your message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+                        <button type="submit">Submit</button>
+                    </form> -->
+                
+                    <form  id="enrollmentForm" method="post" autocomplete="off" name="google-sheet">
                       <div class="name_contact">
                             <div class="form-group">
                                 <label for="name" id="nameLabel">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter Name">
+                                 <input type="text" id="name" name="name" placeholder="Enter Name">
                             
                             </div>
                             <div class="form-group">
                                 <label for="mobile" id="mobileLabel">Mobile Number</label>
-                                <input type="tel" id="mobile" name="mobile" required>
+                                 <input type="text" id="mobile" name="mobile" placeholder="Enter Number">
                             </div>
                       </div>  
                         
                        
                         
                         <div class="form-group">
-                            <label for="email" id="emailLabel">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Enter ID" required>
+                             <label for="email" id="emailLabel">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter ID">
                         </div>
                         
                         <div class="form-group">
-                            <label for="message" id="messageLabel">Your message</label>
-                            <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+                           <label for="message" id="messageLabel">Your message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here"></textarea>
                         </div>
                         
                         <button type="submit">Submit</button>
