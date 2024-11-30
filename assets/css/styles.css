@@ -527,7 +527,7 @@ nav {
         background-color: var(--colors-shakespeare-500);
         padding: 8px 16px;
         border-radius: 12px;
-        border: 1px solid var(--colors-violet-eggplant-500);
+       
     }
     .sm-btn{
         display: inline-flex;
@@ -556,7 +556,27 @@ nav {
         color: white;
         transition: 0.35s ease-in;
     }
-    
+    .flex.flex-col-reverse.lg\:flex-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+      .flex.flex-col-reverse.lg\:flex-row .descrp_learn{
+        font-size: var(--h4-font-size);
+        font-weight: var(--h4-font-weight);
+        line-height: var(--h4-line-height);
+        color: #f9941f;
+      }
+      .flex.flex-col-reverse.lg\:flex-row .descrp_caption{
+        font-size: var(--lg-font-size);
+        font-weight: var(--lg-font-weight);
+        font-style: var(--lg-font-style);
+        line-height: var(--lg-line-height);
+        letter-spacing: var(--lg-letter-spacing);
+      }
+     
     /*------program highlights--------------*/
     .program_highlightsContinaer{
         width: 100%;
@@ -634,7 +654,7 @@ nav {
         position: relative;
     }
     .why_innerHeaderContainer mark{
-        background-color: #00F2B2;
+        background-color: #fbaa3c;
     }
     .why_innercontainer .desc_achievements{
         display: flex;
@@ -679,7 +699,7 @@ nav {
     }
     .mentorimg_Container_2 .no_students{
         white-space: nowrap;
-        color: #00F2B2;
+        color: #fbaa3c;
     }
     .social_header {
     display: flex;
@@ -1269,7 +1289,7 @@ nav {
         
         .accordion button:hover {
         cursor: pointer;
-        color: #00F2B2;
+        color: #fbaa3c;
         }
         
         .accordion button:hover::after,
@@ -1722,7 +1742,7 @@ nav {
     gap: 1.5rem;
 }
 .hurry_upCourse{
- background-color: #00F2B2;
+ background-color: #fbaa3c;
  padding: 16px 32px;
  color: #000;
 }

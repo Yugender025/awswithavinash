@@ -187,6 +187,11 @@ html {
     .why_innercontainer {
         padding: 2rem 1.5rem;
     }
+    .flex.flex-col-reverse.lg\:flex-row{
+      flex-direction: column-reverse;
+      gap: 1rem;
+      align-items: flex-start;
+    }
 }
 
 /* Small devices (tablets, 576px and up) */
@@ -211,6 +216,11 @@ html {
     }
     .why_innercontainer {
         padding: 2.5rem 2rem;
+    }
+    .flex.flex-col-reverse.lg\:flex-row{
+      flex-direction: column-reverse;
+      gap: 1rem;
+      align-items: flex-start;
     }
 }
 
@@ -321,6 +331,7 @@ html {
         border-radius: 12px;
         padding: 2rem;
     }
+   
     .enrolling_informationContainer .course_headerContainer{
       align-items: center;
     }
