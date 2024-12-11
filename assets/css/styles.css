@@ -1010,6 +1010,9 @@ nav {
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
+    .modules_container li {
+        list-style: square;
+    }
     .coursemodules_container .modules_container{
         padding-top: 1rem;
     }
@@ -1901,7 +1904,7 @@ border:  none;
 }
 .aws_devopsCerticate .certificatecontainer .awsdevopscertification{
     width: 7.2rem;
-    height: 7.2rem;
+    height: 6rem;
 }
 .aws_devopsCerticate .certificateinfocontainer .info{
     color: #666;
