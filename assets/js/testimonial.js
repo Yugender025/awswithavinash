@@ -1,45 +1,44 @@
 const testimonials = [
   {
     id: 1,
-    name: "Avinash",
-    image: "assets/images/avatar_1.jpg",
+    name: "Bharath",
+    image: "assets/images/bharath-rightkey.webp",
     text: "This AWS DevOps course is fantastic! It simplified complex concepts, making me confident in managing infrastructure like a pro.",
   },
   {
     id: 2,
-    name: "Anudeep",
-    image:
-      "https://s3.ap-south-1.amazonaws.com/awswithavinash.com/awswithavinash/assets/images/avatar_2.jpg",
+    name: "Hari",
+    image: "assets/images/hari-rightkey.webp",
     text: "Highly recommended! The practical projects and real-world scenarios helped me master AWS tools quickly.",
   },
   {
     id: 3,
-    name: "Yugender Reddy",
-    image: "assets/images/avatar_3.jpg",
+    name: "Pavan",
+    image: "assets/images/pavan.webp",
     text: "This course transformed my career. The insights and techniques I learned are directly applicable to my job.",
   },
   {
     id: 4,
-    name: "Aravind",
-    image: "assets/images/avatar_4.jpg",
+    name: "Nithin Reddy",
+    image: "assets/images/nithin.webp",
     text: "With Avinash’s expertise, I gained deep knowledge of DevOps and AWS in a structured, easy-to-follow format.",
   },
   {
     id: 5,
-    name: "Pavan",
-    image: "assets/images/avatar_5.jpg",
+    name: "Bharth naik",
+    image: "assets/images/bharth-naik.webp",
     text: "I went from beginner to confident AWS user, thanks to this hands-on course and clear guidance.",
   },
   {
     id: 6,
-    name: "Neha",
-    image: "assets/images/avatar_6.jpg",
+    name: "Lakshmi",
+    image: "assets/images/lakshmi-digital-grey.webp",
     text: "Avinash’s AWS course was engaging and comprehensive. It’s a must for anyone wanting to excel in DevOps.",
   },
   {
     id: 7,
     name: "Yuktha",
-    image: "assets/images/avatar_7.jpg",
+    image: "assets/images/deepika.webp",
     text: "Perfect blend of theory and practice. I now feel equipped to tackle AWS challenges at work effectively.",
   },
 ];
