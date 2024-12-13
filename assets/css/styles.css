@@ -463,7 +463,7 @@ nav {
     background-color: var(--colors-lucky-point-950);
    
     background-size: 220px, contain;
-    padding: 5rem 3.75rem 4rem 3.75rem ;
+    padding: 3.2rem 3.75rem 4rem 3.75rem ;
     display: flex;
     align-items: center;
     justify-content: space-between;
