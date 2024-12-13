@@ -763,13 +763,17 @@ html {
       text-align: center;
     }
     .multipe_qsContainer button#next-button {
-        margin-left: 25% !important;
+        margin-left: -52% !important;
     }
     .next-container {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    .retake-test {
+      float: left;
+      margin-left: -58%;
+  }
     .frm_container iframe {
         width: 350px;
         height: 200px;
@@ -799,6 +803,10 @@ html {
         width: 350px;
         height: 200px;
     }
+    .retake-test {
+      float: left;
+      margin-left: -58%;
+  }
   }
 
   /*----------course responive page-----------*/

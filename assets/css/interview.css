@@ -479,7 +479,7 @@ a.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
       
   }
   .multipe_qsContainer .next-container{
-    background-color: #00F2B2;
+    background-color: #dde7e4;
     padding-top:16px ;
     padding-bottom: 16px;
     border-top-left-radius:1rem ;
@@ -554,7 +554,7 @@ a.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      height: 550px;
+      height: auto;
       overflow: auto;
       overflow-x: hidden;
       position: relative;
@@ -571,7 +571,7 @@ a.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    left: 12%;
+    left: 75%;
     right: 24%;
     margin-top: 2rem;
     display: block;

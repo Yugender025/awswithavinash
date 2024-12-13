@@ -352,6 +352,12 @@ nav {
     margin: 5px 0;
     transition: all 0.3s ease;
 }
+.nav_items .highlight_practice{
+    font-weight: 600;
+                            color: red;
+                            font-size: 18px;
+                            text-decoration: underline;  animation: blinker 1s linear infinite;
+}
 
 /* Mobile & Tablet Responsive Styles */
 @media screen and (max-width: 1024px) {
@@ -1945,3 +1951,8 @@ button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
