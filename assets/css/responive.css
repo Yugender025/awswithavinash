@@ -264,8 +264,8 @@ html {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     nav {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     .banner-section {
         padding: 3.2rem 3.75rem;
