@@ -41,7 +41,7 @@ function showQuestion(index) {
     nextButton.style.backgroundColor = "red";
     nextButton.style.color = "white";
     nextButton.style.removeProperty("border-color");
-
+    nextButton.style.left = "58%";
     nextButton.style.marginLeft = "25%";
   } else {
     nextButton.textContent = "Next question";
