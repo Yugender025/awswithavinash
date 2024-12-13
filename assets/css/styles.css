@@ -358,7 +358,9 @@ nav {
                             font-size: 18px;
                             text-decoration: underline;  animation: blinker 1s linear infinite;
 }
-
+.nav_items .highlight_practice:hover{
+    animation: none;
+}
 /* Mobile & Tablet Responsive Styles */
 @media screen and (max-width: 1024px) {
     nav {
@@ -1955,4 +1957,5 @@ button:disabled {
     50% {
       opacity: 0;
     }
+    
   }
