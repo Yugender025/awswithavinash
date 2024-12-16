@@ -953,7 +953,7 @@ html {
   /* Very Small Screens - Below 576px */
   @media screen and (max-width: 375px) {
     .course_bannerinnerContainer {
-      padding: 15px 10px !important;
+      padding: 2rem 2rem !important;
       gap: 1rem;
     }
   
@@ -1126,5 +1126,99 @@ html {
   
   .bullet_points {
       margin-left: 1rem;
+  }
+}
+
+/*-----------demo session responive-------*/
+/* Base Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .course-sectionDemo {
+      padding: 30px 40px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 992px) {
+  .course-sectionDemo {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 25px;
+  }
+
+  .course-sectionDemo .content-header h2 {
+      font-size: 2rem;
+  }
+
+  .course-sectionDemo .video-container {
+      min-height: 200px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .course-sectionDemo {
+      padding: 20px;
+  }
+
+  .course-sectionDemo .content-header h2 {
+      font-size: 1.75rem;
+  }
+
+  .course-sectionDemo .video-container .placeholder-icon {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+  .course-sectionDemo {
+      padding: 15px;
+  }
+
+  .course-sectionDemo .content-header h2 {
+      font-size: 1.5rem;
+  }
+
+  .course-sectionDemo .content-description {
+      font-size: 0.9rem;
+  }
+
+  .course-sectionDemo .video-container {
+     min-height: 200px;
+     max-width: 92%;
+  }
+
+  .course-sectionDemo .video-container .placeholder-icon {
+      width: 60px;
+      height: 60px;
+  }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 320px) {
+  .course-sectionDemo {
+      padding: 10px;
+  }
+
+  .course-sectionDemo .content-header h2 {
+      font-size: 1.25rem;
+  }
+
+  .course-sectionDemo .content-description {
+      font-size: 0.8rem;
+      margin-bottom: 15px;
+  }
+}
+
+/* Landscape Orientation */
+@media screen and (max-width: 992px) and (orientation: landscape) {
+  .course-sectionDemo {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+  }
+
+  .course-sectionDemo .video-container {
+      min-height: 180px;
   }
 }
