@@ -1174,6 +1174,7 @@ html {
 @media screen and (max-width: 480px) {
   .course-sectionDemo {
       padding: 15px;
+      width: 90%;
   }
 
   .course-sectionDemo .content-header h2 {
@@ -1186,7 +1187,7 @@ html {
 
   .course-sectionDemo .video-container {
      min-height: 200px;
-     max-width: 92%;
+     max-width: 100%;
   }
 
   .course-sectionDemo .video-container .placeholder-icon {
