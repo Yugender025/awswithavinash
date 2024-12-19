@@ -1151,6 +1151,7 @@ html {
 
   .course-sectionDemo .video-container {
       min-height: 200px;
+      
   }
 }
 
@@ -1186,7 +1187,7 @@ html {
   }
 
   .course-sectionDemo .video-container {
-     min-height: 200px;
+     min-height: 160px;
      max-width: 100%;
   }
 
@@ -1222,4 +1223,10 @@ html {
   .course-sectionDemo .video-container {
       min-height: 180px;
   }
+}
+@media screen and (max-width: 480px) {
+    .play-button {
+        width: 40px;
+        height: 40px;
+    }
 }
