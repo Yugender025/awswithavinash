@@ -3,7 +3,7 @@ const classVideos = [
     _id: 1,
     day: "Day 0 Demo",
     ClassHeader: "aws class",
-    SecondHeader: "Today class session",
+    SecondHeader: "Introduction to program",
     thubnailImg: "assets/images/Day0.jpg",
     infoContainer:
       "Discover the fundamentals of Amazon Web Services (AWS). Learn cloud computing basics, key services, and how to leverage AWS for scalable and efficient solutions in modern technology infrastructure.",
@@ -15,7 +15,7 @@ const classVideos = [
     _id: 2,
     day: "Day 1 Demo",
     ClassHeader: "aws class",
-    SecondHeader: "Today class session",
+    SecondHeader: "Introduction to cloud computing",
     infoContainer:
       "Discover the fundamentals of Amazon Web Services (AWS). Learn cloud computing basics, key services, and how to leverage AWS for scalable and efficient solutions in modern technology infrastructure.",
     iframesource: "https://d1mfrlrzgvrt4d.cloudfront.net/demo/Day1.mp4",
@@ -34,7 +34,7 @@ function createDaysessions(dayVideos) {
                         <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.7)" />
                         <path d="M35,25 L75,50 L35,75 Z" fill="white"/>
                     </svg>
-               <video style="width:100%; height:100%; border-radius: 12px;" controls="" autoplay="" name="media"><source src="${dayVideos.iframesource}" type="video/mp4"></video> 
+               <video style="width:100%; height:100%; border-radius: 12px;" controls="" name="media"><source src="${dayVideos.iframesource}" type="video/mp4"></video> 
             </div>
             
             <div class="content-container">
