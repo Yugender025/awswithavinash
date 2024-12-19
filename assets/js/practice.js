@@ -3,7 +3,7 @@ const totalQuestions = document.querySelectorAll(".question").length;
 const progressBar = document.getElementById("progress-bar");
 const questionNumber = document.getElementById("question-number");
 const nextButton = document.getElementById("next-button");
-let timeLeft = 1 * 60 * 60;
+let timeLeft = 10 * 60;
 let timer;
 
 function startTimer() {
