@@ -168,6 +168,7 @@ html {
     .banner-section {
         flex-direction: column;
         padding: 2rem 1.5rem;
+        gap:2.2rem;
     }
     .course_headerSection h1 {
         font-size: 32px;
