@@ -23,6 +23,18 @@ const classVideos = [
     register:
       "https://awswithavinashreddy.my.webex.com/weblink/register/r0b7834a679fdc79bc7dd2dc51efbe3d4",
   },
+  {
+    _id: 3,
+    day: "Day 2 Demo",
+    ClassHeader: "aws class",
+    SecondHeader: "Service models & aws global Infra",
+    infoContainer:
+      "we will cover the key aspects of cloud computing service models (IaaS, PaaS, SaaS), the benefits they offer, and provide an overview of AWS's global infrastructure, including Regions, Availability Zones, Edge Locations.",
+    iframesource: "https://d1mfrlrzgvrt4d.cloudfront.net/demo/Day2.mp4",
+    thubnailImg: "assets/images/day2.jpg",
+    register:
+      "https://awswithavinashreddy.my.webex.com/weblink/register/r0b7834a679fdc79bc7dd2dc51efbe3d4",
+  },
 ];
 
 function createDaysessions(dayVideos) {
