@@ -1140,6 +1140,9 @@ html {
 
 /* Tablet Styles */
 @media screen and (max-width: 992px) {
+  .Course_contentdaily{
+   width: 90%;
+  }
   .course-sectionDemo {
       grid-template-columns: 1fr;
       gap: 20px;
@@ -1174,6 +1177,9 @@ html {
 
 /* Small Mobile Styles */
 @media screen and (max-width: 480px) {
+  .Course_contentdaily{
+    width: 100%;
+  }
   .course-sectionDemo {
       padding: 15px;
       width: 90%;
