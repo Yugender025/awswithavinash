@@ -35,6 +35,30 @@ const classVideos = [
     register:
       "https://awswithavinashreddy.my.webex.com/weblink/register/r0b7834a679fdc79bc7dd2dc51efbe3d4",
   },
+  {
+    _id: 4,
+    day: "Day 3 Demo",
+    ClassHeader: "aws class",
+    SecondHeader: "AWS Account Creation, MFA Activation & IAM Root User",
+    infoContainer:
+      "Creating and managing an AWS account, enabling MFA (Multi-Factor Authentication), and managing IAM users and root users are critical steps in securing your AWS environment.",
+    iframesource: "https://d1mfrlrzgvrt4d.cloudfront.net/demo/Day3.mp4",
+    thubnailImg: "assets/images/day3.jpg",
+    register:
+      "https://awswithavinashreddy.my.webex.com/weblink/register/r0b7834a679fdc79bc7dd2dc51efbe3d4",
+  },
+  {
+    _id: 5,
+    day: "Day 4 Demo",
+    ClassHeader: "aws class",
+    SecondHeader: "IAM User, Alias, and Billing Alerts Setup",
+    infoContainer:
+      "IAM user creation, alias setup, and billing alerts is crucial for managing AWS accounts securely and efficiently while keeping track of expenses.",
+    iframesource: "https://d1mfrlrzgvrt4d.cloudfront.net/demo/Day4.mp4",
+    thubnailImg: "assets/images/day4.jpg",
+    register:
+      "https://awswithavinashreddy.my.webex.com/weblink/register/r0b7834a679fdc79bc7dd2dc51efbe3d4",
+  },
 ];
 
 function createDaysessions(dayVideos) {
