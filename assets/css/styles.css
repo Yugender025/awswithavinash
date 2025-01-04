@@ -240,7 +240,7 @@ header{
     overflow: hidden; 
 }
 .container-1{
-    background-color:var(--colors-west-side-500);
+    background-color:#ffd37d;
 }
 .container-1 .batch-info{
 
@@ -249,7 +249,7 @@ header{
   padding-bottom: 0.5rem;
 }
 .batch-info .batch_desc{
-    color: var(--colors-white-50);
+    color: #000;
 }
 .batch_desc:hover {
     transform: scale(1.05);
