@@ -764,7 +764,7 @@ html {
       text-align: center;
     }
     .multipe_qsContainer button#next-button {
-        margin-left: -52% !important;
+        margin-left: 52% !important;                     /*changed*/
     }
     .next-container {
         display: flex;
