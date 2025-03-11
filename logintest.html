@@ -102,127 +102,758 @@
                 <div style="display: none;" class="quiz-container">
                     <!-- <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 1.5rem;" class="main_questionContainer"> -->
                         <div id="quiz-header">
-                            <div id="question-number">1/4</div>
+                            <div id="question-number">1/65</div>
                             <progress id="progress-bar" value="0" max="100" style="flex-grow: 1; margin: 0 10px;"></progress>
                             <div id="timer">10:00</div>
                         </div>
                     <form id="quiz-form">
                       <div class="question">
-                        <p>1. What is Cloud Computing?
+                        <p>1.  Which of the following AWS products cannot be used by CloudWatch to trigger alarms?
                           <div><br></div>
                           
                          
-                            <label><input type="radio" name="q1" value="a"> Storing data locally on a device. </label><br>
+                            <label><input type="radio" name="q1" value="a">  Elastic Load Balancing. </label><br>
                            
                          
                       
-                            <label><input type="radio" name="q1" value="b"> Delivering computing services (storage, db, network..) over the internet.</label><br>
+                            <label><input type="radio" name="q1" value="b"> EC2.</label><br>
                          
                        
-                            <label><input type="radio" name="q1" value="c"> Hosting a website offline.</label><br>
+                            <label><input type="radio" name="q1" value="c"> CloudSearch.</label><br>
                         
                         
-                            <label><input type="radio" name="q1" value="d"> Using a high-powered laptop.</label><br>
+                            <label><input type="radio" name="q1" value="d"> Auto Scaling.</label><br>
                           
             
                       </div>
                   
                       <div class="question" style="display: none;">
-                        <p>2. What is cloud computing primarily characterized by?
+                        <p>2.  Which of the following is not a storage option for uploading objects to an S3 bucket?
                           <div><br></div>
                           
-                        <label><input type="radio" name="q2" value="a"> Physical server ownership</label><br>
-                        <label><input type="radio" name="q2" value="b"> On-demand network access to computing resources
+                        <label><input type="radio" name="q2" value="a">  Standard—Infrequent Access </label><br>
+                        <label><input type="radio" name="q2" value="b">   Standard 
                         </label><br>
-                        <label><input type="radio" name="q2" value="c"> Mandatory local infrastructure</label><br>
-                        <label><input type="radio" name="q2" value="d"> Permanent hardware installation</label><br>
+                        <label><input type="radio" name="q2" value="c">Glacier </label><br>
+                        <label><input type="radio" name="q2" value="d">Reduced Redundancy </label><br>
                       </div>
                       <div class="question" style="display: none;">
-                        <p>3. What is the key advantage of using Cloud Computing?
+                        <p>3.  Which is not a category of instance types in AWS?
                           <div><br></div>
                           
-                        <label><input type="radio" name="q3" value="a"> Free hardware</label><br>
-                        <label><input type="radio" name="q3" value="b"> Elasticity and scalability.</label><br>
-                        <label><input type="radio" name="q3" value="c"> Unlimited internet bandwidth.</label><br>
+                        <label><input type="radio" name="q3" value="a"> Compute Optimized</label><br>
+                        <label><input type="radio" name="q3" value="b">  Machine Learning .</label><br>
+                        <label><input type="radio" name="q3" value="c">  General Purpose.</label><br>
                         <label><input type="radio" name="q3" value="d"> 
-                            Manual resource allocation.</label><br>
+                          Memory Optimized.</label><br>
                       </div>
                       <div class="question" style="display: none;">
-                        <p>4. What does elasticity mean in cloud computing?
+                        <p>4.  You need to complete compute processing tasks and have a window of several months to get them done. You would like to
+                          save money over the standard pricing model of EC2. What should you consider?
 
                           <div><br></div>
                           
-                        <label><input type="radio" name="q4" value="a"> Fixed computing resources.</label><br>
-                        <label><input type="radio" name="q4" value="b"> Ability to scale resources up or down based on demand.</label><br>
-                        <label><input type="radio" name="q4" value="c"> Permanent server allocation.</label><br>
-                        <label><input type="radio" name="q4" value="d"> Constant computational power.</label><br>
+                        <label><input type="radio" name="q4" value="a"> Reserved.</label><br>
+                        <label><input type="radio" name="q4" value="b"> Spot instance .</label><br>
+                        <label><input type="radio" name="q4" value="c"> On demand.</label><br>
+                        <label><input type="radio" name="q4" value="d"> Dynamic.</label><br>
                       </div>
                       <div class="question" style="display: none;">
-                        <p>5. What does "scalability" mean in Cloud Computing?
+                        <p>5. Which two of the following features can be used to restrict access to data in S3? (Choose two.)
                           <div><br></div>
                           
-                        <label><input type="radio" name="q5" value="a"> The ability to grow or shrink resources as needed</label><br>
-                        <label><input type="radio" name="q5" value="b"> Measuring the weight of data  </label><br>
-                        <label><input type="radio" name="q5" value="c"> Creating larger physical servers</label><br>
-                        <label><input type="radio" name="q5" value="d"> Using only fixed resources</label><br>
+                          <label><input type="checkbox" name="q5" value="a">  Enable IAM identity federation</label><br>
+                          <label><input type="checkbox" name="q5" value="b"> Use S3 virtual hosting.</label><br>
+                          <label><input type="checkbox" name="q5" value="c"> Set an S3 bucket policy. </label><br>
+                          <label><input type="checkbox" name="q5" value="d">  Set an S3 ACL on the bucket or the object. </label><br>
+                          <label><input type="checkbox" name="q5" value="e">   Create a CloudFront distribution for the bucket. </label><br>
                       </div>
                       <div class="question" style="display: none;">
-                        <p>6. What does "pay-as-you-go" mean in Cloud Computing?
+                        <p>6.  Which of the following is necessary to create an AWS account?
                         </p>
                         <div><br></div>
-                        <label><input type="radio" name="q6" value="a"> You pay only for the resources you use </label><br>
-                        <label><input type="radio" name="q6" value="b"> You pay a fixed monthly fee regardless of usage</label><br>
-                        <label><input type="radio" name="q6" value="c"> You pay in advance for unused resources</label><br>
+                        <label><input type="radio" name="q6" value="a">  Credit card </label><br>
+                        <label><input type="radio" name="q6" value="b"> Private data center</label><br>
+                        <label><input type="radio" name="q6" value="c"> Bank account information</label><br>
                           <label><input type="radio" name="q6" value="d"> 
-                            It's a free service</label><br>
+                            Business plan</label><br>
                       </div>
                       <div class="question" style="display: none;">
-                        <p>7. What is virtualization in Cloud Computing? 
+                        <p>7.  What type of service does AWS Kinesis provide? 
                           <div><br></div>
                           
                         <label><input type="radio" name="q7" value="a"> 
-                            Simulating physical hardware with software </label><br>
-                        <label><input type="radio" name="q7" value="b"> Create an IAM policy in the root account and attach it to users and groups in each Physically moving servers to the cloud</label><br>
+                          Networking services </label><br>
+                        <label><input type="radio" name="q7" value="b">  Database services</label><br>
                         <label><input type="radio" name="q7" value="c"> 
-                            Disabling physical servers</label><br>
+                          Compute services</label><br>
                         <label><input type="radio" name="q7" value="d"> 
-                            Operating system upgrades</label><br>
+                          Data stream analysis </label><br>
                       </div>
                       <div class="question" style="display: none;">
-                        <p>8. Which of the following is NOT a type of cloud deployment model?
+                        <p>8. According to the Shared Responsibility model, who is responsible for the hypervisor software that EC2 instances run on?
 
                           <div><br></div>
                        
                         <label><input type="radio" name="q8" value="a"> 
-                          Public cloud</label><br>
-                        <label><input type="radio" name="q8" value="b"> Private cloud</label><br>
-                        <label><input type="radio" name="q8" value="c"> Community cloud</label><br>
+                          AWS customer</label><br>
+                        <label><input type="radio" name="q8" value="b">  Hypervisor vendor</label><br>
+                        <label><input type="radio" name="q8" value="c">  AWS </label><br>
                         <label><input type="radio" name="q8" value="d"> 
-                          Distributed cloud</label><br>
+                          Microsoft</label><br>
                       </div>
                       <div class="question" style="display: none;">
-                        <p>9. In AWS, what is an Availability Zone?
+                        <p>9._____is an example of a supported scripting language for CloudFormation templates.
                           <div><br></div>
                           
                         <label><input type="radio" name="q9" value="a"> 
-                            A region of high internet connectivity</label><br>
-                        <label><input type="radio" name="q9" value="b"> A physical data center in a region </label><br>
-                        <label><input type="radio" name="q9" value="c"> A redundant backup system  </label><br>
-                        <label><input type="radio" name="q9" value="d"> A feature for scaling databases</label><br>
+                          ASP</label><br>
+                        <label><input type="radio" name="q9" value="b"> C# </label><br>
+                        <label><input type="radio" name="q9" value="c"> JSON </label><br>
+                        <label><input type="radio" name="q9" value="d"> Java</label><br>
                       </div>
                       <div class="question" style="display: none;">
-                        <p>10. What is serverless computing in AWS?
+                        <p>10.  At which two levels can you configure access control for S3? (Choose two.)?
 
                           <div><br></div>
                           
-                        <label><input type="radio" name="q10" value="a"> 
-                            Servers that never stop running</label><br>
-                        <label><input type="radio" name="q10" value="b"> Computing without managing server infrastructure</label><br>
-                        <label><input type="radio" name="q10" value="c"> Permanent server allocation</label><br>
-                        <label><input type="radio" name="q10" value="d"> 
-                            Manual server configuration</label><br>
+                        <label><input type="checkbox" name="q10" value="a"> 
+                            Object</label><br>
+                        <label><input type="checkbox" name="q10" value="b"> File</label><br>
+                        <label><input type="checkbox" name="q10" value="c"> Folder</label><br>
+                        <label><input type="checkbox" name="q10" value="d"> 
+                            Bucket</label><br>
                       </div>
-                      
+                      <div class="question" style="display: none;">
+                        <p>11.Which of the following services can help with excessive latency in cloud-based architectures?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q11" value="a"> 
+                          Cloudwatch</label><br>
+                        <label><input type="radio" name="q11" value="b"> Auto Scaling</label><br>
+                        <label><input type="radio" name="q11" value="c"> Elastic Load Balancing</label><br>
+                        <label><input type="radio" name="q11" value="d"> CloudFront</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>12. When creating an EC2 instance from an AMI, what is the first state that the instance enters after being launched?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q12" value="a"> 
+                          Running</label><br>
+                        <label><input type="radio" name="q12" value="b"> Pending</label><br>
+                        <label><input type="radio" name="q12" value="c"> Rebooting </label><br>
+                        <label><input type="radio" name="q12" value="d"> Shutting down</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>13. n the structure of an Amazon DynamoDB, which of the following are contained in a table and are made up of attributes?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q13" value="a"> 
+                          Files</label><br>
+                        <label><input type="radio" name="q13" value="b"> Chunks</label><br>
+                        <label><input type="radio" name="q13" value="c"> Attributes </label><br>
+                        <label><input type="radio" name="q13" value="d"> Items</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>14. Which of the following AWS service levels includes the compute, networking, and storage services?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q14" value="a"> 
+                          Information</label><br>
+                        <label><input type="radio" name="q14" value="b"> Foundation </label><br>
+                        <label><input type="radio" name="q14" value="c"> Infrastructure </label><br>
+                        <label><input type="radio" name="q14" value="d"> Platform</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>15. What is the maximum number of security groups that can be applied to any one EC2 instance?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q15" value="a"> 
+                          10</label><br>
+                        <label><input type="radio" name="q15" value="b"> 2 </label><br>
+                        <label><input type="radio" name="q15" value="c"> 5 </label><br>
+                        <label><input type="radio" name="q15" value="d"> 1</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>16. What tool does AWS provide that allows you to monitor the activities of AWS involving your infrastructure?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q16" value="a"> 
+                          CloudSecurityMonitor</label><br>
+                        <label><input type="radio" name="q16" value="b">  CloudTrail </label><br>
+                        <label><input type="radio" name="q16" value="c"> CloudWatch </label><br>
+                        <label><input type="radio" name="q16" value="d"> CloudAudit</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>17. Which of the following is not a component of Auto Scaling in AWS?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q17" value="a"> 
+                          Groups</label><br>
+                        <label><input type="radio" name="q17" value="b"> Launch configurations</label><br>
+                        <label><input type="radio" name="q17" value="c"> Scaling plans </label><br>
+                        <label><input type="radio" name="q17" value="d">AMI batch </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>18. If you create your VPC using the wizard with the option for private and public subnets, how does your public subnet
+                          access the Internet?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q18" value="a"> 
+                          Using a routing instance in that subnet</label><br>
+                        <label><input type="radio" name="q18" value="b">  Using a routing instance in the private subnet</label><br>
+                        <label><input type="radio" name="q18" value="c">  Using an EC2 instance on the edge of the subnet </label><br>
+                        <label><input type="radio" name="q18" value="d">  Using the NAT gateway with an elastic IP address</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>19. What is the default load balancing algorithm with classic ELB?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q19" value="a"> 
+                          Dykstra</label><br>
+                        <label><input type="radio" name="q19" value="b">  Load based </label><br>
+                        <label><input type="radio" name="q19" value="c">  Bandwidth based </label><br>
+                        <label><input type="radio" name="q19" value="d"> RR </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>20. How can you save the most money with reserved instances?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q20" value="a"> 
+                          pay some up front</label><br>
+                        <label><input type="radio" name="q20" value="b"> Pay all at the end of the contract </label><br>
+                        <label><input type="radio" name="q20" value="c"> Pay monthly </label><br>
+                        <label><input type="radio" name="q20" value="d"> Pay all up front </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>21. Where in the EC2 Management Console can you find thousands of preconfigured AMIs designed with many different
+                          preinstalled options?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q21" value="a"> 
+                          Quick Start</label><br>
+                        <label><input type="radio" name="q21" value="b">  My AMIs
+                        </label><br>
+                        <label><input type="radio" name="q21" value="c">  AWS App Store</label><br>
+                        <label><input type="radio" name="q21" value="d"> AWS Marketplace</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>22. What security construct is associated with VPC subnets?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q22" value="a"> 
+                          FirePower</label><br>
+                        <label><input type="radio" name="q22" value="b"> IDS</label><br>
+                        <label><input type="radio" name="q22" value="c"> NACLs </label><br>
+                        <label><input type="radio" name="q22" value="d"> Security groups</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>23. Besides EC2 instances, which two the following AWS products can also take advantage of security groups? (Choose two.)
+                          <div><br></div>
+                          
+                        <label><input type="checkbox" name="q23" value="a"> 
+                          Elastic Load Balancing</label><br>
+                        <label><input type="checkbox" name="q23" value="b">  Elastic MapReduce  </label><br>
+                        <label><input type="checkbox" name="q23" value="c">  Redshift  </label><br>
+                        <label><input type="checkbox" name="q23" value="d"> CloudFront</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>24. You are planning on migrating your music streaming service to the AWS cloud. Which of the following AWS storage
+                          products would best suit your needs?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q24" value="a"> 
+                          Glacier</label><br>
+                        <label><input type="radio" name="q24" value="b"> EFS </label><br>
+                        <label><input type="radio" name="q24" value="c"> S3 </label><br>
+                        <label><input type="radio" name="q24" value="d"> EBS</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>25. Which statement about a default security group is incorrect?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q25" value="a"> 
+                          The group permits all inbound traffic</label><br>
+                        <label><input type="radio" name="q25" value="b"> You must rename the default security group in order to use it.</label><br>
+                        <label><input type="radio" name="q25" value="c">  The group permits all outbound traffic by default. </label><br>
+                        <label><input type="radio" name="q25" value="d"> You cannot delete a default security group.</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>26. Which two items are configured by the AMI? (Choose two.)
+                          <div><br></div>
+                          
+                        <label><input type="checkbox" name="q26" value="a"> 
+                          Storage</label><br>
+                        <label><input type="checkbox" name="q26" value="b"> Root volume </label><br>
+                        <label><input type="checkbox" name="q26" value="c"> OS </label><br>
+                        <label><input type="checkbox" name="q26" value="d">Memory</label><br>
+                        <label><input type="checkbox" name="q26" value="e">Region</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>27. How can you configure session affinity with ELB in AWS?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q27" value="a"> 
+                          Use an HTTPS listener.</label><br>
+                        <label><input type="radio" name="q27" value="b">  Configure the client retention period. </label><br>
+                        <label><input type="radio" name="q27" value="c">  Configure the server retention period. </label><br>
+                        <label><input type="radio" name="q27" value="d">  Use the sticky session feature. </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>28. Which statement about EC2 instances is true?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q28" value="a"> 
+                          EC2 instance billing occurs regardless of whether the virtual machine is powered on or powered off.
+                        </label><br>
+                        <label><input type="radio" name="q28" value="b">  You cannot run multiple EC2 instances for the same instance type in the same VPC.
+                        </label><br>
+                        <label><input type="radio" name="q28" value="c">  When you power down a virtual machine running on an EC2 instance, billing for that instance is discontinued until the VM is powered up again. 
+                        </label><br>
+                        <label><input type="radio" name="q28" value="d">  You cannot power off an EC2 instance.
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>29. Which of the following is not an AWS region?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q29" value="a"> 
+                          Asia Pacific (Singapore)</label><br>
+                        <label><input type="radio" name="q29" value="b">  EU (Warsaw) 
+                        </label><br>
+                        <label><input type="radio" name="q29" value="c">  US East (N. Virginia)
+                        </label><br>
+                        <label><input type="radio" name="q29" value="d">  US West (Oregon)
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>30. You are interested in using event-driven triggers to launch compute functions in AWS without relying on the provisioning and
+                          maintenance of EC2 instances.
+                          What service should you use?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q30" value="a"> 
+                          Kinesis</label><br>
+                        <label><input type="radio" name="q30" value="b"> ElastiCache </label><br>
+                        <label><input type="radio" name="q30" value="c"> Lambda </label><br>
+                        <label><input type="radio" name="q30" value="d"> Redshift</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>31. Which of the following EC2 pricing models allows you to bid on unused instance hours purchased by another AWS user?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q31" value="a"> 
+                          Dedicated
+                        </label><br>
+                        <label><input type="radio" name="q31" value="b"> Reserved </label><br>
+                        <label><input type="radio" name="q31" value="c"> Scheduled </label><br>
+                        <label><input type="radio" name="q31" value="d"> Spot</label><br>
+                        <label><input type="radio" name="q31" value="e">  On-demand/pay-as-you-go
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>32.Which of the following S3 storage classes has the lowest durability rating?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q32" value="a"> 
+                          Glacier</label><br>
+                        <label><input type="radio" name="q32" value="b">  Reduced Redundancy 
+                        </label><br>
+                        <label><input type="radio" name="q32" value="c"> Standard </label><br>
+                        <label><input type="radio" name="q32" value="d">  Infrequent Access
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>33. What service from AWS can help protect your web applications from SQL injection types of attacks?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q33" value="a"> 
+                          RDS</label><br>
+                        <label><input type="radio" name="q33" value="b">  ElastiCache
+                        </label><br>
+                        <label><input type="radio" name="q33" value="c"> WAF </label><br>
+                        <label><input type="radio" name="q33" value="d"> DynamoDB</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>34. Which of the following S3 storage classes is the least expensive?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q34" value="a"> 
+                          Reduced Redundancy
+                        </label><br>
+                        <label><input type="radio" name="q34" value="b">  Infrequent Access
+                        </label><br>
+                        <label><input type="radio" name="q34" value="c"> Glacier </label><br>
+                        <label><input type="radio" name="q34" value="d"> Standard</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>35.Which of the following AWS resources would incur charges against a Free Tier account, if used?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q35" value="a"> 
+                          AWS S3
+                        </label><br>
+                        <label><input type="radio" name="q35" value="b">  An AWS provisioned IOPS EBS 
+                        </label><br>
+                        <label><input type="radio" name="q35" value="c">  AWS ELB
+                        </label><br>
+                        <label><input type="radio" name="q35" value="d">  An EC2 micro instance
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>36. Which of the following are considered advantages of elasticity? (Choose two.)
+                          <div><br></div>
+                          
+                        <label><input type="checkbox" name="q36" value="a"> 
+                          Complete control of your infrastructure
+                        </label><br>
+                        <label><input type="checkbox" name="q36" value="b">  Easy “on-ramping” 
+                        </label><br>
+                        <label><input type="checkbox" name="q36" value="c">  Ability to physically access your servers
+                        </label><br>
+                        <label><input type="checkbox" name="q36" value="d">  Cost-effectiveness 
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>37.What are two components that must make up an EC2 instance? (Choose two.)
+                          <div><br></div>
+                          
+                        <label><input type="checkbox" name="q37" value="a"> 
+                          S3</label><br>
+                        <label><input type="checkbox" name="q37" value="b"> Lambda </label><br>
+                        <label><input type="checkbox" name="q37" value="c">  Instance type 
+                        </label><br>
+                        <label><input type="checkbox" name="q37" value="d"> AMI</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>38.Your IT group maintains an application on AWS to provide development and testing platforms for your developers. Currently,
+                          each environment consists of an m1.small EC2 instance.
+                          <br>
+                          Your developers report to your group performance degradation as they increase network load in the test environment.
+                          <br>
+                          How would you mitigate these performance issues in the test environment?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q38" value="a"> 
+                          Upgrade the m1.small to a larger instance type.</label><br>
+                        <label><input type="radio" name="q38" value="b"> Add an additional ENI to the test instance. </label><br>
+                        <label><input type="radio" name="q38" value="c"> Use the EBS optimized option to offload EBS traffic </label><br>
+                        <label><input type="radio" name="q38" value="d">  Configure Amazon CloudWatch to provision more network bandwidth when network utilization exceeds 80 percent. </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>39.How does AWS help ensure durability with your S3 objects?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q39" value="a"> 
+                          It automatically vaults copies in Glacier.
+                        </label><br>
+                        <label><input type="radio" name="q39" value="b">  It uses ElastiCache.
+                        </label><br>
+                        <label><input type="radio" name="q39" value="c">  The objects are automatically copied to another AZ. 
+                        </label><br>
+                        <label><input type="radio" name="q39" value="d">  It uses EC2.
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>40.What service seeks to assist your developers in deploying applications by building the appropriate infrastructure for
+                          them?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q40" value="a"> 
+                          Redshift</label><br>
+                        <label><input type="radio" name="q40" value="b">  Elastic Beanstalk 
+                        </label><br>
+                        <label><input type="radio" name="q40" value="c"> Lambda </label><br>
+        
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>41. How many Auto Scaling groups can you have per region?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q41" value="a"> 
+                          100</label><br>
+                        <label><input type="radio" name="q41" value="b"> 50</label><br>
+                        <label><input type="radio" name="q41" value="c">  20
+                        </label><br>
+                        <label><input type="radio" name="q41" value="d"> 10</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>42.Which of the following terms describes a grouping of AWS data centers?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q42" value="a"> 
+                          Availability Zone </label><br>
+                        <label><input type="radio" name="q42" value="b">  Edge location </label><br>
+                        <label><input type="radio" name="q42" value="c">  Data center 
+                        </label><br>
+                        <label><input type="radio" name="q42" value="d"> Region</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>43. Which of the following is necessary to make a secure SSH connection to a particular EC2 instance from the AWS console?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q43" value="a"> 
+                          Secret access key
+                        </label><br>
+                        <label><input type="radio" name="q43" value="b"> Password </label><br>
+                        <label><input type="radio" name="q43" value="c">  Access Key 
+                        </label><br>
+                        <label><input type="radio" name="q43" value="d"> Key pair</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>44.When using Elastic Load Balancing, which statement is true?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q44" value="a"> 
+                          You can specify the port for monitoring with the classic load balancer.</label><br>
+                        <label><input type="radio" name="q44" value="b">  There is a limit of two ELB instances per AZ. </label><br>
+                        <label><input type="radio" name="q44" value="c">   You do not assign security groups to an ELB but only to the EC2 instances it services.
+                        </label><br>
+                        
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>45. Which of the following AWS connection methods can be used with an iOS bash shell?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q45" value="a"> 
+                         Mobile</label><br>
+                        <label><input type="radio" name="q45" value="b"> Restful API </label><br>
+                        <label><input type="radio" name="q45" value="c">  Command-line-interface
+                        </label><br>
+                        <label><input type="radio" name="q45" value="d"> Web-based console</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>46. Which of the following storage options for EC2 instances deletes the root volume configuration when you terminate the
+                          instance?
+                          <div><br></div>
+                          
+                        <label><input type="checkbox" name="q37" value="a"> 
+                          EFS backed
+                        </label><br>
+                        <label><input type="checkbox" name="q37" value="b">  Instance store backed 
+                        </label><br>
+                        <label><input type="checkbox" name="q37" value="c">   EBS backed 
+                        </label><br>
+                        <label><input type="checkbox" name="q37" value="d">  Glacier backed
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>47. Say that instance A and instance B are running in two different subnets, A and B, of a VPC. Instance A is not able to ping
+                          instance B.
+                          <br>
+                          What are two possible reasons for this? (Choose two.)
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q47" value="a"> 
+                          The policy linked to the IAM role on instance A is not configured correctly.
+                        </label><br>
+                        <label><input type="radio" name="q47" value="b"> The NACL on subnet B does not allow outbound ICMP traffic.
+                        </label><br>
+                        <label><input type="radio" name="q47" value="c">   The security group attached to instance B does not allow inbound ICMP traffic. 
+ 
+                        </label><br>
+                        <label><input type="radio" name="q47" value="d">  The routing table of subnet A has no target route to subnet B. 
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>48. Which statement about the root account for your AWS infrastructure is correct?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q48" value="a"> 
+                          The root account does not possess administrative power by default.
+                        </label><br>
+                        <label><input type="radio" name="q48" value="b">  The root account should rarely by used. 
+                        </label><br>
+                        <label><input type="radio" name="q48" value="c">   The root account is not created in a Free Tier account.
+                        </label><br>
+                        <label><input type="radio" name="q48" value="d">  The root account should be used for almost all functions.
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>49. Your company has an existing MySQL database that you would like to migrate to AWS. Which of the following AWS
+                          products would be the best choice for this scenario?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q49" value="a"> 
+                          SimpleDB</label><br>
+                        <label><input type="radio" name="q49" value="b"> RDS </label><br>
+                        <label><input type="radio" name="q49" value="c"> DynamoDB 
+                        </label><br>
+                        <label><input type="radio" name="q49" value="d"> SQS</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>50. When using the EC2 pay-as-you-go payment option, which of the following pricing schedules applies?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q50" value="a"> 
+                          Daily</label><br>
+                        <label><input type="radio" name="q50" value="b"> Hourly </label><br>
+                        <label><input type="radio" name="q50" value="c">  By the minute 
+                        </label><br>
+                        <label><input type="radio" name="q50" value="d"> Monthly</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>51.What type of queue is available in all regions with SQS?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q51" value="a"> 
+                          Limited throughput
+                        </label><br>
+                        <label><input type="radio" name="q51" value="b">  High throughput 
+                        </label><br>
+                        <label><input type="radio" name="q51" value="c">  First-in, first-out delivery
+
+                        </label><br>
+                        <label><input type="radio" name="q51" value="d"> Exactly-once processing
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>52. When creating an S3 bucket, which of the following must be considered when naming the bucket?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q52" value="a"> 
+                          The words in the bucket name must be separated by underscores.
+                        </label><br>
+                        <label><input type="radio" name="q52" value="b">  The bucket name must include at least one special character (for example, @, #,*).
+                        </label><br>
+                        <label><input type="radio" name="q52" value="c">  The bucket name must be globally unique. 
+
+                        </label><br>
+                        <label><input type="radio" name="q52" value="d">  The bucket name must consist of both uppercase and lowercase letters.
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>53. What is the maximum object size that can be stored in an S3 bucket?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q53" value="a"> 
+                          100 TB
+                        </label><br>
+                        <label><input type="radio" name="q53" value="b"> 1TB </label><br>
+                        <label><input type="radio" name="q53" value="c">  5TB
+                        </label><br>
+                        <label><input type="radio" name="q53" value="d"> 100GB</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>54. How can you move a running EC2 instance to another AZ in AWS?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q54" value="a"> 
+                          Take a snapshot of the EBS for the EC2 instance and migrate that.
+                        </label><br>
+                        <label><input type="radio" name="q54" value="b">  Use the ELB Service Migrate feature.
+                        </label><br>
+                        <label><input type="radio" name="q54" value="c">   Stop the instance and then migrate it; you cannot move running instances.
+
+                        </label><br>
+                        <label><input type="radio" name="q54" value="d">  Create an AMI from the running instance. 
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>55. What does S3 stand for?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q55" value="a"> 
+                          Storage Safe Support
+                        </label><br>
+                        <label><input type="radio" name="q55" value="b">  Simple Storage Service 
+                        </label><br>
+                        <label><input type="radio" name="q55" value="c">   Storage Three Tier
+
+                        </label><br>
+                        <label><input type="radio" name="q55" value="d">  Save Stuff Simply
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>56.Your software architects want to be able to design apps for more platforms with less prep time. What service model might
+                          they be interested in?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q56" value="a"> 
+                          IaaS</label><br>
+                        <label><input type="radio" name="q56" value="b">XaaS </label><br>
+                        <label><input type="radio" name="q56" value="c"> PaaS 
+                        </label><br>
+                        <label><input type="radio" name="q56" value="d">SaaS</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>57. AWS uses a Shared Responsibility model with its customers. What is an example of what AWS would be responsible for,
+                          according to this model?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q57" value="a"> 
+                          Encrypting communications between EC2 and ELB
+                        </label><br>
+                        <label><input type="radio" name="q57" value="b">  Security patching ELB
+                        </label><br>
+                        <label><input type="radio" name="q57" value="c">   Anti-spoofing 
+
+                        </label><br>
+                        <label><input type="radio" name="q57" value="d">  Least privilege concept surrounding an EC2 instance
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>58. What is the first action that Elastic Load Balancing takes in the event of an EC2 instance failure?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q58" value="a"> 
+                          It removes one of the instances.
+                        </label><br>
+                        <label><input type="radio" name="q58" value="b">  It attempts to repair the instance.
+                        </label><br>
+                        <label><input type="radio" name="q58" value="c">  It adds another instance.
+
+                        </label><br>
+                        <label><input type="radio" name="q58" value="d">  It stops sending traffic to the failed instance. 
+                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>59. ____ workloads are ideal for reserved instance pricing.
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q59" value="a"> 
+                          Fixed and predictable</label><br>
+                        <label><input type="radio" name="q59" value="b">  Disk-intensive
+                        </label><br>
+                        <label><input type="radio" name="q59" value="c">   Memory-intensive
+                        </label><br>
+                        <label><input type="radio" name="q59" value="d">  Highly variable                        </label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>60.How can you perform custom actions when instances launch or terminate as part of Auto Scaling?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q37" value="a"> 
+                          Use Elastic Container Service
+                        </label><br>
+                        <label><input type="radio" name="q37" value="b">  Add lifecycle hooks 
+                        </label><br>
+                        <label><input type="radio" name="q37" value="c">   Use the Auto Scaling Automator 
+                        </label><br>
+                        <label><input type="radio" name="q37" value="d"> Use Lambda</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>61.What is the longest duration of a typical reserved instance contract?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q37" value="a"> 
+                          2 years</label><br>
+                        <label><input type="radio" name="q37" value="b"> 1 year </label><br>
+                        <label><input type="radio" name="q37" value="c">  6 months 
+                        </label><br>
+                        <label><input type="radio" name="q37" value="d"> 3 years</label><br>
+                      </div>
+                      <div class="question" style="display: none;">
+                        <p>62.Which is not a category for EC2 machine types?
+                          <div><br></div>
+                          
+                        <label><input type="radio" name="q62" value="a"> 
+                          Storage</label><br>
+                        <label><input type="radio" name="q62" value="b"> Compute </label><br>
+                        <label><input type="radio" name="q62" value="c"> Memory 
+                        </label><br>
+                        <label><input type="radio" name="q62" value="d"> AI</label><br>
+                      </div>
                     </form>
                       <div id="container-pie">
                         <canvas id="scoreChart" width="400" height="400"></canvas>
@@ -293,7 +924,7 @@
               
              </div>
              
-            
+    
         </div>
         
         <div class="designed_privacyCopyright">
@@ -306,442 +937,376 @@
     </a>
     <script src="https://cdn.jsdelivr.net/npm/chart.js" async></script>
     <script src="assets/js/practice.js" async></script>
+    <script src="assets/js/formvalidation.js" async></script>
     <script>
-     function start() {
-        const quizContainer = document.querySelector(".quiz-container");
-        const nextQuestionContainer = document.querySelector(".next-container");
-        const startButton = document.querySelector("#start_Exam");
-        
-        
-        const isStarting = quizContainer.style.display === "none" || quizContainer.style.display === "";
-        
-        
-        quizContainer.style.display = isStarting ? "block" : "none";
-        nextQuestionContainer.style.display = isStarting ? "block" : "none";
-        startButton.style.display = isStarting ? "none" : "block";
-     }
-    </script>
-    <script>
-        let currentQuestion = 0;
-const totalQuestions = document.querySelectorAll(".question").length;
-const progressBar = document.getElementById("progress-bar");
-const questionNumber = document.getElementById("question-number");
-const nextButton = document.getElementById("next-button");
-let timeLeft = 10 * 60;
-let timer;
+      // Quiz state management
+    let currentQuestion = 0;
+    const totalQuestions = document.querySelectorAll(".question").length;
+    const progressBar = document.getElementById("progress-bar");
+    const questionNumber = document.getElementById("question-number");
+    const nextButton = document.getElementById("next-button");
+    let timeLeft = 10 * 60; // 10 minutes in seconds
+    let timer;
 
-function startTimer() {
-  const timerElement = document.getElementById("timer");
-  timer = setInterval(() => {
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-      checkAnswers();
-    } else {
-      timeLeft--;
-      const hours = Math.floor(timeLeft / 3600);
-      const minutes = Math.floor((timeLeft % 3600) / 60);
-      const seconds = timeLeft % 60;
-      timerElement.textContent = `${hours}:${minutes
-        .toString()
-        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-    }
-  }, 1000);
-}
+    // Quiz answers and explanations
+    const quizAnswers = {
+      q1: "c",
+      q2: "c", 
+      q3: "b",
+      q4: "b",
+      q5: ["c", "d"], // Multi-select question
+      q6: "a",
+      q7: "d",
+      q8: "c",
+      q9: "c",
+      q10: ["a", "d"], // Multi-select question
+    };
 
-function updateProgress() {
-  const progress = ((currentQuestion + 1) / totalQuestions) * 100;
-  progressBar.value = progress;
-  questionNumber.textContent = `Question ${
-    currentQuestion + 1
-  }/${totalQuestions}`;
-}
+    // Quiz explanations
+    const explanations = {
+      q1: {
+        c: "Correct. CloudWatch uses information from Auto Scaling, Elastic Load Balancing, and EC2 instances to trigger alarms, but it does not use CloudSearch."
+      },
+      q2: {
+        c: "Correct. The storage options for uploading objects to an S3 bucket are Standard, Standard—Infrequent Access, and Reduced Redundancy."
+      },
+      q3: {
+        b: "Correct. There is no Machine Learning category. In addition to the other categories listed here, there are GPU Graphics, GPU Compute, and Storage Optimized categories."
+      },
+      q4: {
+        b: "Correct. Since you have a large window in which to complete the tasks, you might consider spot instance pricing, in which you bid and hope the spot price triggers the compute resources at your price."
+      },
+      q5: {
+        c: "Correct. You can control data access in S3 buckets by using an ACL or by using a bucket policy.",
+        d: "Correct. You can control data access in S3 buckets by using an ACL or by using a bucket policy."
+      },
+      q6: {
+        a: "Correct. A credit card is necessary to create an AWS account."
+      },
+      q7: {
+        d: "Correct. AWS Kinesis provides data stream analysis services."
+      },
+      q8: {
+        c: "Correct. According to the Shared Responsibility model, AWS is responsible for the hypervisor software that EC2 instances run on."
+      },
+      q9: {
+        c: "Correct. JSON is an example of a supported scripting language for CloudFormation templates."
+      },
+      q10: {
+        a: "Correct. You can configure access control for S3 at the object level.",
+        d: "Correct. You can configure access control for S3 at the bucket level."
+      }
+    };
 
-function showQuestion(index) {
-  document.querySelectorAll(".question").forEach((question, i) => {
-    question.style.display = i === index ? "block" : "none";
-  });
-  if (index === totalQuestions - 1) {
-    nextButton.textContent = "Finish";
-    nextButton.style.backgroundColor = "red";
-    nextButton.style.color = "white";
-    nextButton.style.removeProperty("border-color");
-    nextButton.style.left = "58%";
-    nextButton.style.marginLeft = "25%";
-  } else {
-    nextButton.textContent = "Next question";
-  }
-  updateProgress();
-}
+    /**
+     * Initialize and start the quiz timer
+     */
+    function startTimer() {
+      const timerElement = document.getElementById("timer");
+      
+      // Format and display initial time
+      updateTimerDisplay(timerElement, timeLeft);
+      
+      timer = setInterval(() => {
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          checkAnswers();
+        } else {
+          timeLeft--;
+          updateTimerDisplay(timerElement, timeLeft);
+        }
+      }, 1000);
+    }
 
-function nextQuestion() {
-  if (currentQuestion < totalQuestions - 1) {
-    currentQuestion++;
-    showQuestion(currentQuestion);
-  } else {
-    clearInterval(timer);
-    checkAnswers();
-  }
-}
-function checkAnswers() {
-  const quizForm = document.getElementById("quiz-form");
-  const resultDiv = document.getElementById("result");
-  const scoreChartCanvas = document.getElementById("scoreChart");
-  const containerPie = document.getElementById("container-pie");
+    /**
+     * Update the timer display with formatted time
+     */
+    function updateTimerDisplay(element, seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = seconds % 60;
+      element.textContent = `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
+    }
 
-  let score = 0;
+    /**
+     * Update the progress bar and question counter
+     */
+    function updateProgress() {
+      const progress = ((currentQuestion + 1) / totalQuestions) * 100;
+      progressBar.value = progress;
+      questionNumber.textContent = `${currentQuestion + 1}/${totalQuestions}`;
+    }
 
-  const answers = {
-    q1: "b",
-    q2: "b",
-    q3: "b",
-    q4: "b",
-    q5: "a",
-    q6: "a",
-    q7: "a",
-    q8: "d",
-    q9: "b",
-    q10: "b",
-  };
-  
-  // Explanations for each question's options
-  const explanations = {
-    q1: {
-      a: "Incorrect. Storing data locally is the opposite of cloud computing, which involves storing and processing data remotely.",
-      b: "Correct. Cloud computing is the delivery of computing services over the internet, including storage, databases, networking, software, analytics, and more.",
-      c: "Incorrect. Hosting a website offline would mean it's not using cloud resources or internet delivery.",
-      d: "Incorrect. Using a high-powered laptop refers to local computing, not cloud computing."
-    },
-    q2: {
-      a: "Incorrect. Cloud computing eliminates the need for physical server ownership.",
-      b: "Correct. On-demand network access to a shared pool of computing resources is a defining characteristic of cloud computing.",
-      c: "Incorrect. Cloud computing reduces or eliminates the need for local infrastructure.",
-      d: "Incorrect. Cloud computing allows for temporary and flexible hardware allocation, not permanent installation."
-    },
-    q3: {
-      a: "Incorrect. Cloud services are paid services, not free hardware.",
-      b: "Correct. Elasticity and scalability allow businesses to quickly scale resources up or down based on demand.",
-      c: "Incorrect. Cloud computing doesn't provide unlimited internet bandwidth.",
-      d: "Incorrect. Cloud computing offers automated resource allocation, not manual allocation."
-    },
-    q4: {
-      a: "Incorrect. Elasticity means resources can be adjusted, not fixed.",
-      b: "Correct. Elasticity is the ability to scale resources up or down based on demand automatically.",
-      c: "Incorrect. Elasticity is the opposite of permanent allocation.",
-      d: "Incorrect. Elasticity means computational power can vary, not remain constant."
-    },
-    q5: {
-      a: "Correct. Scalability refers to the ability to grow or shrink resources as needed to accommodate changing workloads.",
-      b: "Incorrect. This is not related to the concept of scalability in cloud computing.",
-      c: "Incorrect. Scalability in cloud computing refers to virtual resources, not physical servers.",
-      d: "Incorrect. Scalability is about flexibility, not fixed resources."
-    },
-    q6: {
-      a: "Correct. Pay-as-you-go means you only pay for the computing resources you use, not a fixed amount.",
-      b: "Incorrect. Pay-as-you-go is not a fixed monthly fee regardless of usage.",
-      c: "Incorrect. Pay-as-you-go doesn't involve paying in advance for unused resources.",
-      d: "Incorrect. Cloud services are not free; they follow a pay-as-you-go model."
-    },
-    q7: {
-      a: "Correct. Virtualization creates virtual versions of physical resources like servers, storage, and networking.",
-      b: "Incorrect. This does not describe virtualization in cloud computing.",
-      c: "Incorrect. Virtualization doesn't involve disabling physical servers.",
-      d: "Incorrect. Virtualization is not about operating system upgrades."
-    },
-    q8: {
-      a: "Incorrect. Public cloud is a valid cloud deployment model.",
-      b: "Incorrect. Private cloud is a valid cloud deployment model.",
-      c: "Incorrect. Community cloud is a valid cloud deployment model.",
-      d: "Correct. Distributed cloud is not one of the main cloud deployment models (Public, Private, Hybrid, and Community are the standard models)."
-    },
-    q9: {
-      a: "Incorrect. An Availability Zone is not defined by internet connectivity.",
-      b: "Correct. An Availability Zone is a distinct physical location (data center) within a region.",
-      c: "Incorrect. While AZs provide redundancy, this is not the definition of an AZ.",
-      d: "Incorrect. AZs are not specifically related to database scaling."
-    },
-    q10: {
-      a: "Incorrect. Serverless doesn't mean servers are constantly running.",
-      b: "Correct. Serverless computing allows developers to build applications without managing server infrastructure.",
-      c: "Incorrect. Serverless is the opposite of permanent server allocation.",
-      d: "Incorrect. Serverless eliminates the need for manual server configuration."
-    }
-  };
-
-  const formData = new FormData(quizForm);
-  const userAnswers = {};
-
-  for (const [question, answer] of formData.entries()) {
-    userAnswers[question] = answer;
-    if (answers[question] === answer) {
-      score++;
-    }
-  }
-
-  // Clear the quiz form
-  document.getElementById("quiz-form").style.display = "none";
-  document.querySelector(".next-container").style.display = "none";
-  document.getElementById("quiz-header").style.display = "none";
-  
-  // Add CSS for results page
-  const styleElement = document.createElement('style');
-  styleElement.textContent = `
-    .results-container {
-      max-width: 800px;
-      margin: 0 auto;
-      font-family: Arial, sans-serif;
-    }
-    
-    .results-header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    
-    .results-title {
-      font-size: 28px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-    
-    .results-score {
-      font-size: 22px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-    
-    .score-percentage {
-      font-weight: bold;
-      color: #2c7be5;
-    }
-    
-    .chart-container {
-      width: 250px;
-      margin: 0 auto 40px;
-    }
-    
-    .questions-review {
-      margin-top: 40px;
-    }
-    
-    .review-title {
-      font-size: 24px;
-      color: #333;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #eee;
-    }
-    
-    .question-item {
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 25px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    
-    .question-text {
-      font-size: 18px;
-      font-weight: 500;
-      color: #333;
-      margin-bottom: 15px;
-    }
-    
-    .options-list {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .option-item {
-      padding: 12px 15px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      position: relative;
-    }
-    
-    .option-correct {
-      background-color: rgba(40, 167, 69, 0.1);
-      border-left: 4px solid #28a745;
-    }
-    
-    .option-incorrect {
-      background-color: rgba(220, 53, 69, 0.1);
-      border-left: 4px solid #dc3545;
-    }
-    
-    .option-neutral {
-      background-color: #f5f5f5;
-      border-left: 4px solid #ddd;
-    }
-    
-    .option-text {
-      display: block;
-      font-size: 16px;
-      padding-left: 30px;
-      position: relative;
-    }
-    
-    .option-text:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 2px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      border: 2px solid #aaa;
-    }
-    
-    .option-correct .option-text:before {
-      background-color: #28a745;
-      border-color: #28a745;
-    }
-    
-    .option-correct.user-selected .option-text:before {
-      background-color: #28a745;
-      border-color: #28a745;
-    }
-    
-    .option-incorrect.user-selected .option-text:before {
-      background-color: #dc3545;
-      border-color: #dc3545;
-    }
-    
-    .explanation {
-      margin-top: 10px;
-      padding: 12px 15px;
-      font-size: 14px;
-      color: #555;
-      border-radius: 4px;
-      background-color: #f5f5f5;
-    }
-    
-    .retake-button {
-      display: block;
-      width: 200px;
-      margin: 40px auto;
-      padding: 12px 0;
-      background-color: #2c7be5;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      text-align: center;
-      transition: background-color 0.2s;
-    }
-    
-    .retake-button:hover {
-      background-color: #1a68d1;
-    }
-    
-    .options-container {
-      margin-top: 15px;
-    }
-    
-    .correct-marker, .incorrect-marker {
-      margin-right: 10px;
-      font-weight: bold;
-    }
-    
-    .correct-marker {
-      color: #28a745;
-    }
-    
-    .incorrect-marker {
-      color: #dc3545;
-    }
-    
-    @media (max-width: 768px) {
-      .results-container {
-        padding: 0 15px;
+    /**
+     * Display a specific question
+     */
+    function showQuestion(index) {
+      // Hide all questions and show only the current one
+      document.querySelectorAll(".question").forEach((question, i) => {
+        question.style.display = i === index ? "block" : "none";
+      });
+      
+      // Change next button text on the last question
+      if (index === totalQuestions - 1) {
+        nextButton.textContent = "Finish";
+        nextButton.style.backgroundColor = "#d9534f";
+        nextButton.style.color = "white";
+      } else {
+        nextButton.textContent = "Next question";
+        nextButton.style.backgroundColor = "";
+        nextButton.style.color = "";
       }
       
-      .question-item {
-        padding: 15px;
+      updateProgress();
+    }
+
+    /**
+     * Move to the next question or finish the quiz
+     */
+    function nextQuestion() {
+      if (currentQuestion < totalQuestions - 1) {
+        currentQuestion++;
+        showQuestion(currentQuestion);
+      } else {
+        clearInterval(timer);
+        checkAnswers();
       }
     }
-  `;
-  document.head.appendChild(styleElement);
-  
-  // Create results container
-  const resultsContainer = document.createElement('div');
-  resultsContainer.className = 'results-container';
-  
-  // Create results header
-  const resultsHeader = document.createElement('div');
-  resultsHeader.className = 'results-header';
-  
-  const resultsTitle = document.createElement('h2');
-  resultsTitle.className = 'results-title';
-  resultsTitle.textContent = 'Quiz Results';
-  
-  const resultsScore = document.createElement('div');
-  resultsScore.className = 'results-score';
-  const percentage = ((score / totalQuestions) * 100).toFixed(1);
-  resultsScore.innerHTML = `Your score: <span class="score-percentage">${score}/${totalQuestions} (${percentage}%)</span>`;
-  
-  resultsHeader.appendChild(resultsTitle);
-  resultsHeader.appendChild(resultsScore);
-  
-  // Chart container
-  const chartContainer = document.createElement('div');
-  chartContainer.className = 'chart-container';
-  chartContainer.appendChild(scoreChartCanvas);
-  
-  // Questions review section
-  const questionsReview = document.createElement('div');
-  questionsReview.className = 'questions-review';
-  
-  const reviewTitle = document.createElement('h3');
-  reviewTitle.className = 'review-title';
-  reviewTitle.textContent = 'Review Your Answers';
-  questionsReview.appendChild(reviewTitle);
-  
-  // Add each question with detailed feedback
-  for (let i = 1; i <= totalQuestions; i++) {
-    const questionKey = `q${i}`;
-    const questionText = document.querySelector(`.question:nth-child(${i}) p`).textContent;
-    
-    const questionItem = document.createElement('div');
-    questionItem.className = 'question-item';
-    
-    // Question text
-    const questionTextElement = document.createElement('div');
-    questionTextElement.className = 'question-text';
-    questionTextElement.textContent = questionText;
-    questionItem.appendChild(questionTextElement);
-    
-    // Options container
-    const optionsContainer = document.createElement('div');
-    optionsContainer.className = 'options-container';
-    
-    // Options list
-    const optionsList = document.createElement('ul');
-    optionsList.className = 'options-list';
-    
-    // Get all labels in this question
-    const questionElement = document.querySelector(`.question:nth-child(${i})`);
-    const labels = questionElement.querySelectorAll('label');
-    
-    labels.forEach(label => {
-      const input = label.querySelector('input');
-      const optionValue = input.value;
-      const optionText = label.textContent.trim();
+
+    /**
+     * Start the quiz
+     */
+    function start() {
+      const quizContainer = document.querySelector(".quiz-container");
+      const nextQuestionContainer = document.querySelector(".next-container");
+      const startButton = document.querySelector("#start_Exam");
       
+      // Check if we're starting or restarting
+      const isStarting = quizContainer.style.display === "none" || quizContainer.style.display === "";
+      
+      // Toggle visibility
+      quizContainer.style.display = isStarting ? "block" : "none";
+      nextQuestionContainer.style.display = isStarting ? "block" : "none";
+      startButton.style.display = isStarting ? "none" : "block";
+      
+      // If starting, initialize the quiz
+      if (isStarting) {
+        currentQuestion = 0;
+        timeLeft = 10 * 60;
+        showQuestion(currentQuestion);
+        startTimer();
+      }
+    }
+
+    /**
+     * Check answers and display results
+     */
+    function checkAnswers() {
+      const quizForm = document.getElementById("quiz-form");
+      const containerPie = document.getElementById("container-pie");
+      const scoreChartCanvas = document.getElementById("scoreChart");
+      
+      let score = 0;
+      const formData = new FormData(quizForm);
+      const userAnswers = {};
+      
+      // Process and collect form data
+      for (const [name, value] of formData.entries()) {
+        // For checkbox questions (multi-select)
+        if (Array.isArray(quizAnswers[name])) {
+          if (!userAnswers[name]) {
+            userAnswers[name] = [];
+          }
+          userAnswers[name].push(value);
+        } else {
+          // For radio button questions (single select)
+          userAnswers[name] = value;
+        }
+      }
+      
+      // Calculate score
+      for (const question in quizAnswers) {
+        if (Array.isArray(quizAnswers[question])) {
+          // Multi-select questions
+          const correctAnswers = quizAnswers[question];
+          const userSelectedAnswers = userAnswers[question] || [];
+          
+          // Check if arrays have the same elements
+          const isCorrect = 
+            correctAnswers.length === userSelectedAnswers.length &&
+            correctAnswers.every(answer => userSelectedAnswers.includes(answer)) &&
+            userSelectedAnswers.every(answer => correctAnswers.includes(answer));
+          
+          if (isCorrect) {
+            score++;
+          }
+        } else {
+          // Single-select questions
+          if (userAnswers[question] === quizAnswers[question]) {
+            score++;
+          }
+        }
+      }
+      
+      // Hide quiz elements
+      quizForm.style.display = "none";
+      document.querySelector(".next-container").style.display = "none";
+      document.getElementById("quiz-header").style.display = "none";
+      
+      // Create the results container
+      const resultsContainer = createResultsContainer(score, totalQuestions, userAnswers);
+      
+      // Clear existing content and add results
+      containerPie.innerHTML = '';
+      containerPie.style.display = 'block';
+      containerPie.appendChild(resultsContainer);
+      
+      // Create and display the chart
+      createScoreChart(scoreChartCanvas, score, totalQuestions);
+    }
+
+    /**
+     * Create the results container with all review elements
+     */
+    function createResultsContainer(score, totalQuestions, userAnswers) {
+      // Create main container
+      const resultsContainer = document.createElement('div');
+      resultsContainer.className = 'results-container';
+      
+      // Add CSS styles for results
+      addResultsStyles();
+      
+      // Create header section
+      const resultsHeader = document.createElement('div');
+      resultsHeader.className = 'results-header';
+      
+      const resultsTitle = document.createElement('h2');
+      resultsTitle.className = 'results-title';
+      resultsTitle.textContent = 'Quiz Results';
+      
+      const resultsScore = document.createElement('div');
+      resultsScore.className = 'results-score';
+      const percentage = ((score / totalQuestions) * 100).toFixed(1);
+      resultsScore.innerHTML = `Your score: <span class="score-percentage">${score}/${totalQuestions} (${percentage}%)</span>`;
+      
+      resultsHeader.appendChild(resultsTitle);
+      resultsHeader.appendChild(resultsScore);
+      
+      // Create chart container
+      const chartContainer = document.createElement('div');
+      chartContainer.className = 'chart-container';
+      chartContainer.appendChild(document.getElementById('scoreChart'));
+      
+      // Create questions review section
+      const questionsReview = createQuestionsReview(userAnswers);
+      
+      // Create retake button
+      const retakeButton = document.createElement('button');
+      retakeButton.className = 'retake-button';
+      retakeButton.textContent = 'Retake Quiz';
+      retakeButton.addEventListener('click', function() {
+        location.reload();
+      });
+      
+      // Assemble the container
+      resultsContainer.appendChild(resultsHeader);
+      resultsContainer.appendChild(chartContainer);
+      resultsContainer.appendChild(questionsReview);
+      resultsContainer.appendChild(retakeButton);
+      
+      return resultsContainer;
+    }
+
+    /**
+     * Create the questions review section
+     */
+    function createQuestionsReview(userAnswers) {
+      const questionsReview = document.createElement('div');
+      questionsReview.className = 'questions-review';
+      
+      const reviewTitle = document.createElement('h3');
+      reviewTitle.className = 'review-title';
+      reviewTitle.textContent = 'Review Your Answers';
+      questionsReview.appendChild(reviewTitle);
+      
+      // Process each question
+      for (let i = 1; i <= totalQuestions; i++) {
+        const questionKey = `q${i}`;
+        const questionElement = document.querySelector(`.question:nth-child(${i})`);
+        const questionText = questionElement.querySelector('p').textContent;
+        
+        // Create question item
+        const questionItem = document.createElement('div');
+        questionItem.className = 'question-item';
+        
+        // Add question text
+        const questionTextElement = document.createElement('div');
+        questionTextElement.className = 'question-text';
+        questionTextElement.textContent = questionText;
+        questionItem.appendChild(questionTextElement);
+        
+        // Create options container
+        const optionsContainer = document.createElement('div');
+        optionsContainer.className = 'options-container';
+        
+        // Create options list
+        const optionsList = document.createElement('ul');
+        optionsList.className = 'options-list';
+        
+        // Process all options for this question
+        const labels = questionElement.querySelectorAll('label');
+        
+        labels.forEach(label => {
+          const input = label.querySelector('input');
+          const optionValue = input.value;
+          const optionText = label.textContent.trim();
+          
+          const optionItem = createOptionItem(
+            questionKey, 
+            optionValue, 
+            optionText, 
+            userAnswers[questionKey]
+          );
+          
+          optionsList.appendChild(optionItem);
+        });
+        
+        optionsContainer.appendChild(optionsList);
+        questionItem.appendChild(optionsContainer);
+        questionsReview.appendChild(questionItem);
+      }
+      
+      return questionsReview;
+    }
+
+    /**
+     * Create an individual option item for review
+     */
+    function createOptionItem(questionKey, optionValue, optionText, userAnswer) {
       const optionItem = document.createElement('li');
       
-      // Determine option class
-      if (optionValue === answers[questionKey]) {
-        // Correct answer
+      // Determine if this option is correct and/or selected
+      const correctAnswer = quizAnswers[questionKey];
+      let isCorrect, isSelected;
+      
+      if (Array.isArray(correctAnswer)) {
+        // Multi-select question
+        isCorrect = correctAnswer.includes(optionValue);
+        isSelected = Array.isArray(userAnswer) && userAnswer.includes(optionValue);
+      } else {
+        // Single-select question
+        isCorrect = (optionValue === correctAnswer);
+        isSelected = (userAnswer === optionValue);
+      }
+      
+      // Set appropriate class based on correctness and selection
+      if (isCorrect) {
         optionItem.className = 'option-item option-correct';
-        if (userAnswers[questionKey] === optionValue) {
+        if (isSelected) {
           optionItem.classList.add('user-selected');
         }
-      } else if (userAnswers[questionKey] === optionValue) {
-        // User's incorrect answer
+      } else if (isSelected) {
         optionItem.className = 'option-item option-incorrect user-selected';
       } else {
-        // Neutral option
         optionItem.className = 'option-item option-neutral';
       }
       
@@ -751,25 +1316,20 @@ function checkAnswers() {
       optionTextElement.textContent = optionText;
       optionItem.appendChild(optionTextElement);
       
-      // Add marker for user selection
-      if (userAnswers[questionKey] === optionValue) {
-        const userSelectionMarker = document.createElement('span');
-        if (optionValue === answers[questionKey]) {
-          userSelectionMarker.className = 'correct-marker';
-          userSelectionMarker.textContent = '✓ Your answer (Correct)';
-        } else {
-          userSelectionMarker.className = 'incorrect-marker';
-          userSelectionMarker.textContent = '✗ Your answer (Incorrect)';
-        }
-        optionItem.appendChild(userSelectionMarker);
-      } else if (optionValue === answers[questionKey]) {
-        const correctMarker = document.createElement('span');
-        correctMarker.className = 'correct-marker';
-        correctMarker.textContent = '✓ Correct answer';
-        optionItem.appendChild(correctMarker);
+      // Add marker for selection
+      if (isSelected) {
+        const marker = document.createElement('span');
+        marker.className = isCorrect ? 'correct-marker' : 'incorrect-marker';
+        marker.textContent = isCorrect ? '✓ Your answer (Correct)' : '✗ Your answer (Incorrect)';
+        optionItem.appendChild(marker);
+      } else if (isCorrect) {
+        const marker = document.createElement('span');
+        marker.className = 'correct-marker';
+        marker.textContent = '✓ Correct answer';
+        optionItem.appendChild(marker);
       }
       
-      // Add explanation
+      // Add explanation if available
       if (explanations[questionKey] && explanations[questionKey][optionValue]) {
         const explanationElement = document.createElement('div');
         explanationElement.className = 'explanation';
@@ -777,88 +1337,254 @@ function checkAnswers() {
         optionItem.appendChild(explanationElement);
       }
       
-      optionsList.appendChild(optionItem);
-    });
-    
-    optionsContainer.appendChild(optionsList);
-    questionItem.appendChild(optionsContainer);
-    questionsReview.appendChild(questionItem);
-  }
-  
-  // Create retake button
-  const retakeButton = document.createElement('button');
-  retakeButton.className = 'retake-button';
-  retakeButton.textContent = 'Retake Quiz';
-  retakeButton.addEventListener('click', function() {
-    location.reload();
-  });
-  
-  // Assemble results page
-  resultsContainer.appendChild(resultsHeader);
-  resultsContainer.appendChild(chartContainer);
-  resultsContainer.appendChild(questionsReview);
-  resultsContainer.appendChild(retakeButton);
-  
-  // Clear existing content and add new results
-  containerPie.innerHTML = '';
-  containerPie.style.display = 'block';
-  containerPie.appendChild(resultsContainer);
-  
-  // Create the chart
-  const ctx = scoreChartCanvas.getContext("2d");
-  new Chart(ctx, {
-    type: "doughnut",
-    data: {
-      labels: ["Correct", "Incorrect"],
-      datasets: [
-        {
-          data: [score, totalQuestions - score],
-          backgroundColor: ["#28a745", "#dc3545"],
-          hoverBackgroundColor: ["#218838", "#c82333"],
-          borderColor: ["#fff", "#fff"],
-          borderWidth: 2,
-          borderRadius: 900,
-        },
-      ],
-    },
-    options: {
-      responsive: true,
-      cutout: "80%",
-      plugins: {
-        legend: {
-          position: "top",
-          labels: {
-            font: {
-              size: 16,
-            },
-          },
-        },
-        tooltip: {
-          callbacks: {
-            label: function (context) {
-              let label = context.label || "";
-              if (label) {
-                label += ": ";
-              }
-              label += context.raw;
-              label += ` (${((context.raw / totalQuestions) * 100).toFixed(1)}%)`;
-              return label;
-            },
-          },
-        },
-      },
-      animation: {
-        animateScale: true,
-        animateRotate: true,
-      },
-    },
-  });
-}
-showQuestion(currentQuestion);
-startTimer();
+      return optionItem;
+    }
 
-    </script>
-    <script src="assets/js/formvalidation.js" async></script>
+    /**
+     * Create score chart using Chart.js
+     */
+    function createScoreChart(canvas, score, totalQuestions) {
+      const ctx = canvas.getContext("2d");
+      new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: ["Correct", "Incorrect"],
+          datasets: [
+            {
+              data: [score, totalQuestions - score],
+              backgroundColor: ["#28a745", "#dc3545"],
+              hoverBackgroundColor: ["#218838", "#c82333"],
+              borderColor: ["#fff", "#fff"],
+              borderWidth: 2,
+              borderRadius: 10,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          cutout: "70%",
+          plugins: {
+            legend: {
+              position: "top",
+              labels: {
+                font: {
+                  size: 14,
+                },
+              },
+            },
+            tooltip: {
+              callbacks: {
+                label: function (context) {
+                  let label = context.label || "";
+                  if (label) {
+                    label += ": ";
+                  }
+                  label += context.raw;
+                  label += ` (${((context.raw / totalQuestions) * 100).toFixed(1)}%)`;
+                  return label;
+                },
+              },
+            },
+          },
+          animation: {
+            animateScale: true,
+            animateRotate: true,
+          },
+        },
+      });
+    }
+
+    /**
+     * Add CSS styles for the results page
+     */
+    function addResultsStyles() {
+      // Check if styles are already added
+      if (document.getElementById('results-styles')) return;
+      
+      const styleElement = document.createElement('style');
+      styleElement.id = 'results-styles';
+      styleElement.textContent = `
+        .results-container {
+          max-width: 800px;
+          margin: 0 auto;
+          font-family: Arial, sans-serif;
+        }
+        
+        .results-header {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        
+        .results-title {
+          font-size: 28px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+        
+        .results-score {
+          font-size: 22px;
+          color: #555;
+          margin-bottom: 20px;
+        }
+        
+        .score-percentage {
+          font-weight: bold;
+          color: #2c7be5;
+        }
+        
+        .chart-container {
+          width: 250px;
+          margin: 0 auto 40px;
+        }
+        
+        .questions-review {
+          margin-top: 40px;
+        }
+        
+        .review-title {
+          font-size: 24px;
+          color: #333;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #eee;
+        }
+        
+        .question-item {
+          background-color: #f9f9f9;
+          border-radius: 8px;
+          padding: 20px;
+          margin-bottom: 25px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .question-text {
+          font-size: 18px;
+          font-weight: 500;
+          color: #333;
+          margin-bottom: 15px;
+        }
+        
+        .options-list {
+          list-style: none;
+          padding: 0;
+        }
+        
+        .option-item {
+          padding: 12px 15px;
+          margin-bottom: 10px;
+          border-radius: 6px;
+          position: relative;
+        }
+        
+        .option-correct {
+          background-color: rgba(40, 167, 69, 0.1);
+          border-left: 4px solid #28a745;
+        }
+        
+        .option-incorrect {
+          background-color: rgba(220, 53, 69, 0.1);
+          border-left: 4px solid #dc3545;
+        }
+        
+        .option-neutral {
+          background-color: #f5f5f5;
+          border-left: 4px solid #ddd;
+        }
+        
+        .option-text {
+          display: block;
+          font-size: 16px;
+          padding-left: 30px;
+          position: relative;
+        }
+        
+        .option-text:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 2px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 2px solid #aaa;
+        }
+        
+        .option-correct .option-text:before {
+          background-color: #28a745;
+          border-color: #28a745;
+        }
+        
+        .option-incorrect.user-selected .option-text:before {
+          background-color: #dc3545;
+          border-color: #dc3545;
+        }
+        
+        .explanation {
+          margin-top: 10px;
+          padding: 12px 15px;
+          font-size: 14px;
+          color: #555;
+          border-radius: 4px;
+          background-color: #f0f8ff;
+          border-left: 3px solid #0077cc;
+        }
+        
+        .retake-button {
+          display: block;
+          width: 200px;
+          margin: 40px auto;
+          padding: 12px 0;
+          background-color: #2c7be5;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+          text-align: center;
+          transition: background-color 0.2s;
+        }
+        
+        .retake-button:hover {
+          background-color: #1a68d1;
+        }
+        
+        .correct-marker, .incorrect-marker {
+          margin-left: 10px;
+          font-weight: bold;
+          display: inline-block;
+          margin-top: 5px;
+        }
+        
+        .correct-marker {
+          color: #28a745;
+        }
+        
+        .incorrect-marker {
+          color: #dc3545;
+        }
+        
+        @media (max-width: 768px) {
+          .results-container {
+            padding: 0 15px;
+          }
+          
+          .question-item {
+            padding: 15px;
+          }
+        }
+      `;
+      document.head.appendChild(styleElement);
+    }
+
+    // Initialize the quiz when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set up event listeners
+      document.getElementById('retake').addEventListener('click', function() {
+        location.reload();
+      });
+    });
+</script>
 </body>
 </html>        
 
