@@ -104,7 +104,7 @@
                         <div id="quiz-header">
                             <div id="question-number">1/65</div>
                             <progress id="progress-bar" value="0" max="100" style="flex-grow: 1; margin: 0 10px;"></progress>
-                            <div id="timer">10:00</div>
+                            <div id="timer">1:00:00</div>
                         </div>
                     <form id="quiz-form">
                       <div class="question">
@@ -627,14 +627,14 @@
                           instance?
                           <div><br></div>
                           
-                        <label><input type="checkbox" name="q37" value="a"> 
+                        <label><input type="radio" name="46" value="a"> 
                           EFS backed
                         </label><br>
-                        <label><input type="checkbox" name="q37" value="b">  Instance store backed 
+                        <label><input type="radio" name="46" value="b">  Instance store backed 
                         </label><br>
-                        <label><input type="checkbox" name="q37" value="c">   EBS backed 
+                        <label><input type="radio" name="46" value="c">   EBS backed 
                         </label><br>
-                        <label><input type="checkbox" name="q37" value="d">  Glacier backed
+                        <label><input type="radio" name="46" value="d">  Glacier backed
                         </label><br>
                       </div>
                       <div class="question" style="display: none;">
@@ -823,25 +823,25 @@
                         <p>60.How can you perform custom actions when instances launch or terminate as part of Auto Scaling?
                           <div><br></div>
                           
-                        <label><input type="radio" name="q37" value="a"> 
+                        <label><input type="radio" name="q60" value="a"> 
                           Use Elastic Container Service
                         </label><br>
-                        <label><input type="radio" name="q37" value="b">  Add lifecycle hooks 
+                        <label><input type="radio" name="q60" value="b">  Add lifecycle hooks 
                         </label><br>
-                        <label><input type="radio" name="q37" value="c">   Use the Auto Scaling Automator 
+                        <label><input type="radio" name="q60" value="c">   Use the Auto Scaling Automator 
                         </label><br>
-                        <label><input type="radio" name="q37" value="d"> Use Lambda</label><br>
+                        <label><input type="radio" name="q60" value="d"> Use Lambda</label><br>
                       </div>
                       <div class="question" style="display: none;">
                         <p>61.What is the longest duration of a typical reserved instance contract?
                           <div><br></div>
                           
-                        <label><input type="radio" name="q37" value="a"> 
+                        <label><input type="radio" name="q61" value="a"> 
                           2 years</label><br>
-                        <label><input type="radio" name="q37" value="b"> 1 year </label><br>
-                        <label><input type="radio" name="q37" value="c">  6 months 
+                        <label><input type="radio" name="q61" value="b"> 1 year </label><br>
+                        <label><input type="radio" name="q61" value="c">  6 months 
                         </label><br>
-                        <label><input type="radio" name="q37" value="d"> 3 years</label><br>
+                        <label><input type="radio" name="q61" value="d"> 3 years</label><br>
                       </div>
                       <div class="question" style="display: none;">
                         <p>62.Which is not a category for EC2 machine types?
@@ -945,7 +945,7 @@
     const progressBar = document.getElementById("progress-bar");
     const questionNumber = document.getElementById("question-number");
     const nextButton = document.getElementById("next-button");
-    let timeLeft = 10 * 60; // 10 minutes in seconds
+    let timeLeft = 10 * 60 *60;
     let timer;
 
     // Quiz answers and explanations
@@ -954,12 +954,64 @@
       q2: "c", 
       q3: "b",
       q4: "b",
-      q5: ["c", "d"], // Multi-select question
+      q5: ["c", "d"], 
       q6: "a",
       q7: "d",
       q8: "c",
       q9: "c",
-      q10: ["a", "d"], // Multi-select question
+      q10: ["a", "d"],
+      q11:"d",
+      q12:"b",
+      q13:"d",
+      q14:"b",
+      q15:"c",
+      q16:"b",
+      q17:"d",
+      q18:"d",
+      q19:"d",
+      q20:"d",
+      q21:"d",
+      q22:"c",
+      q23:["b","c"],
+      q24:"c",
+      q25:"a",
+      q26:["b","c"],
+      q27:"d",
+      q28:"c",
+      q29:"b",
+      q30:"c",
+      q31:"d",
+      q32:"b",
+      q33:"c",
+      q34:"c",
+      q35:"b",
+      q36:["b","d"],
+      q37:["c","d"],
+      q38:"d",
+      q39:"c",
+      q40:"b",
+      q41:"c",
+      q42:"a",
+      q43:"d",
+      q44:"a",
+      q45:"c",
+      q46:"b",
+      q47:["c","d"],
+      q48:"b",
+      q49:"b",
+      q50:"b",
+      q51:"b",
+      q52:"c",
+      q53:"c",
+      q54:"d",
+      q55:"b",
+      q56:"c",
+      q57:"c",
+      q58:"d",
+      q59:"a",
+      q60:"b",
+      q61:"d",
+      q62:"d",      
     };
 
     // Quiz explanations
@@ -995,37 +1047,199 @@
       q10: {
         a: "Correct. You can configure access control for S3 at the object level.",
         d: "Correct. You can configure access control for S3 at the bucket level."
-      }
+      },
+      q11:{
+        d:"CloudFront delivers static and streaming content using a global network of AWS Edge Locations."
+      },
+      q12:{
+        b:"An EC2 instance enters the pending state immediately after being launched; in this state, the instance builds the image and acquires."
+      },
+      q13:{
+        d:"The top level of an Amazon DynamoDB is organized into tables, tables contain items, and items contain attributes."
+    },
+    q14:{
+      b:"Foundation services—the foundational services that AWS offers—include compute (EC2, Lambda, Auto Scaling), networking (Load-Balancing, Route53, VPC), and storage (S3, Block Storage, Glacier, EFS) services."
+    },
+    q15:{
+       c:"The maximum number of security groups that can be applied to any one EC2 instance is 5, although this is a soft limit that can be raised"
+    },
+    q16:{
+     b:"-AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command-line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting."
+    },
+    q17:{
+     d:"Three main components make up Auto Scaling: scaling plans, launch configurations, and groups. AMI batch does not exist in AWS."
+    },
+    q18:{
+     d:"In this use of the wizard, using a NAT gateway and an elastic IP address makes the public subnet Internet accessible."
+    },
+    q19:{
+     d:"Round robin (RR) is the default algorithm for load balancing"
+    },
+    q20:{
+     d:"AWS provides the largest discount possible when you pay for all your reserved instances up front."
+    },
+    q21:{
+      d:"The AWS Marketplace is an online software store that helps AWS customers find, buy, and immediately start using the software and services that run on AWS"
+    },
+    q22:{
+      c:"-NACLs, which are associated with subnets, give you a powerful security capability to control traffic between your AWS resources."
+    },
+    q23:{
+     b:"A security group acts as a virtual firewall for EC2 instances as well as various other AWS products. Keep in mind that security groups are not instance specific. Therefore, one security group can be shared among many instances.",
+     c:"Redshift "
+    },
+    q24:{
+     c:"Amazon Simple Storage Service (S3) is a scalable, durable platform that makes data accessible from any Internet location, for user generated content, active archive, serverless computing, big data storage, or backup and recovery."
+    },
+    q25:{
+    a:"All outbound traffic from the instance is permitted by default. For inbound traffic, just traffic from other instances of that security group  is permitted by default"
+    },
+    q26:{
+     b:"The Amazon Machine Image (AMI) contains the basic configuration for the operating system (OS) and the root volume",
+     c:"The Amazon Machine Image (AMI) contains the basic configuration for the operating system (OS) and the root volume"
+    },
+    q27:{
+      d:"You can use the sticky session feature (also known as session affinity), which enables the load balancer to bind a user's session to a specific instance. This ensures that all requests from the user during the session are sent to the same instance."
+    },
+    q28:{
+      c:"AWS bills only for the time that a virtual machine is actually running"
+    },
+    q29:{
+      b:"AWS does not currently have any regions in Poland"
+    },
+    q30:{
+      c:"Lambda permits serverless computing, which means functions can run in the cloud without specific EC2 resources being provisioned"
+    },
+    q31:{
+      d:"-Spot allows AWS users to auction off unused reserved and scheduled instance hours to the highest bidder as a way to cut down on unnecessary expense."
+    },
+    q32:{
+      b:"The Reduced Redundancy S3 storage class has a durability rating of 99.99%, while the other three storage classes listed here are rated at 99.999999999%."
+    },
+    q33:{
+      c:"Services like AWS Web Application Firewall (WAF) can help protect your web applications from SQL injection attacks and other vulnerabilities in your application code. For access control, you can use Identity and Access Management (IAM) to define a granular set of policies and assign them to users, groups, and AWS resources. Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily"
+    },
+    q34:{
+      c:"Glacier is the least expensive of the S3 storage classes, but keep in mind that it can take up to a couple hours to restore."
+    },
+    q35:{
+      b:"Provisioned IOPS are a new Elastic Block Store (EBS) volume type designed to deliver predictable high performance for I/O-intensive workloads, such as database applications, that rely on consistent and fast response times. These would not be part of a Free Tier account."
+    },
+    q36:{
+      b:"Elasticity (scalability) is cost-effective because you can spin up and pay for additional services as you need them (on demand), and it allows “on-ramping,” which means moving your services to the cloud over time gradually.",
+      d:"Elasticity (scalability) is cost-effective because you can spin up and pay for additional services as you need them (on demand), and it allows “on-ramping,” which means moving your services to the cloud over time gradually"
+    },
+    q37:{
+      c:"An EC2 instance is constructed from an Amazon Machine Image (AMI) and an instance type",
+      d:"An EC2 instance is constructed from an Amazon Machine Image (AMI) and an instance type"
+    },
+    q38:{
+      d:"Note that the EBS optimized option is not available for this EC2 instance."
+    },
+    q39:{
+      c:"AWS S3 duplicates your objects across Availability Zones (AZs) in order to improve durability"
+    },
+    q40:{
+      b:"The job of Elastic Beanstalk is to build the underlying AWS infrastructure for the developer in order to make deployment of applications simple"
+    },
+    q41:{
+       c:"The following limits are related to your Auto Scaling resources: 100 launch configurations per region and 20 Auto Scaling groups per region"
+    },
+    q42:{
+       a:"An AWS Availability Zone (AZ) is one of two to five geographically separate zones contained within a region. An AZ includes one or more data centers."
+    },
+    q43:{
+       d:"When launching an EC2 instance, you are asked to create a key pair to ensure secure access to that instance"
+    },
+    q44:{
+     a:"You can specify the port or ports for health check monitoring with Elastic Load Balancing (ELB)."
+    },
+    q45:{
+      d:"The command-line interface is a utility that can be downloaded from the AWS website and used with various command-line shells."
+    },
+    q46:{
+     b:"The instance store backed storage option has exceptionally low I/O latency, but it is ephemeral (that is, short-lived), which means the stored data will disappear when the instance is terminated. The EBS backed storage option also deletes the root volume by default, but you can choose to override the delete option at the time of termination."
+    },
+    q47:{
+      c:"This ping might fail due to a lack of routing information or due to the security group configuration. Identity and Access Management (IAM)would not prevent network traffic from passing, and an NACL on subnet B would have to prevent a ping in the inbound direction to cause the issue described here.",
+      d:"This ping might fail due to a lack of routing information or due to the security group configuration. Identity and Access Management (IAM)would not prevent network traffic from passing, and an NACL on subnet B would have to prevent a ping in the inbound direction to cause the issue described here."
+    },
+    q48:{
+      b:"The AWS root/administrator account should only be used for occasional administrative tasks because this account has full  administrative access. After creating your AWS account, you should create additional user accounts and passwords with limited permissions using Identity and Access Management (IAM)and then use those accounts to gain access to various predetermined services."
+    },
+    q49:{
+      b:"Relational Database Service (RDS) is a good choice when migrating an existing database due to the fact that the migration will not require rewriting of code."
+    },
+    q50:{
+      b:"The pay-as-you-go payment plan is billed on an hourly basis, but partial hours are billed for a full hour. Keep in mind that some instances have a per-second billing rate as well"
+    },
+    q51:{
+      b:"The high throughput queue is available in all regions"
+    },
+    q52:{
+      c:"AWS requires that all S3 bucket names be globally unique across all regions; in addition, bucket names must not include spaces between words."
+    },
+    q53:{
+      c:"You can store an unlimited number of objects in an S3 bucket, and the maximum size is 5 TB each"
+    },
+    q54:{
+      d:"It is possible to moving a running instance to another Availability Zone (AZ), but you must first create an Amazon Machine Image (AMI) from this instance. That is then used to create another instance in another AZ"
+    },
+    q55:{
+      b:"S3 is simple object-based storage service in AWS. It was one of the first services ever offered by AWS"
+    },
+    q56:{
+      c:"Platform as a Service is often a goal of developers. PaaS permits developers to design and build apps for many different operating systems with few or no requirements for maintenance of the target systems."
+    },
+    q57:{
+      c:"Customer responsibility is based on the AWS cloud services that a customer selects. The services determine the amount of configuration work the customer must perform as part of security responsibilities. For example, services such as Elastic Compute Cloud (EC2), Amazon Virtual Private Cloud (VPC), and Amazon S3 are categorized as Infrastructure as a Service (IaaS) and, as such, require the customer to perform all the necessary security configuration and management tasks."
+    },
+    q58:{
+       d:"In the event of an EC2 instance failure, Elastic Load Balancing reroutes and distributes traffic evenly between healthy active instances until the failed instance is back up and running correctly"
+    },
+    q59:{
+       a:"Reserved instance pricing is an excellent choice when workloads are fixed and predictable."
+    },
+    q60:{
+      b:"Auto Scaling lifecycle hooks enable you to perform custom actions by pausing instances as Auto Scaling launches or terminates them. For example, while a newly launched instance is paused, you could install or configure software on it. Each Auto Scaling group can have multiple lifecycle hooks. However, there is a limit on the number of hooks per Auto Scaling group"
+    },
+    q61:{
+      d:"Reserved instance contracts can extend to three years."
+    },
+    q62:{
+      d:"AI is not a specific category of machine types"
+    },
+
     };
 
-    /**
-     * Initialize and start the quiz timer
-     */
     function startTimer() {
-      const timerElement = document.getElementById("timer");
-      
-      // Format and display initial time
+  const timerElement = document.getElementById("timer");
+  
+  // Set timeLeft to 60 minutes (3600 seconds)
+  timeLeft = 3600;
+  
+  // Format and display initial time
+  updateTimerDisplay(timerElement, timeLeft);
+  
+  timer = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      checkAnswers();
+    } else {
+      timeLeft--;
       updateTimerDisplay(timerElement, timeLeft);
-      
-      timer = setInterval(() => {
-        if (timeLeft <= 0) {
-          clearInterval(timer);
-          checkAnswers();
-        } else {
-          timeLeft--;
-          updateTimerDisplay(timerElement, timeLeft);
-        }
-      }, 1000);
     }
+  }, 1000);
+}
 
-    /**
-     * Update the timer display with formatted time
-     */
-    function updateTimerDisplay(element, seconds) {
-      const minutes = Math.floor(seconds / 60);
-      const remainingSeconds = seconds % 60;
-      element.textContent = `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
-    }
+/**
+ * Update the timer display with formatted time
+ */
+function updateTimerDisplay(element, seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  element.textContent = `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
+}
 
     /**
      * Update the progress bar and question counter
