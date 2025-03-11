@@ -859,6 +859,187 @@ startTimer();
 
     </script>
     <script src="assets/js/formvalidation.js" async></script>
+<script>
+  // Add CSS to fix the black background in fullscreen mode and position next button
+function addFullscreenStyles() {
+  // Check if our style element already exists
+  if (document.getElementById('fullscreen-styles')) return;
+  
+  const styleEl = document.createElement('style');
+  styleEl.id = 'fullscreen-styles';
+  styleEl.textContent = `
+    .multipe_qsContainer:fullscreen {
+      background-color: white; /* Or whatever your desired background color is */
+      overflow-y: auto;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      position: relative; /* Needed for absolute positioning of children */
+    }
+    
+    /* Vendor prefixes for different browsers */
+    .multipe_qsContainer:-webkit-full-screen {
+      background-color: white;
+      overflow-y: auto;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    
+    .multipe_qsContainer:-moz-full-screen {
+      background-color: white;
+      overflow-y: auto;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    
+    .multipe_qsContainer:-ms-fullscreen {
+      background-color: white;
+      overflow-y: auto;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    
+    /* Fixed positioning for the next button when in fullscreen */
+    .multipe_qsContainer:fullscreen .next-container,
+    .multipe_qsContainer:-webkit-full-screen .next-container,
+    .multipe_qsContainer:-moz-full-screen .next-container,
+    .multipe_qsContainer:-ms-fullscreen .next-container {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: white;
+      padding: 15px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+    
+    /* Add some bottom padding to the quiz form to prevent content from being hidden behind the fixed button */
+    .multipe_qsContainer:fullscreen #quiz-form,
+    .multipe_qsContainer:-webkit-full-screen #quiz-form,
+    .multipe_qsContainer:-moz-full-screen #quiz-form,
+    .multipe_qsContainer:-ms-fullscreen #quiz-form {
+      padding-bottom: 70px; /* Ensure content isn't hidden behind the button */
+    }
+  `;
+  
+  document.head.appendChild(styleEl);
+}
+
+// Function to handle entering full-screen mode for the quiz container
+function enterFullScreen() {
+  // Add the necessary styles first
+  addFullscreenStyles();
+  
+  const quizContainer = document.querySelector('.multipe_qsContainer');
+  
+  if (quizContainer.requestFullscreen) {
+    quizContainer.requestFullscreen();
+  } else if (quizContainer.mozRequestFullScreen) { /* Firefox */
+    quizContainer.mozRequestFullScreen();
+  } else if (quizContainer.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    quizContainer.webkitRequestFullscreen();
+  } else if (quizContainer.msRequestFullscreen) { /* IE/Edge */
+    quizContainer.msRequestFullscreen();
+  }
+}
+
+// Modify your existing start function to enter full-screen mode
+function start() {
+  // Enter full-screen mode
+  enterFullScreen();
+  
+  // Show the quiz container
+  document.querySelector('.quiz-container').style.display = 'block';
+  document.querySelector('.next-container').style.display = 'block';
+  
+  // Hide the start button
+  document.querySelector('.program_mainHeaderContainer').style.display = 'none';
+  
+  // Initialize the quiz (your existing quiz initialization code)
+  // ...
+}
+
+// Create a prompt div for fullscreen reminder
+function createFullscreenPrompt() {
+  // Check if prompt already exists
+  if (document.getElementById('fullscreen-prompt')) return;
+  
+  const promptDiv = document.createElement('div');
+  promptDiv.id = 'fullscreen-prompt';
+  promptDiv.style.position = 'fixed';
+  promptDiv.style.top = '20px';
+  promptDiv.style.left = '50%';
+  promptDiv.style.transform = 'translateX(-50%)';
+  promptDiv.style.backgroundColor = '#f8d7da';
+  promptDiv.style.color = '#721c24';
+  promptDiv.style.padding = '10px 20px';
+  promptDiv.style.borderRadius = '5px';
+  promptDiv.style.zIndex = '9999';
+  promptDiv.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+  promptDiv.style.display = 'none';
+  
+  promptDiv.innerHTML = `
+    <p style="margin: 0 0 10px 0">For the best test experience, please use full screen mode.</p>
+    <button id="return-fullscreen" style="background: #dc3545; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Return to Full Screen</button>
+  `;
+  
+  document.body.appendChild(promptDiv);
+  
+  document.getElementById('return-fullscreen').addEventListener('click', function() {
+    enterFullScreen();
+    promptDiv.style.display = 'none';
+  });
+}
+
+// Listen for fullscreenchange event
+document.addEventListener('fullscreenchange', handleFullScreenChange);
+document.addEventListener('webkitfullscreenchange', handleFullScreenChange);
+document.addEventListener('mozfullscreenchange', handleFullScreenChange);
+document.addEventListener('MSFullscreenChange', handleFullScreenChange);
+
+function handleFullScreenChange() {
+  createFullscreenPrompt(); // Create the prompt if it doesn't exist
+  
+  const promptDiv = document.getElementById('fullscreen-prompt');
+  
+  if (!document.fullscreenElement && 
+      !document.webkitFullscreenElement && 
+      !document.mozFullScreenElement && 
+      !document.msFullscreenElement) {
+    // If we've exited full-screen mode, show the prompt
+    promptDiv.style.display = 'block';
+    
+    // Hide the prompt after 10 seconds if user doesn't act
+    setTimeout(function() {
+      promptDiv.style.display = 'none';
+    }, 10000);
+  } else {
+    // We're in full-screen mode, hide the prompt
+    promptDiv.style.display = 'none';
+  }
+}
+
+// Handling "Retake" to also go into fullscreen again
+document.getElementById('retake').addEventListener('click', function() {
+  enterFullScreen();
+  // Your existing retake functionality
+  // ...
+});
+
+// Initialize when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  createFullscreenPrompt();
+  addFullscreenStyles();
+});
+</script>
 </body>
 </html>        
 
