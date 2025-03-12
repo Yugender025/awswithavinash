@@ -1463,54 +1463,64 @@ function updateTimerDisplay(element, seconds) {
     /**
      * Create the results container with all review elements
      */
-    function createResultsContainer(score, totalQuestions, userAnswers) {
-      // Create main container
-      const resultsContainer = document.createElement('div');
-      resultsContainer.className = 'results-container';
-      
-      // Add CSS styles for results
-      addResultsStyles();
-      
-      // Create header section
-      const resultsHeader = document.createElement('div');
-      resultsHeader.className = 'results-header';
-      
-      const resultsTitle = document.createElement('h2');
-      resultsTitle.className = 'results-title';
-      resultsTitle.textContent = 'Quiz Results';
-      
-      const resultsScore = document.createElement('div');
-      resultsScore.className = 'results-score';
-      const percentage = ((score / totalQuestions) * 100).toFixed(1);
-      resultsScore.innerHTML = `Your score: <span class="score-percentage">${score}/${totalQuestions} (${percentage}%)</span>`;
-      
-      resultsHeader.appendChild(resultsTitle);
-      resultsHeader.appendChild(resultsScore);
-      
-      // Create chart container
-      const chartContainer = document.createElement('div');
-      chartContainer.className = 'chart-container';
-      chartContainer.appendChild(document.getElementById('scoreChart'));
-      
-      // Create questions review section
-      const questionsReview = createQuestionsReview(userAnswers);
-      
-      // Create retake button
-      const retakeButton = document.createElement('button');
-      retakeButton.className = 'retake-button';
-      retakeButton.textContent = 'Retake Quiz';
-      retakeButton.addEventListener('click', function() {
-        location.reload();
-      });
-      
-      // Assemble the container
-      resultsContainer.appendChild(resultsHeader);
-      resultsContainer.appendChild(chartContainer);
-      resultsContainer.appendChild(questionsReview);
-      resultsContainer.appendChild(retakeButton);
-      
-      return resultsContainer;
-    }
+     function createResultsContainer(score, totalQuestions, userAnswers) {
+  // Create main container
+  const resultsContainer = document.createElement('div');
+  resultsContainer.className = 'results-container';
+  
+  // Add CSS styles for results
+  addResultsStyles();
+  
+  // Create header section
+  const resultsHeader = document.createElement('div');
+  resultsHeader.className = 'results-header';
+  
+  const resultsTitle = document.createElement('h2');
+  resultsTitle.className = 'results-title';
+  resultsTitle.textContent = 'Quiz Results';
+  
+  const resultsScore = document.createElement('div');
+  resultsScore.className = 'results-score';
+  const percentage = ((score / totalQuestions) * 100).toFixed(1);
+  resultsScore.innerHTML = `Your score: <span class="score-percentage">${score}/${totalQuestions} (${percentage}%)</span>`;
+  
+  resultsHeader.appendChild(resultsTitle);
+  resultsHeader.appendChild(resultsScore);
+  
+  // Create chart container
+  const chartContainer = document.createElement('div');
+  chartContainer.className = 'chart-container';
+  chartContainer.appendChild(document.getElementById('scoreChart'));
+  
+  // Add recommendation for scores below 70%
+  if ((score / totalQuestions) * 100 < 70) {
+    const recommendation = document.createElement('div');
+    recommendation.className = 'score-recommendation';
+    recommendation.innerHTML = '<p><strong>Recommendation:</strong> We suggest you join an AWS course or review your class materials to improve your understanding. <a style="color:blue; text-decoration:underline;" href="contactus.html" target="_blank" >Click here to join classes</a></p>';
+    resultsContainer.appendChild(resultsHeader);
+    resultsContainer.appendChild(recommendation);
+  } else {
+    resultsContainer.appendChild(resultsHeader);
+  }
+  
+  // Create questions review section
+  const questionsReview = createQuestionsReview(userAnswers);
+  
+  // Create retake button
+  const retakeButton = document.createElement('button');
+  retakeButton.className = 'retake-button';
+  retakeButton.textContent = 'Retake Quiz';
+  retakeButton.addEventListener('click', function() {
+    location.reload();
+  });
+  
+  // Assemble the container
+  resultsContainer.appendChild(chartContainer);
+  resultsContainer.appendChild(questionsReview);
+  resultsContainer.appendChild(retakeButton);
+  
+  return resultsContainer;
+}
 
     /**
      * Create the questions review section
