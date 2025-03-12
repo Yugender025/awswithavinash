@@ -640,7 +640,33 @@ a.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
 
 
 /*dashboard.css*/
-
+.dashboard_container .sm-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 32px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: rgba(0, 40, 225, 1);
+  border-radius: 24px;
+  cursor: pointer;
+  color: white;
+}
+.dashboard_container .sm-btn .get-started{
+  font-size: var(--BODY-font-size);
+  font-family: var(--BODY-font-family);
+  font-style: var(--BODY-font-style);
+  line-height: var(--BODY-line-height);
+  letter-spacing: var(--BODY-letter-spacing);
+  font-weight: var(--BODY-font-weight);
+}
+.dashboard_container .sm-btn:hover{
+  background-color: var(--colors-lucky-point-900);
+  gap: 14px;
+  color: white;
+  transition: 0.35s ease-in;
+}
 .dash_main_ctn {
   width: 100%;
   max-width: 500px;
@@ -686,6 +712,7 @@ gap: 3rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 .bottom_content .head_info_ctn {

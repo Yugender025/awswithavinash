@@ -101,9 +101,10 @@
                 <i class="fa-regular fa-arrow-right"></i>
             </div>
             
+            
         </div>
     </div>
-    <div class="dash_main_ctn">
+    <!-- <div class="dash_main_ctn">
         <div class="top_content">
             <div class="head_info_ctn">Test:1</div>
             <div class="right_info_ctn">--60min--</div>
@@ -117,7 +118,7 @@
             </div>
             
         </div>
-    </div>
+    </div> -->
 </section>
 <div class="modal-overlay" id="exam-modal">
     <div class="modal-container">
@@ -150,10 +151,10 @@
 
     // Function to handle starting an exam set
     function startExam(setNumber) {
-        alert(`Starting Exam Set ${setNumber}!`);
-        window.location.href = `set1exam.html?set=${setNumber}`;
-        closeModal();
-    }
+    alert(`Starting Exam Set ${setNumber}!`);
+    window.location.href = `set${setNumber}exam.html?set=${setNumber}`;
+    closeModal();
+}
 
     // Close modal if user clicks outside the modal content
     window.addEventListener('click', function(event) {

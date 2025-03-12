@@ -104,7 +104,7 @@
                         <div id="quiz-header">
                             <div id="question-number">1/65</div>
                             <progress id="progress-bar" value="0" max="100" style="flex-grow: 1; margin: 0 10px;"></progress>
-                            <div id="timer">1:00:00</div>
+                            <div id="timer">01:30:00</div>
                         </div>
                     <form id="quiz-form">
                       <div class="question">
@@ -979,7 +979,7 @@
     const progressBar = document.getElementById("progress-bar");
     const questionNumber = document.getElementById("question-number");
     const nextButton = document.getElementById("next-button");
-    let timeLeft = 10 * 60 *60;
+    let timeLeft = 90 * 60;
     let timer;
 
     // Quiz answers and explanations
@@ -1232,8 +1232,8 @@
     function startTimer() {
   const timerElement = document.getElementById("timer");
   
-  // Set timeLeft to 60 minutes (3600 seconds)
-  timeLeft = 3600;
+
+  timeLeft = 5400;
   
   // Format and display initial time
   updateTimerDisplay(timerElement, timeLeft);
@@ -1322,7 +1322,7 @@ function updateTimerDisplay(element, seconds) {
       // If starting, initialize the quiz
       if (isStarting) {
         currentQuestion = 0;
-        timeLeft = 10 * 60;
+        timeLeft = 60*90;
         showQuestion(currentQuestion);
         startTimer();
       }
