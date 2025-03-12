@@ -945,7 +945,7 @@
     const progressBar = document.getElementById("progress-bar");
     const questionNumber = document.getElementById("question-number");
     const nextButton = document.getElementById("next-button");
-    let timeLeft = 10 * 60 *60;
+    let timeLeft = 90 * 60; // 90 minutes × 60 seconds = 5400 seconds
     let timer;
 
     // Quiz answers and explanations
@@ -1215,8 +1215,8 @@
     function startTimer() {
   const timerElement = document.getElementById("timer");
   
-  // Set timeLeft to 60 minutes (3600 seconds)
-  timeLeft = 3600;
+ 
+  timeLeft = 5400;
   
   // Format and display initial time
   updateTimerDisplay(timerElement, timeLeft);
@@ -1305,7 +1305,7 @@ function updateTimerDisplay(element, seconds) {
       // If starting, initialize the quiz
       if (isStarting) {
         currentQuestion = 0;
-        timeLeft = 10 * 60;
+        timeLeft = 90 * 60;
         showQuestion(currentQuestion);
         startTimer();
       }
