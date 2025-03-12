@@ -90,10 +90,75 @@
         <div style="margin-top: 3rem;" class="multipe_qsContainer">
             <div class="multiple_qsinnerContainer">
                 <div class="program_mainHeaderContainer">
-                    <h2>Test your knowledge in aws</h2> 
+                    <h1 style="color: rgba(0, 40, 225, 1);">AWS Certified Cloud Practitioner</h1>
+                    <h3>SET-2: Practice Examination</h3>
+                    
+                    <div class="exam-container">
+                      <!-- Tabbed Navigation -->
+                      <div class="exam-tabs">
+                          <button class="tab-button active" onclick="showTab('details')">Exam Details</button>
+                          <button class="tab-button" onclick="showTab('instructions')">Instructions</button>
+                      </div>
+                      
+                      <!-- Tab Content -->
+                      <div class="tab-content">
+                          <!-- Details Tab -->
+                          <div id="details" class="tab-pane active">
+                              <table class="exam-table">
+                                  <tr>
+                                      <td class="label-cell"><i class="fa-regular fa-clock"></i> Duration</td>
+                                      <td class="value-cell">90 minutes</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="label-cell"><i class="fa-regular fa-list-check"></i> Questions</td>
+                                      <td class="value-cell">62 multiple choice and multiple response</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="label-cell"><i class="fa-regular fa-chart-simple"></i> Passing Score</td>
+                                      <td class="value-cell">700/1000 (70%)</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="label-cell"><i class="fa-regular fa-square-check"></i> Format</td>
+                                      <td class="value-cell">Multiple choice and multiple response</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="label-cell"><i class="fa-regular fa-globe"></i> Language</td>
+                                      <td class="value-cell">English</td>
+                                  </tr>
+                              </table>
+                          </div>
+                          
+                          <!-- Instructions Tab -->
+                          <div id="instructions" class="tab-pane">
+                              <div class="instruction-card">
+                                  <div class="instruction-item">
+                                      <div class="instruction-icon">1</div>
+                                      <div class="instruction-text">Read each question carefully and select the best answer(s)</div>
+                                  </div>
+                                  <div class="instruction-item">
+                                      <div class="instruction-icon">2</div>
+                                      <div class="instruction-text">Some questions require multiple selections - these will be clearly indicated</div>
+                                  </div>
+                                  <div class="instruction-item">
+                                      <div class="instruction-icon">3</div>
+                                      <div class="instruction-text">You may find explanation for each question after completing your test</div>
+                                  </div>
+                                  <div class="instruction-item">
+                                      <div class="instruction-icon">4</div>
+                                      <div class="instruction-text">Time remaining will be displayed in the top corner</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                    
                     <div class="sm-btn" id="start_Exam">
-                        <div id="how-link" class="get-started" onclick="start()">Start now</div>
+                        <div id="how-link" class="get-started" onclick="start()">Begin Examination</div>
                         <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                    
+                    <div class="exam-note">
+                        <p>This practice examination is designed to prepare you for the AWS Certified Cloud Practitioner certification.</p>
                     </div>
                 </div>
               
@@ -1310,7 +1375,7 @@ function updateTimerDisplay(element, seconds) {
       const quizContainer = document.querySelector(".quiz-container");
       const nextQuestionContainer = document.querySelector(".next-container");
       const startButton = document.querySelector("#start_Exam");
-      
+      const program_headerContainer=document.querySelector(".program_mainHeaderContainer");
       // Check if we're starting or restarting
       const isStarting = quizContainer.style.display === "none" || quizContainer.style.display === "";
       
@@ -1318,7 +1383,7 @@ function updateTimerDisplay(element, seconds) {
       quizContainer.style.display = isStarting ? "block" : "none";
       nextQuestionContainer.style.display = isStarting ? "block" : "none";
       startButton.style.display = isStarting ? "none" : "block";
-      
+      program_headerContainer.style.display = isStarting ? "none" : "block";
       // If starting, initialize the quiz
       if (isStarting) {
         currentQuestion = 0;
@@ -1816,6 +1881,25 @@ function updateTimerDisplay(element, seconds) {
       });
     });
 </script>
+<script>
+    function showTab(tabId) {
+      // Hide all tab panes
+      const tabPanes = document.getElementsByClassName('tab-pane');
+      for (let i = 0; i < tabPanes.length; i++) {
+          tabPanes[i].classList.remove('active');
+      }
+      
+      // Deactivate all tab buttons
+      const tabButtons = document.getElementsByClassName('tab-button');
+      for (let i = 0; i < tabButtons.length; i++) {
+          tabButtons[i].classList.remove('active');
+      }
+      
+      // Activate the selected tab and its button
+      document.getElementById(tabId).classList.add('active');
+      document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
+    }
+    </script>
 </body>
 </html>        
 
